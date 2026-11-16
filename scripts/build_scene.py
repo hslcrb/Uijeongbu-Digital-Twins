@@ -144,6 +144,7 @@ for id,w in ways.items():
   except:h=10
   counts['estimated_heights']+=1
  z=float(t.get('min_height','0'));h=max(z+.3,h)
+ if t.get('building:part')=='roof' and 'min_height' not in t:z=h-.3
  if id in mallparts:current=COL['04_Shinsegae'];m=M['Brown_panel'] if id=='608705745' else M['Concrete'];counts['mall_parts']+=1
  elif id in stationparts:current=COL['03_Station'];m=M['Glass'] if id=='1311394048' else M['Dark'] if id=='1311394063' else M['Concrete'];counts['station_parts']+=1
  else:current=COL['05_Context_OSM'];m=mat('Facade '+id,random.choice([(.46,.43,.38),(.57,.57,.52),(.3,.29,.27),(.65,.59,.49),(.45,.48,.48)]));counts['osm_buildings']+=1
@@ -311,7 +312,7 @@ for p in [(0,30,24),(60,-20,22),(-50,55,18),(65,-105,20)]:
 current=COL['10_Cameras']
 def camera(n,p,target,lens):
  bpy.ops.object.camera_add(location=p);c=link(bpy.context.object);c.name=n;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.lens=lens;c.data.clip_end=3000;return c
-cam=camera('01_East_Station_overview',(275,305,175),(5,-10,20),42);camera('02_Plaza_eye_level',(26,29,13),(2,49,13),24);camera('03_Parking_ramp',(160,-290,90),(0,-85,24),40);scene.camera=cam
+cam=camera('01_East_Station_overview',(275,305,175),(5,-10,20),42);camera('02_Plaza_eye_level',(2,30,13),(2,49,13),24);camera('03_Parking_ramp',(160,-290,90),(0,-85,24),40);scene.camera=cam
 scene.render.engine='CYCLES';scene.cycles.samples=48;scene.cycles.use_denoising=True;scene.render.resolution_x=1440;scene.render.resolution_y=1000;scene.render.resolution_percentage=100;scene.render.image_settings.file_format='PNG';scene.view_settings.view_transform='AgX';scene.view_settings.exposure=0;scene.frame_end=240;scene.frame_set(1)
 scene['README']='OSM-driven exterior study; photographic facade interpretation. Not a surveyed or fully photoreal final twin. See docs.'
 scene['LOD']='Disable 07_Trees_LOD0 and enable 08_Trees_LOD1 for far/interactive view.'

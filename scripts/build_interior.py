@@ -7,7 +7,7 @@ def mat(n,c,metal=0,rough=.45,emit=0):
  if emit:p.inputs['Emission Color'].default_value=(*c,1);p.inputs['Emission Strength'].default_value=emit
  return m
 stone=mat('Gray polished granite',(.36,.39,.39),.12,.22);wall=mat('Pale granite walls',(.58,.6,.59),.05,.35);steel=mat('Brushed stainless',(.4,.45,.46),.8,.24);black=mat('Black trim',(.018,.023,.026),.2,.3);ceil=mat('Metal ceiling tiles',(.32,.35,.35),.65,.35);yellow=mat('Tactile ochre',(.83,.57,.08),0,.5);blue=mat('Korail blue signs',(.018,.04,.21),.1,.4);white=mat('Sign white',(.9,.95,.94),0,.35, .3);lamp=mat('Luminous ceiling panels',(.79,.88,1),0,.4,5);screen=mat('Ticket screens',(.025,.12,.19),.2,.15,.8);red=mat('Departure red',(.9,.07,.025),0,.5,2);green=mat('Gate indicator',(.08,.9,.18),0,.5,3)
-glass=mat('Transparent partition',(.58,.75,.77),0,.12);p=glass.node_tree.nodes.get('Principled BSDF');p.inputs['Transmission Weight'].default_value=.82;p.inputs['IOR'].default_value=1.45
+glass=mat('Transparent partition',(.92,.96,.97),0,.025);p=glass.node_tree.nodes.get('Principled BSDF');p.inputs['Transmission Weight'].default_value=1.0;p.inputs['IOR'].default_value=1.45
 font=bpy.data.fonts.load('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
 def box(n,loc,dim,m,bev=0):
  x,y,z=[d/2 for d in dim];me=bpy.data.meshes.new(n);me.from_pydata([(-x,-y,-z),(x,-y,-z),(x,y,-z),(-x,y,-z),(-x,-y,z),(x,-y,z),(x,y,z),(-x,y,z)],[],[(0,3,2,1),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)]);o=bpy.data.objects.new(n,me);bpy.context.collection.objects.link(o);o.location=loc;o.data.materials.append(m)
@@ -20,12 +20,12 @@ def rail(a,b,r=.035,m=steel):
 def area(n,loc,power,size,target):
  bpy.ops.object.light_add(type='AREA',location=loc);o=bpy.context.object;o.name=n;o.data.energy=power;o.data.shape='DISK';o.data.size=size;o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler()
 # footprint proportions are photo estimates, not surveyed
-box('Structural left',(-11.5,1,-.18),(5,32,.3),stone)
-box('Structural right',(4,1,-.18),(20,32,.3),stone)
-box('Structural middle',(-7.5,-2,-.18),(3,26,.3),stone)
+box('Structural left',(-12.75,1,-.18),(2.5,32,.3),stone)
+box('Structural right',(5.25,1,-.18),(17.5,32,.3),stone)
+box('Structural middle',(-7.5,-2,-.18),(8,26,.3),stone)
 for ix in range(-14,14):
  for iy in range(-15,17):
-  if -9<=ix<-6 and iy>=11:continue
+  if -12<=ix<-3 and iy>=11:continue
   box('Individual floor tile',(ix+.5,iy+.5,-.015),(.992,.992,.045),stone)
 for x in [-14,14]:box('Side granite wall',(x,1,2.2),(.22,32,4.4),wall);box('Wall skirting',(x*.994,1,.12),(.13,32,.24),black)
 # columns and ceiling modular seams
@@ -68,7 +68,8 @@ for y in range(-14,10):
 for x in range(-13,14):
  for dy in [-.14,0,.14]:box('Tactile cross rib',(x+.5,-5+dy,.008),(.96,.055,.006),yellow,.015)
 # stairwell landing and descending flight as observed side section
-# stairwell remains a true floor opening
+# stairwell and paired escalators share a true floor opening
+box('Lower platform landing',(-7.5,14,-2.55),(8,8,.25),stone)
 for i in range(14):box('Descending step',(-7.5,11.2+i*.32,-.12-i*.16),(2.5,.33,.16),stone)
 for x in [-9,-6]:
  rail((x,10.8,1.1),(x,15.4,-1.15))
