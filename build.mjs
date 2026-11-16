@@ -26,6 +26,7 @@ fs.writeFileSync('web-dist/app.js',app);
 // Preserve 104 independent streaming URLs while uploading one source archive.
 if(fs.existsSync('web/city/city-tiles.tar.gz')) {
  const tar=gunzipSync(fs.readFileSync('web/city/city-tiles.tar.gz'));
+ fs.rmSync('web-dist/city/tiles',{recursive:true,force:true});const paths=new Set();
  let count=0;
  for(let offset=0;offset+512<=tar.length;){
   const h=tar.subarray(offset,offset+512);if(h.every(v=>v===0))break;
@@ -35,6 +36,7 @@ if(fs.existsSync('web/city/city-tiles.tar.gz')) {
   if(!Number.isSafeInteger(length)||length<0||offset+512+length>tar.length)throw Error('Invalid city archive length');
   if(type===0||type===48){
    if(!/^tiles\/[-0-9_]+\.glb$/.test(name))throw Error('Unexpected city archive path: '+name);
+   if(paths.has(name))throw Error('Duplicate city tile '+name);paths.add(name);
    const data=tar.subarray(offset+512,offset+512+length);
    if(data.toString('ascii',0,4)!=='glTF'||data.readUInt32LE(8)!==length)throw Error('Invalid city GLB '+name);
    fs.mkdirSync('web-dist/city/tiles',{recursive:true});fs.writeFileSync('web-dist/city/'+name,data);count++;

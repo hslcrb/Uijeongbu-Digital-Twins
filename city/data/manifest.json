@@ -1,0 +1,2436 @@
+{
+  "origin": [
+    127.046,
+    37.738
+  ],
+  "ground_reference_elevation_m": 46.67999999999271,
+  "stats": {
+    "buildings": 9094,
+    "height_tagged": 1910,
+    "height_estimated": 7184,
+    "roads": 9721,
+    "terrain_cells": 12808,
+    "objects": 268
+  },
+  "tiles": [
+    {
+      "name": "city_-2_-4_roads",
+      "tile": [
+        -2,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 10317
+    },
+    {
+      "name": "city_-3_-4_roads",
+      "tile": [
+        -3,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 8313
+    },
+    {
+      "name": "city_-2_-5_roads",
+      "tile": [
+        -2,
+        -5
+      ],
+      "layer": "roads",
+      "vertices": 2145
+    },
+    {
+      "name": "city_-3_-5_roads",
+      "tile": [
+        -3,
+        -5
+      ],
+      "layer": "roads",
+      "vertices": 1719
+    },
+    {
+      "name": "city_-2_-4_buildings",
+      "tile": [
+        -2,
+        -4
+      ],
+      "layer": "buildings",
+      "vertices": 195
+    },
+    {
+      "name": "city_-3_-4_buildings",
+      "tile": [
+        -3,
+        -4
+      ],
+      "layer": "buildings",
+      "vertices": 250
+    },
+    {
+      "name": "city_-2_-2_roads",
+      "tile": [
+        -2,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 6957
+    },
+    {
+      "name": "city_-3_-2_roads",
+      "tile": [
+        -3,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 2991
+    },
+    {
+      "name": "city_-3_-3_roads",
+      "tile": [
+        -3,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 2724
+    },
+    {
+      "name": "city_-3_-1_roads",
+      "tile": [
+        -3,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 1725
+    },
+    {
+      "name": "city_-2_-1_roads",
+      "tile": [
+        -2,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 9735
+    },
+    {
+      "name": "city_-2_-3_roads",
+      "tile": [
+        -2,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 3261
+    },
+    {
+      "name": "city_-2_-2_buildings",
+      "tile": [
+        -2,
+        -2
+      ],
+      "layer": "buildings",
+      "vertices": 100
+    },
+    {
+      "name": "city_-4_-2_roads",
+      "tile": [
+        -4,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 156
+    },
+    {
+      "name": "city_-2_-1_buildings",
+      "tile": [
+        -2,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 6140
+    },
+    {
+      "name": "city_-2_0_roads",
+      "tile": [
+        -2,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 15942
+    },
+    {
+      "name": "city_-3_1_roads",
+      "tile": [
+        -3,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 2166
+    },
+    {
+      "name": "city_-2_1_roads",
+      "tile": [
+        -2,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 12162
+    },
+    {
+      "name": "city_-2_2_roads",
+      "tile": [
+        -2,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 5970
+    },
+    {
+      "name": "city_-3_2_buildings",
+      "tile": [
+        -3,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 3685
+    },
+    {
+      "name": "city_-2_1_buildings",
+      "tile": [
+        -2,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 9615
+    },
+    {
+      "name": "city_-3_0_roads",
+      "tile": [
+        -3,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 6084
+    },
+    {
+      "name": "city_-2_0_buildings",
+      "tile": [
+        -2,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 3820
+    },
+    {
+      "name": "city_-3_1_buildings",
+      "tile": [
+        -3,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 2600
+    },
+    {
+      "name": "city_-4_-1_roads",
+      "tile": [
+        -4,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 168
+    },
+    {
+      "name": "city_-3_0_buildings",
+      "tile": [
+        -3,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 2235
+    },
+    {
+      "name": "city_-3_-1_buildings",
+      "tile": [
+        -3,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 130
+    },
+    {
+      "name": "city_-3_2_roads",
+      "tile": [
+        -3,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 4404
+    },
+    {
+      "name": "city_-4_2_roads",
+      "tile": [
+        -4,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 1485
+    },
+    {
+      "name": "city_-4_1_roads",
+      "tile": [
+        -4,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 2511
+    },
+    {
+      "name": "city_-1_-1_roads",
+      "tile": [
+        -1,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 28014
+    },
+    {
+      "name": "city_-2_2_buildings",
+      "tile": [
+        -2,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 8400
+    },
+    {
+      "name": "city_-4_1_buildings",
+      "tile": [
+        -4,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 20
+    },
+    {
+      "name": "city_-4_0_roads",
+      "tile": [
+        -4,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 1263
+    },
+    {
+      "name": "city_-4_-1_buildings",
+      "tile": [
+        -4,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 20
+    },
+    {
+      "name": "city_-3_3_roads",
+      "tile": [
+        -3,
+        3
+      ],
+      "layer": "roads",
+      "vertices": 1236
+    },
+    {
+      "name": "city_-3_3_buildings",
+      "tile": [
+        -3,
+        3
+      ],
+      "layer": "buildings",
+      "vertices": 415
+    },
+    {
+      "name": "city_0_-6_roads",
+      "tile": [
+        0,
+        -6
+      ],
+      "layer": "roads",
+      "vertices": 4179
+    },
+    {
+      "name": "city_0_-5_roads",
+      "tile": [
+        0,
+        -5
+      ],
+      "layer": "roads",
+      "vertices": 14358
+    },
+    {
+      "name": "city_0_-4_roads",
+      "tile": [
+        0,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 11430
+    },
+    {
+      "name": "city_-1_-4_roads",
+      "tile": [
+        -1,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 13125
+    },
+    {
+      "name": "city_-1_-5_roads",
+      "tile": [
+        -1,
+        -5
+      ],
+      "layer": "roads",
+      "vertices": 5637
+    },
+    {
+      "name": "city_-1_-6_roads",
+      "tile": [
+        -1,
+        -6
+      ],
+      "layer": "roads",
+      "vertices": 654
+    },
+    {
+      "name": "city_0_-5_buildings",
+      "tile": [
+        0,
+        -5
+      ],
+      "layer": "buildings",
+      "vertices": 2990
+    },
+    {
+      "name": "city_0_-4_buildings",
+      "tile": [
+        0,
+        -4
+      ],
+      "layer": "buildings",
+      "vertices": 9410
+    },
+    {
+      "name": "city_-1_-4_buildings",
+      "tile": [
+        -1,
+        -4
+      ],
+      "layer": "buildings",
+      "vertices": 3845
+    },
+    {
+      "name": "city_1_-4_roads",
+      "tile": [
+        1,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 5892
+    },
+    {
+      "name": "city_0_-3_roads",
+      "tile": [
+        0,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 10461
+    },
+    {
+      "name": "city_1_-3_roads",
+      "tile": [
+        1,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 2337
+    },
+    {
+      "name": "city_-1_-5_buildings",
+      "tile": [
+        -1,
+        -5
+      ],
+      "layer": "buildings",
+      "vertices": 1160
+    },
+    {
+      "name": "city_1_-6_roads",
+      "tile": [
+        1,
+        -6
+      ],
+      "layer": "roads",
+      "vertices": 480
+    },
+    {
+      "name": "city_1_-5_buildings",
+      "tile": [
+        1,
+        -5
+      ],
+      "layer": "buildings",
+      "vertices": 475
+    },
+    {
+      "name": "city_1_-5_roads",
+      "tile": [
+        1,
+        -5
+      ],
+      "layer": "roads",
+      "vertices": 2163
+    },
+    {
+      "name": "city_0_-6_buildings",
+      "tile": [
+        0,
+        -6
+      ],
+      "layer": "buildings",
+      "vertices": 3555
+    },
+    {
+      "name": "city_1_-4_buildings",
+      "tile": [
+        1,
+        -4
+      ],
+      "layer": "buildings",
+      "vertices": 1220
+    },
+    {
+      "name": "city_0_-2_roads",
+      "tile": [
+        0,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 14820
+    },
+    {
+      "name": "city_-1_-3_roads",
+      "tile": [
+        -1,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 11682
+    },
+    {
+      "name": "city_-1_-2_roads",
+      "tile": [
+        -1,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 20841
+    },
+    {
+      "name": "city_0_-1_roads",
+      "tile": [
+        0,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 18879
+    },
+    {
+      "name": "city_0_-2_buildings",
+      "tile": [
+        0,
+        -2
+      ],
+      "layer": "buildings",
+      "vertices": 8805
+    },
+    {
+      "name": "city_-1_-2_buildings",
+      "tile": [
+        -1,
+        -2
+      ],
+      "layer": "buildings",
+      "vertices": 16500
+    },
+    {
+      "name": "city_-1_-1_buildings",
+      "tile": [
+        -1,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 34955
+    },
+    {
+      "name": "city_1_-1_roads",
+      "tile": [
+        1,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 14445
+    },
+    {
+      "name": "city_1_-2_roads",
+      "tile": [
+        1,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 9819
+    },
+    {
+      "name": "city_-1_-3_buildings",
+      "tile": [
+        -1,
+        -3
+      ],
+      "layer": "buildings",
+      "vertices": 6555
+    },
+    {
+      "name": "city_0_-1_buildings",
+      "tile": [
+        0,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 9620
+    },
+    {
+      "name": "city_1_-1_buildings",
+      "tile": [
+        1,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 2300
+    },
+    {
+      "name": "city_1_-2_buildings",
+      "tile": [
+        1,
+        -2
+      ],
+      "layer": "buildings",
+      "vertices": 2035
+    },
+    {
+      "name": "city_0_-3_buildings",
+      "tile": [
+        0,
+        -3
+      ],
+      "layer": "buildings",
+      "vertices": 5845
+    },
+    {
+      "name": "city_-2_-3_buildings",
+      "tile": [
+        -2,
+        -3
+      ],
+      "layer": "buildings",
+      "vertices": 140
+    },
+    {
+      "name": "city_1_1_roads",
+      "tile": [
+        1,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 22233
+    },
+    {
+      "name": "city_0_0_roads",
+      "tile": [
+        0,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 16338
+    },
+    {
+      "name": "city_-1_0_roads",
+      "tile": [
+        -1,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 19635
+    },
+    {
+      "name": "city_-1_2_roads",
+      "tile": [
+        -1,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 18372
+    },
+    {
+      "name": "city_-1_1_roads",
+      "tile": [
+        -1,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 18501
+    },
+    {
+      "name": "city_0_1_roads",
+      "tile": [
+        0,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 21924
+    },
+    {
+      "name": "city_1_0_roads",
+      "tile": [
+        1,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 14067
+    },
+    {
+      "name": "city_0_2_roads",
+      "tile": [
+        0,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 3651
+    },
+    {
+      "name": "city_-1_1_buildings",
+      "tile": [
+        -1,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 7220
+    },
+    {
+      "name": "city_1_0_buildings",
+      "tile": [
+        1,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 5210
+    },
+    {
+      "name": "city_0_0_buildings",
+      "tile": [
+        0,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 15300
+    },
+    {
+      "name": "city_2_1_roads",
+      "tile": [
+        2,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 29406
+    },
+    {
+      "name": "city_0_1_buildings",
+      "tile": [
+        0,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 6705
+    },
+    {
+      "name": "city_-1_0_buildings",
+      "tile": [
+        -1,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 21465
+    },
+    {
+      "name": "city_-1_2_buildings",
+      "tile": [
+        -1,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 12865
+    },
+    {
+      "name": "city_1_1_buildings",
+      "tile": [
+        1,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 6310
+    },
+    {
+      "name": "city_0_2_buildings",
+      "tile": [
+        0,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 445
+    },
+    {
+      "name": "city_-1_3_roads",
+      "tile": [
+        -1,
+        3
+      ],
+      "layer": "roads",
+      "vertices": 585
+    },
+    {
+      "name": "city_-2_3_buildings",
+      "tile": [
+        -2,
+        3
+      ],
+      "layer": "buildings",
+      "vertices": 120
+    },
+    {
+      "name": "city_1_2_roads",
+      "tile": [
+        1,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 3075
+    },
+    {
+      "name": "city_-2_3_roads",
+      "tile": [
+        -2,
+        3
+      ],
+      "layer": "roads",
+      "vertices": 108
+    },
+    {
+      "name": "city_-1_3_buildings",
+      "tile": [
+        -1,
+        3
+      ],
+      "layer": "buildings",
+      "vertices": 45
+    },
+    {
+      "name": "city_3_-5_roads",
+      "tile": [
+        3,
+        -5
+      ],
+      "layer": "roads",
+      "vertices": 960
+    },
+    {
+      "name": "city_2_-5_roads",
+      "tile": [
+        2,
+        -5
+      ],
+      "layer": "roads",
+      "vertices": 5118
+    },
+    {
+      "name": "city_2_-4_roads",
+      "tile": [
+        2,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 3459
+    },
+    {
+      "name": "city_4_-4_roads",
+      "tile": [
+        4,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 3873
+    },
+    {
+      "name": "city_2_-3_roads",
+      "tile": [
+        2,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 8556
+    },
+    {
+      "name": "city_3_-4_roads",
+      "tile": [
+        3,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 4206
+    },
+    {
+      "name": "city_4_-2_roads",
+      "tile": [
+        4,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 6015
+    },
+    {
+      "name": "city_2_-2_roads",
+      "tile": [
+        2,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 4047
+    },
+    {
+      "name": "city_3_-1_roads",
+      "tile": [
+        3,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 14763
+    },
+    {
+      "name": "city_2_-1_roads",
+      "tile": [
+        2,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 11220
+    },
+    {
+      "name": "city_3_-1_buildings",
+      "tile": [
+        3,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 4480
+    },
+    {
+      "name": "city_3_-2_roads",
+      "tile": [
+        3,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 3483
+    },
+    {
+      "name": "city_3_-3_roads",
+      "tile": [
+        3,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 1308
+    },
+    {
+      "name": "city_1_-3_buildings",
+      "tile": [
+        1,
+        -3
+      ],
+      "layer": "buildings",
+      "vertices": 40
+    },
+    {
+      "name": "city_2_-1_buildings",
+      "tile": [
+        2,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 2425
+    },
+    {
+      "name": "city_2_-2_buildings",
+      "tile": [
+        2,
+        -2
+      ],
+      "layer": "buildings",
+      "vertices": 370
+    },
+    {
+      "name": "city_3_0_roads",
+      "tile": [
+        3,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 17031
+    },
+    {
+      "name": "city_2_0_roads",
+      "tile": [
+        2,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 11928
+    },
+    {
+      "name": "city_3_1_buildings",
+      "tile": [
+        3,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 3065
+    },
+    {
+      "name": "city_3_0_buildings",
+      "tile": [
+        3,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 7100
+    },
+    {
+      "name": "city_2_1_buildings",
+      "tile": [
+        2,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 8210
+    },
+    {
+      "name": "city_3_1_roads",
+      "tile": [
+        3,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 8565
+    },
+    {
+      "name": "city_3_2_roads",
+      "tile": [
+        3,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 9513
+    },
+    {
+      "name": "city_2_0_buildings",
+      "tile": [
+        2,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 2545
+    },
+    {
+      "name": "city_2_2_roads",
+      "tile": [
+        2,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 10476
+    },
+    {
+      "name": "city_2_2_buildings",
+      "tile": [
+        2,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 3120
+    },
+    {
+      "name": "city_1_2_buildings",
+      "tile": [
+        1,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 230
+    },
+    {
+      "name": "city_3_2_buildings",
+      "tile": [
+        3,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 840
+    },
+    {
+      "name": "city_3_3_roads",
+      "tile": [
+        3,
+        3
+      ],
+      "layer": "roads",
+      "vertices": 1329
+    },
+    {
+      "name": "city_4_3_roads",
+      "tile": [
+        4,
+        3
+      ],
+      "layer": "roads",
+      "vertices": 3330
+    },
+    {
+      "name": "city_4_4_roads",
+      "tile": [
+        4,
+        4
+      ],
+      "layer": "roads",
+      "vertices": 1842
+    },
+    {
+      "name": "city_5_-4_roads",
+      "tile": [
+        5,
+        -4
+      ],
+      "layer": "roads",
+      "vertices": 651
+    },
+    {
+      "name": "city_4_-3_roads",
+      "tile": [
+        4,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 5979
+    },
+    {
+      "name": "city_5_-3_roads",
+      "tile": [
+        5,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 3990
+    },
+    {
+      "name": "city_4_-1_roads",
+      "tile": [
+        4,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 6375
+    },
+    {
+      "name": "city_5_-1_roads",
+      "tile": [
+        5,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 12543
+    },
+    {
+      "name": "city_5_-2_roads",
+      "tile": [
+        5,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 12492
+    },
+    {
+      "name": "city_6_-1_roads",
+      "tile": [
+        6,
+        -1
+      ],
+      "layer": "roads",
+      "vertices": 5280
+    },
+    {
+      "name": "city_4_-1_buildings",
+      "tile": [
+        4,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 760
+    },
+    {
+      "name": "city_6_-1_buildings",
+      "tile": [
+        6,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 390
+    },
+    {
+      "name": "city_5_-1_buildings",
+      "tile": [
+        5,
+        -1
+      ],
+      "layer": "buildings",
+      "vertices": 3965
+    },
+    {
+      "name": "city_6_-2_roads",
+      "tile": [
+        6,
+        -2
+      ],
+      "layer": "roads",
+      "vertices": 909
+    },
+    {
+      "name": "city_6_-3_roads",
+      "tile": [
+        6,
+        -3
+      ],
+      "layer": "roads",
+      "vertices": 30
+    },
+    {
+      "name": "city_5_-2_buildings",
+      "tile": [
+        5,
+        -2
+      ],
+      "layer": "buildings",
+      "vertices": 4295
+    },
+    {
+      "name": "city_4_0_roads",
+      "tile": [
+        4,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 10752
+    },
+    {
+      "name": "city_5_1_roads",
+      "tile": [
+        5,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 12411
+    },
+    {
+      "name": "city_5_0_roads",
+      "tile": [
+        5,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 6924
+    },
+    {
+      "name": "city_4_1_roads",
+      "tile": [
+        4,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 8121
+    },
+    {
+      "name": "city_4_2_roads",
+      "tile": [
+        4,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 4380
+    },
+    {
+      "name": "city_6_1_roads",
+      "tile": [
+        6,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 11181
+    },
+    {
+      "name": "city_5_1_buildings",
+      "tile": [
+        5,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 5615
+    },
+    {
+      "name": "city_5_2_roads",
+      "tile": [
+        5,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 2556
+    },
+    {
+      "name": "city_4_0_buildings",
+      "tile": [
+        4,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 5615
+    },
+    {
+      "name": "city_4_1_buildings",
+      "tile": [
+        4,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 2420
+    },
+    {
+      "name": "city_6_2_roads",
+      "tile": [
+        6,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 2352
+    },
+    {
+      "name": "city_6_1_buildings",
+      "tile": [
+        6,
+        1
+      ],
+      "layer": "buildings",
+      "vertices": 3455
+    },
+    {
+      "name": "city_6_0_roads",
+      "tile": [
+        6,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 4422
+    },
+    {
+      "name": "city_5_2_buildings",
+      "tile": [
+        5,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 385
+    },
+    {
+      "name": "city_6_0_buildings",
+      "tile": [
+        6,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 1790
+    },
+    {
+      "name": "city_5_0_buildings",
+      "tile": [
+        5,
+        0
+      ],
+      "layer": "buildings",
+      "vertices": 500
+    },
+    {
+      "name": "city_6_2_buildings",
+      "tile": [
+        6,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 650
+    },
+    {
+      "name": "city_6_3_roads",
+      "tile": [
+        6,
+        3
+      ],
+      "layer": "roads",
+      "vertices": 2325
+    },
+    {
+      "name": "city_5_3_roads",
+      "tile": [
+        5,
+        3
+      ],
+      "layer": "roads",
+      "vertices": 6183
+    },
+    {
+      "name": "city_5_4_roads",
+      "tile": [
+        5,
+        4
+      ],
+      "layer": "roads",
+      "vertices": 3189
+    },
+    {
+      "name": "city_4_3_buildings",
+      "tile": [
+        4,
+        3
+      ],
+      "layer": "buildings",
+      "vertices": 95
+    },
+    {
+      "name": "city_4_2_buildings",
+      "tile": [
+        4,
+        2
+      ],
+      "layer": "buildings",
+      "vertices": 145
+    },
+    {
+      "name": "city_8_1_roads",
+      "tile": [
+        8,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 2601
+    },
+    {
+      "name": "city_7_0_roads",
+      "tile": [
+        7,
+        0
+      ],
+      "layer": "roads",
+      "vertices": 558
+    },
+    {
+      "name": "city_7_1_roads",
+      "tile": [
+        7,
+        1
+      ],
+      "layer": "roads",
+      "vertices": 3141
+    },
+    {
+      "name": "city_7_2_roads",
+      "tile": [
+        7,
+        2
+      ],
+      "layer": "roads",
+      "vertices": 3960
+    },
+    {
+      "name": "city_6_3_buildings",
+      "tile": [
+        6,
+        3
+      ],
+      "layer": "buildings",
+      "vertices": 20
+    },
+    {
+      "name": "city_7_3_roads",
+      "tile": [
+        7,
+        3
+      ],
+      "layer": "roads",
+      "vertices": 2283
+    },
+    {
+      "name": "city_-4_2_terrain",
+      "tile": [
+        -4,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 678
+    },
+    {
+      "name": "city_-4_0_terrain",
+      "tile": [
+        -4,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 762
+    },
+    {
+      "name": "city_-4_1_terrain",
+      "tile": [
+        -4,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 606
+    },
+    {
+      "name": "city_-4_-1_terrain",
+      "tile": [
+        -4,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 450
+    },
+    {
+      "name": "city_-4_-2_terrain",
+      "tile": [
+        -4,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 108
+    },
+    {
+      "name": "city_-4_-3_terrain",
+      "tile": [
+        -4,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 12
+    },
+    {
+      "name": "city_-3_-3_terrain",
+      "tile": [
+        -3,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 834
+    },
+    {
+      "name": "city_-3_-2_terrain",
+      "tile": [
+        -3,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_-3_-1_terrain",
+      "tile": [
+        -3,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_-3_0_terrain",
+      "tile": [
+        -3,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_-3_1_terrain",
+      "tile": [
+        -3,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_-3_2_terrain",
+      "tile": [
+        -3,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_-3_3_terrain",
+      "tile": [
+        -3,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 222
+    },
+    {
+      "name": "city_-3_-4_terrain",
+      "tile": [
+        -3,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 564
+    },
+    {
+      "name": "city_-3_-5_terrain",
+      "tile": [
+        -3,
+        -5
+      ],
+      "layer": "terrain",
+      "vertices": 78
+    },
+    {
+      "name": "city_-2_-5_terrain",
+      "tile": [
+        -2,
+        -5
+      ],
+      "layer": "terrain",
+      "vertices": 528
+    },
+    {
+      "name": "city_-2_-4_terrain",
+      "tile": [
+        -2,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_-2_-3_terrain",
+      "tile": [
+        -2,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_-2_-2_terrain",
+      "tile": [
+        -2,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_-2_-1_terrain",
+      "tile": [
+        -2,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_-2_0_terrain",
+      "tile": [
+        -2,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_-2_1_terrain",
+      "tile": [
+        -2,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_-2_2_terrain",
+      "tile": [
+        -2,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_-2_3_terrain",
+      "tile": [
+        -2,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 228
+    },
+    {
+      "name": "city_-2_-6_terrain",
+      "tile": [
+        -2,
+        -6
+      ],
+      "layer": "terrain",
+      "vertices": 42
+    },
+    {
+      "name": "city_-1_-6_terrain",
+      "tile": [
+        -1,
+        -6
+      ],
+      "layer": "terrain",
+      "vertices": 18
+    },
+    {
+      "name": "city_-1_-5_terrain",
+      "tile": [
+        -1,
+        -5
+      ],
+      "layer": "terrain",
+      "vertices": 798
+    },
+    {
+      "name": "city_-1_-4_terrain",
+      "tile": [
+        -1,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_-1_-3_terrain",
+      "tile": [
+        -1,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_-1_-2_terrain",
+      "tile": [
+        -1,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_-1_-1_terrain",
+      "tile": [
+        -1,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 837
+    },
+    {
+      "name": "city_-1_0_terrain",
+      "tile": [
+        -1,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 897
+    },
+    {
+      "name": "city_-1_1_terrain",
+      "tile": [
+        -1,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_-1_2_terrain",
+      "tile": [
+        -1,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 918
+    },
+    {
+      "name": "city_-1_3_terrain",
+      "tile": [
+        -1,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 114
+    },
+    {
+      "name": "city_0_-6_terrain",
+      "tile": [
+        0,
+        -6
+      ],
+      "layer": "terrain",
+      "vertices": 396
+    },
+    {
+      "name": "city_0_-5_terrain",
+      "tile": [
+        0,
+        -5
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_0_-4_terrain",
+      "tile": [
+        0,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_0_-3_terrain",
+      "tile": [
+        0,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_0_-2_terrain",
+      "tile": [
+        0,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_0_-1_terrain",
+      "tile": [
+        0,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 891
+    },
+    {
+      "name": "city_0_0_terrain",
+      "tile": [
+        0,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 951
+    },
+    {
+      "name": "city_0_1_terrain",
+      "tile": [
+        0,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_0_2_terrain",
+      "tile": [
+        0,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 660
+    },
+    {
+      "name": "city_1_-6_terrain",
+      "tile": [
+        1,
+        -6
+      ],
+      "layer": "terrain",
+      "vertices": 102
+    },
+    {
+      "name": "city_1_-5_terrain",
+      "tile": [
+        1,
+        -5
+      ],
+      "layer": "terrain",
+      "vertices": 798
+    },
+    {
+      "name": "city_1_-4_terrain",
+      "tile": [
+        1,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_1_-3_terrain",
+      "tile": [
+        1,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_1_-2_terrain",
+      "tile": [
+        1,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_1_-1_terrain",
+      "tile": [
+        1,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_1_0_terrain",
+      "tile": [
+        1,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_1_1_terrain",
+      "tile": [
+        1,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_1_2_terrain",
+      "tile": [
+        1,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 744
+    },
+    {
+      "name": "city_2_-5_terrain",
+      "tile": [
+        2,
+        -5
+      ],
+      "layer": "terrain",
+      "vertices": 780
+    },
+    {
+      "name": "city_2_-4_terrain",
+      "tile": [
+        2,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_2_-3_terrain",
+      "tile": [
+        2,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_2_-2_terrain",
+      "tile": [
+        2,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_2_-1_terrain",
+      "tile": [
+        2,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_2_0_terrain",
+      "tile": [
+        2,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_2_1_terrain",
+      "tile": [
+        2,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_2_2_terrain",
+      "tile": [
+        2,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_2_3_terrain",
+      "tile": [
+        2,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 330
+    },
+    {
+      "name": "city_3_-5_terrain",
+      "tile": [
+        3,
+        -5
+      ],
+      "layer": "terrain",
+      "vertices": 42
+    },
+    {
+      "name": "city_3_-4_terrain",
+      "tile": [
+        3,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 918
+    },
+    {
+      "name": "city_3_-3_terrain",
+      "tile": [
+        3,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_3_-2_terrain",
+      "tile": [
+        3,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_3_-1_terrain",
+      "tile": [
+        3,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_3_0_terrain",
+      "tile": [
+        3,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_3_1_terrain",
+      "tile": [
+        3,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_3_2_terrain",
+      "tile": [
+        3,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_3_3_terrain",
+      "tile": [
+        3,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 786
+    },
+    {
+      "name": "city_3_4_terrain",
+      "tile": [
+        3,
+        4
+      ],
+      "layer": "terrain",
+      "vertices": 36
+    },
+    {
+      "name": "city_4_-4_terrain",
+      "tile": [
+        4,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 822
+    },
+    {
+      "name": "city_4_-3_terrain",
+      "tile": [
+        4,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_4_-2_terrain",
+      "tile": [
+        4,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_4_-1_terrain",
+      "tile": [
+        4,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_4_0_terrain",
+      "tile": [
+        4,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_4_1_terrain",
+      "tile": [
+        4,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_4_2_terrain",
+      "tile": [
+        4,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_4_3_terrain",
+      "tile": [
+        4,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_4_4_terrain",
+      "tile": [
+        4,
+        4
+      ],
+      "layer": "terrain",
+      "vertices": 384
+    },
+    {
+      "name": "city_5_-4_terrain",
+      "tile": [
+        5,
+        -4
+      ],
+      "layer": "terrain",
+      "vertices": 210
+    },
+    {
+      "name": "city_5_-3_terrain",
+      "tile": [
+        5,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 636
+    },
+    {
+      "name": "city_5_-2_terrain",
+      "tile": [
+        5,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_5_-1_terrain",
+      "tile": [
+        5,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_5_0_terrain",
+      "tile": [
+        5,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_5_1_terrain",
+      "tile": [
+        5,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_5_2_terrain",
+      "tile": [
+        5,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_5_3_terrain",
+      "tile": [
+        5,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 864
+    },
+    {
+      "name": "city_5_4_terrain",
+      "tile": [
+        5,
+        4
+      ],
+      "layer": "terrain",
+      "vertices": 522
+    },
+    {
+      "name": "city_6_-3_terrain",
+      "tile": [
+        6,
+        -3
+      ],
+      "layer": "terrain",
+      "vertices": 66
+    },
+    {
+      "name": "city_6_-2_terrain",
+      "tile": [
+        6,
+        -2
+      ],
+      "layer": "terrain",
+      "vertices": 774
+    },
+    {
+      "name": "city_6_-1_terrain",
+      "tile": [
+        6,
+        -1
+      ],
+      "layer": "terrain",
+      "vertices": 876
+    },
+    {
+      "name": "city_6_0_terrain",
+      "tile": [
+        6,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 948
+    },
+    {
+      "name": "city_6_1_terrain",
+      "tile": [
+        6,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 936
+    },
+    {
+      "name": "city_6_2_terrain",
+      "tile": [
+        6,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 1014
+    },
+    {
+      "name": "city_6_3_terrain",
+      "tile": [
+        6,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 876
+    },
+    {
+      "name": "city_6_4_terrain",
+      "tile": [
+        6,
+        4
+      ],
+      "layer": "terrain",
+      "vertices": 48
+    },
+    {
+      "name": "city_7_0_terrain",
+      "tile": [
+        7,
+        0
+      ],
+      "layer": "terrain",
+      "vertices": 72
+    },
+    {
+      "name": "city_7_1_terrain",
+      "tile": [
+        7,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 750
+    },
+    {
+      "name": "city_7_2_terrain",
+      "tile": [
+        7,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 726
+    },
+    {
+      "name": "city_7_3_terrain",
+      "tile": [
+        7,
+        3
+      ],
+      "layer": "terrain",
+      "vertices": 132
+    },
+    {
+      "name": "city_8_1_terrain",
+      "tile": [
+        8,
+        1
+      ],
+      "layer": "terrain",
+      "vertices": 684
+    },
+    {
+      "name": "city_8_2_terrain",
+      "tile": [
+        8,
+        2
+      ],
+      "layer": "terrain",
+      "vertices": 384
+    }
+  ],
+  "excluded_station_xy": [
+    -265,
+    -225,
+    355,
+    335
+  ],
+  "source": "OSM/Mapzen"
+}

@@ -1,0 +1,25 @@
+{
+  "tiles": 104,
+  "totalBytes": 3988628,
+  "allBuildRestoredHashesMatch": true,
+  "mockMaxConcurrent": 2,
+  "realGpuQA": "unavailable: GL_VENDOR/RENDERER disabled",
+  "runtimeArchive": "none: build extracts independent GLBs",
+  "mainDeployed": "pending",
+  "terrainBoundaryVertices": 171,
+  "terrainBoundaryMaxAbsZ": 0.0,
+  "terrainExclusion": [
+    -285,
+    -250,
+    375,
+    360
+  ],
+  "roadExclusion": [
+    -265,
+    -225,
+    355,
+    335
+  ],
+  "terrainCropIntersectionArea": 0,
+  "roadCropIntersectionArea": 0
+}

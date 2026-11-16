@@ -1,12 +1,6 @@
 # Uijeongbu-Digital-Twins
 의정부시 디지털 트윈
 
-## 최신 5차 결과
-
-- [최신 Blender 원본 복원 안내](blender/v5/README.md): 두 조각을 표준 Python으로 무손실 결합하고 SHA256을 확인합니다. 루트 Blender 파일은 4차 호환 스냅샷입니다.
-- [낮](renders/day-v5.jpg) · [밤](renders/night-v5.jpg) · [역 외장](renders/station-cladding-v5.jpg) · [철도](renders/rail-v5.jpg)
-- [5차 검증 및 저장 방식](docs/V5_REVIEW.md)
-
 ## 의정부역 Blender 외관 연구
 
 - [Blender 장면 다운로드](Uijeongbu_Station_v1.blend)
@@ -21,3 +15,9 @@ Blender 5.2.4 LTS, 지도 기반 494동 주변 건물과 역사/백화점 22매�
 https://twin.uijeongbu.rhee.life/
 
 `npm ci && npm run build`로 웹을 빌드합니다. Cloudflare 네이티브 Git main 자동배포를 사용하며 GitHub Actions는 사용하지 않습니다. 대합실은 별도 장면 전환이 아닌 외관과 동일 좌표의 단일 모델에 연결됩니다.
+
+## 도시 윤곽 레이어 (6차)
+
+웹의 **시 전역 윤곽** 버튼으로 의정부시 지형·건물·도로 윤곽을 같은 공간에서 조망할 수 있다. 104개 타일(약4MB)을 거리 기반으로 순차 로드한다. 원본 지도 기록은 9,094개 건물과 9,721개 도로 way이며, 확인되지 않은 높이·외장은 근사이다. 실제 시내 건물 전수 정밀 복원은 아니다. 지형은 SRTM계열 DEM의80m 재표본 윤곽이고 역 경계에 인위적 고도 전이를 사용한다.
+
+타일은 `web/city/city-tiles.tar.gz`에 보관하며 빌드시104개의 독립 GLB로 복원된다. [스트리밍 검수와 한계](docs/CITY_STREAMING.md), [개발과정기](docs/DEVELOPMENT_JOURNAL.md)를 참조한다.
