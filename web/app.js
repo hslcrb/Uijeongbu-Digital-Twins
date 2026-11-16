@@ -8,7 +8,7 @@ let renderer,scene,camera,controls,model,box,center,size,hemi,sun,raf=0,auto=fal
 function schedule(){dirty=true;if(!raf&&!document.hidden)raf=requestAnimationFrame(draw)}
 function draw(t){raf=0;if(t-last<33&&auto){schedule();return}last=t;controls?.update();if(renderer&&scene&&camera)renderer.render(scene,camera);dirty=false;if(auto)schedule()}
 function resize(){if(!renderer)return;renderer.setPixelRatio(Math.min(devicePixelRatio,high?2:1.25));renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();schedule()}
-function preset(close=false){if(!camera||!center)return;controls.target.copy(center);const d=Math.max(size.x,size.z)*(close?.35:.7);camera.position.set(center.x+d*.7,center.y+d*.85,center.z+d*.85);controls.minDistance=12;controls.maxDistance=Math.max(size.x,size.z)*2.3;camera.near=.5;camera.far=Math.max(size.x,size.z)*6;camera.updateProjectionMatrix();controls.update();schedule()}
+function preset(close=false){if(!camera||!center)return;controls.target.copy(center);const d=Math.max(size.x,size.z)*(close?.35:.7);camera.position.set(center.x+d*.7,center.y+d*.85,center.z+d*.85);controls.minDistance=.3;controls.maxDistance=Math.max(size.x,size.z)*2.3;camera.near=.05;camera.far=Math.max(size.x,size.z)*6;camera.updateProjectionMatrix();controls.update();schedule()}
 function mode(key){const m=modes[key];if(!scene)return;scene.background=new THREE.Color(m.sky);scene.fog=new THREE.Fog(m.fog,Math.max(size.x,size.z)*.9,Math.max(size.x,size.z)*3.5);sun.color.setHex(m.sun);sun.intensity=m.intensity;hemi.intensity=m.ambient;renderer.toneMappingExposure=m.exposure;for(const l of nightLights)l.visible=key==='night';document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===key));schedule()}
 try{
  renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.shadowMap.enabled=false;document.querySelector('#canvas').append(renderer.domElement);
@@ -21,3 +21,15 @@ try{
 document.querySelector('#home').onclick=()=>preset();document.querySelector('#station').onclick=()=>preset(true);
 document.querySelector('#rotate').onclick=e=>{auto=!auto;if(controls)controls.autoRotate=auto;e.currentTarget.setAttribute('aria-pressed',auto);schedule()};document.querySelector('#quality').onclick=e=>{high=!high;e.currentTarget.setAttribute('aria-pressed',high);resize()};document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>mode(b.dataset.mode));
 const about=document.querySelector('#about');document.querySelector('#info').onclick=()=>about.showModal();document.querySelector('#close').onclick=()=>about.close();addEventListener('resize',resize);document.addEventListener('visibilitychange',()=>{if(document.hidden&&raf){cancelAnimationFrame(raf);raf=0}else schedule()});
+
+// Translate camera and orbit target together: interior/exterior remain one space.
+addEventListener('keydown',e=>{
+ if(!camera||!controls||document.querySelector('dialog[open]')||e.ctrlKey||e.metaKey||e.altKey)return;
+ const k=e.key.toLowerCase();if(!['w','a','s','d','q','e','arrowup','arrowdown','arrowleft','arrowright'].includes(k))return;
+ e.preventDefault();const forward=new THREE.Vector3();camera.getWorldDirection(forward);forward.y=0;forward.normalize();
+ const right=new THREE.Vector3().crossVectors(forward,new THREE.Vector3(0,1,0)).normalize(),delta=new THREE.Vector3();
+ if(k==='w'||k==='arrowup')delta.add(forward);if(k==='s'||k==='arrowdown')delta.sub(forward);
+ if(k==='d'||k==='arrowright')delta.add(right);if(k==='a'||k==='arrowleft')delta.sub(right);
+ if(k==='q')delta.y-=1;if(k==='e')delta.y+=1;delta.multiplyScalar(e.shiftKey?8:1.5);
+ camera.position.add(delta);controls.target.add(delta);controls.update();schedule();
+});
