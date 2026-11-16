@@ -1,0 +1,90 @@
+{
+  "N37E127.hgt.gz": {
+    "bytes": 13027283,
+    "sha256": "ef253d549196ce2239cb8c8c85f912b7f660855dc2cdf969dd174d2689b44a11"
+  },
+  "boundary-search.json": {
+    "bytes": 9926,
+    "sha256": "0b54665e6aff4c6a62409e2ba979363946e7941510bb6d54d54903a8ea4ee870"
+  },
+  "osm/0-0.osm": {
+    "bytes": 1630555,
+    "sha256": "6c3f3e70839c775cb8c59fb3ba8d0346636a591f379d974264427bf9e4703762"
+  },
+  "osm/0-1.osm": {
+    "bytes": 1640213,
+    "sha256": "07cfc1dfd89c2fa762b46a52d144fbf4d63cc0cf33a43f0f1d585390e161ed3c"
+  },
+  "osm/0-2.osm": {
+    "bytes": 3712890,
+    "sha256": "b1d007f61ea3d06258b54431c830bd534a9e35385651150a1948cc615a237934"
+  },
+  "osm/0-3.osm": {
+    "bytes": 1826962,
+    "sha256": "dc4d5404e7a39bfa3d3157887f0825d96b750d06c80ad687b50e60eaf039df05"
+  },
+  "osm/1-0.osm": {
+    "bytes": 6419228,
+    "sha256": "153e36c72933056bb475f46f91973cea70eda72b7fa4703edc0e0ff562759d12"
+  },
+  "osm/1-1.osm": {
+    "bytes": 8830054,
+    "sha256": "067cee97811720b9b297b1fddbb8587832a4c99c3a7f02deb21b55cedbf43080"
+  },
+  "osm/1-2.osm": {
+    "bytes": 13554699,
+    "sha256": "b7f791bf577461e4e2f3a18571662e191c3ea2df5317179df656be039da431b0"
+  },
+  "osm/1-3.osm": {
+    "bytes": 5046216,
+    "sha256": "784a0a4b24e5318da6b0110802cd0768a5f62e47518f06a37cfa1deb58c89d7c"
+  },
+  "osm/2-0.osm": {
+    "bytes": 1273052,
+    "sha256": "0d199f79b832185f238b6e4f39d15e0fea55fc40a56ffb9df1871504c9f858f2"
+  },
+  "osm/2-1.osm": {
+    "bytes": 1721159,
+    "sha256": "b245a95c910b4cc6c57b0998e3ff94cb64dd3478be22ffb9e425d669d19bb4db"
+  },
+  "osm/2-2.osm": {
+    "bytes": 6589662,
+    "sha256": "5dedce94dec9f3d70ba2b4ab29df64bf87b229050ee138c1b003121a02f66323"
+  },
+  "osm/2-3.osm": {
+    "bytes": 1898802,
+    "sha256": "00fba265ea70a70f5e1383dbb9e688ebcf9b88df77261dfa3ecf41a6f0524fea"
+  },
+  "osm/3-0.osm": {
+    "bytes": 1437707,
+    "sha256": "ed22eab1724360831905781af5df5ffd9feee9988d1d08a508cdcfe83baf1ea2"
+  },
+  "osm/3-1.osm": {
+    "bytes": 2572931,
+    "sha256": "96ec999a29b626275279dbed73df009efd51ad4a926f0b39a9b010a4614d9be3"
+  },
+  "osm/3-2.osm": {
+    "bytes": 3929835,
+    "sha256": "79965207ef3d763ba81b54a711d908e284a37882f760e7d026307c4cc716b04b"
+  },
+  "osm/3-3.osm": {
+    "bytes": 1384634,
+    "sha256": "3f52951b1731090e9ae467e51eae760c56e01e44a4b3106ab015dd6d80869977"
+  },
+  "osm/4-0.osm": {
+    "bytes": 1141252,
+    "sha256": "6edb4c28f35d21db42e0609cd9501d8902f53b506e29b8e68199196c7979600b"
+  },
+  "osm/4-1.osm": {
+    "bytes": 1012259,
+    "sha256": "0661e13739a5e69b4fdee4108d5d35eca38778cac7ea084fb4f5a85cc10b1c49"
+  },
+  "osm/4-2.osm": {
+    "bytes": 1268946,
+    "sha256": "493b5f0dacc7732c0455859f79bb8b07865917eaa211df14abb3113e636c448a"
+  },
+  "osm/4-3.osm": {
+    "bytes": 1412711,
+    "sha256": "98cb014a7b5708f5fc44109af3b2195c3d9e4b3a084508d96164106f5e80e0f7"
+  }
+}
