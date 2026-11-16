@@ -1,0 +1,14 @@
+{
+  "removed_generic_or_outward_faces": {
+    "Context room reveals": 114,
+    "Context room wall": 450,
+    "Context transparent thin glazing": 678,
+    "North window interior backs": 14,
+    "Room glow 0": 20,
+    "Room glow 1": 27,
+    "Room glow 2": 20,
+    "Room glow 3": 47
+  },
+  "note": "generic context window details removed only in station envelope; north strips protruding east facade removed",
+  "remaining": "east wall mass height and topology still require more validation"
+}

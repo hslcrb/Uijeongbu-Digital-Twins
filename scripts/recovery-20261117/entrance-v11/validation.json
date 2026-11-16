@@ -1,0 +1,20 @@
+{
+  "lights": 15,
+  "aperture_diameter_m": 0.2,
+  "diffuser_recess_m": 0.037,
+  "meshes": 3,
+  "objects": 1838,
+  "source": "https://hhk2001.tistory.com/8063",
+  "estimated": [
+    "dimensions",
+    "lamp layout",
+    "sign ratio"
+  ],
+  "preserved": [
+    "Korail mesh text",
+    "tactile paving",
+    "door detail",
+    "whole city model"
+  ],
+  "deploy_status": "local only"
+}
