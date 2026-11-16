@@ -54,6 +54,14 @@ r=ET.parse(gzip.open(ROOT/'data/map.osm.gz','rb')).getroot();nodes={e.get('id'):
 ways={e.get('id'):e for e in r.findall('way')}
 def tags(e):return {t.get('k'):t.get('v') for t in e.findall('tag')}
 def coords(w):return [nodes[n.get('ref')] for n in w.findall('nd') if n.get('ref') in nodes]
+def simplify_ring(pts):
+ q=pts[:-1] if pts[0]==pts[-1] else pts
+ out=[]
+ for i,p in enumerate(q):
+  a=Vector(p)-Vector(q[i-1]);b=Vector(q[(i+1)%len(q)])-Vector(p)
+  if a.length and b.length and abs(a.normalized().cross(b.normalized()))<.015:continue
+  out.append(p)
+ return out+[out[0]] if len(out)>=3 else pts
 def inside(p):return -265<p[0]<355 and -225<p[1]<335
 stationparts=set();mallparts=set();outlines=set()
 for e in r.findall('relation'):
@@ -66,8 +74,11 @@ box('Study area / not surveyed terrain',(45,55,-.6),(660,610,1.2),M['Pavement'])
 current=COL['02_Roads_Rail']; roadpaths=[]
 for id,w in ways.items():
  t=tags(w);pts=coords(w)
+ if id in ['154983856','461206881','709171497','1500216537','1500216538','1500216539']:continue
  pts=[p for p in pts if inside(p)]
  if len(pts)<2 or not any(inside(p) for p in pts) or t.get('indoor')=='yes' or t.get('tunnel') in ('yes','building_passage'):continue
+ if t.get('area')=='yes' and t.get('highway')=='pedestrian':
+  extrude('Pedestrian area '+id,pts,0,.08,M['Pavement']);continue
  if t.get('railway') in ('rail','light_rail'):
   z=7 if t.get('railway')=='light_rail' else .1
   ribbon('Track ballast '+id,pts,3.3,z,M['Dark'])
@@ -88,6 +99,31 @@ for id,w in ways.items():
      if L>400:continue
      for k in range(0,int(L),8):
       p=Vector(a)+dv.normalized()*k;q=Vector(a)+dv.normalized()*min(k+3,L);line('Lane dash',[(p.x,p.y,.07),(q.x,q.y,.07)],.13,M['White'])
+# Photo-confirmed Simin-ro cutting/tunnel. Depth5m is a visible geometric estimate, not survey.
+current=COL['02_Roads_Rail']
+for wid in ['154983856','461206881','709171497','1500216537','1500216538','1500216539']:
+ pts=coords(ways[wid]);is_tunnel=tags(ways[wid]).get('tunnel')=='yes';vs=[]
+ def dep(x):return -5 if -102<x<59 else -5*max(0,min(1,(x+226)/124)) if x<=-102 else -5*max(0,min(1,(140-x)/81))
+ for i,(x,y) in enumerate(pts):
+  z=dep(x);vs.extend([(x,y-3,z),(x,y+3,z)])
+ mesh('Simin underpass road '+wid,vs,[(i*2,i*2+1,i*2+3,i*2+2) for i in range(len(pts)-1)],M['Asphalt'])
+ for off in [-3.4,3.4]:
+  wall=[]
+  for x,y in pts:wall.extend([(x,y+off,dep(x)),(x,y+off,.2)])
+  mesh('Cutting retaining wall '+wid,wall,[(i*2,i*2+1,i*2+3,i*2+2) for i in range(len(pts)-1)],M['Concrete'])
+  line('Cutting guardrail '+wid,[(x,y+off,1) for x,y in pts],.09,M['Metal'])
+# Open the reference datum along the actual road corridor, preserving surrounding ground.
+ground=bpy.data.objects.get('Study area / not surveyed terrain')
+for wid in ['154983856','461206881','709171497','1500216537','1500216538','1500216539']:
+ pts=coords(ways[wid])
+ for a,b in zip(pts,pts[1:]):
+  dv=Vector(b)-Vector(a);mid=(Vector(a)+Vector(b))/2
+  cutter=box('temporary ground cutting',(mid.x,mid.y,-3),(dv.length+1,7,8),M['Dark'])
+  angle=math.atan2(dv.y,dv.x)
+  for v in cutter.data.vertices:
+   x=v.co.x-mid.x;y=v.co.y-mid.y;v.co.x=mid.x+x*math.cos(angle)-y*math.sin(angle);v.co.y=mid.y+x*math.sin(angle)+y*math.cos(angle)
+  mod=ground.modifiers.new('Road cut','BOOLEAN');mod.operation='DIFFERENCE';mod.object=cutter
+  bpy.context.view_layer.objects.active=ground;bpy.ops.object.modifier_apply(modifier=mod.name);bpy.data.objects.remove(cutter,do_unlink=True)
 # Buildings and photo-guided detailed facade modules.
 counts={'osm_buildings':0,'station_parts':0,'mall_parts':0,'estimated_heights':0}; detailed=[]
 for id,w in ways.items():
@@ -96,6 +132,7 @@ for id,w in ways.items():
  if not (t.get('building') or t.get('building:part') or id in mallparts|stationparts):continue
  center=Vector((sum(p[0] for p in pts)/len(pts),sum(p[1] for p in pts)/len(pts)))
  if not inside(center):continue
+ if id=='608705745':pts=simplify_ring(pts)
  if id=='1364007203':continue # outline height 0.01 is invalid; use mapped station parts
  try:h=float(t.get('height','0'))
  except:h=0
@@ -106,7 +143,7 @@ for id,w in ways.items():
   counts['estimated_heights']+=1
  z=float(t.get('min_height','0'));h=max(z+.3,h)
  if id in mallparts:current=COL['04_Shinsegae'];m=M['Brown_panel'] if id=='608705745' else M['Concrete'];counts['mall_parts']+=1
- elif id in stationparts:current=COL['03_Station'];m=M['Glass'] if id in ('1311394048','1311394063') else M['Concrete'];counts['station_parts']+=1
+ elif id in stationparts:current=COL['03_Station'];m=M['Glass'] if id=='1311394048' else M['Dark'] if id=='1311394063' else M['Concrete'];counts['station_parts']+=1
  else:current=COL['05_Context_OSM'];m=mat('Facade '+id,random.choice([(.46,.43,.38),(.57,.57,.52),(.3,.29,.27),(.65,.59,.49),(.45,.48,.48)]));counts['osm_buildings']+=1
  o=extrude((t.get('name') or 'OSM building')+' ['+id+']',pts,z,h,m);o['osm_way_id']=id;o['height_evidence']='estimated from levels or default' if estimated else 'OSM height tag, unverified survey';o['height_m']=h
  near=center.length<210
@@ -126,10 +163,10 @@ for id,w in ways.items():
     for level in range(max(12,int(z+2)),int(h-2),5):line('Parking window band',[(a.x+normal.x*.12,a.y+normal.y*.12,level),(b[0]+normal.x*.12,b[1]+normal.y*.12,level)],1.6,M['Glass'])
     for u in range(0,int(L),3):
      p=a+dn*u+normal*.2;beam('Parking fin',(p.x,p.y,max(z,10)),(p.x,p.y,h),.16,.3,M['Metal'])
-   elif id in stationparts:
+   elif id in stationparts and id=='1311394048':
     for u in range(0,int(L),3):
      p=a+dn*u+normal*.15;beam('Station mullion',(p.x,p.y,z),(p.x,p.y,h),.12,.16,M['Metal'])
-   elif L<80 and h<85:
+   elif id not in stationparts and L<80 and h<85:
     for floor in range(2,int(h-1),4):
      for u in range(2,int(L-1),4):
       p=a+dn*u+normal*.05; q=p+dn*2.5;beam('Context window',(p.x,p.y,floor),(q.x,q.y,floor),1.65,.09,M['Glass'])
@@ -137,23 +174,56 @@ for id,w in ways.items():
 current=COL['03_Station']
 box('Station name backing',(1,112.3,29),(30,.3,4.4),M['White']);text('의정부역 sign','의정부역',(1,112.55,28),3.4,M['Blue'],(math.pi/2,0,math.pi))
 text('Station English','UIJEONGBU STATION',(1,112.6,26.9),.8,M['Blue'],(math.pi/2,0,math.pi))
+# East elevation observed in 2025-03 visit: four small square windows, not full glazing.
+for yy in [79,82,94,97]:
+ xx=31.5+(yy-71.6)*(46.1-31.5)/(111.9-71.6)
+ box('East station small square window',(xx+.1,yy,15),(0.15,1,1),M['Glass'])
+text('East station rooftop sign','의정부역',(46,92,30),2.5,M['Blue'],(math.pi/2,0,math.pi/2))
 current=COL['04_Shinsegae'];text('Department store name','신세계',(38,25.9,57),4,M['White'],(math.pi/2,0,math.pi));text('SHINSEGAE','SHINSEGAE',(1,26.5,10),2,M['WarmLight'],(math.pi/2,0,math.pi))
-# Stylized permanent flower sign, not a claimed exact vector asset.
-for a in range(8):
- an=a*math.pi/4;o=box('Flower petal',(38+2*math.cos(an),26,64+2*math.sin(an)),(1.25,.25,2.2),M['WarmLight']);o.rotation_euler.y=-an
-# Plaza between mall north and station south. Curved canopy mesh based on Haeahn photos.
+# Eight lens-shaped petals interpreted from architectural photo, not official vector.
+for j in range(8):
+ an=j*math.pi/4;vs=[]
+ for i in range(20):
+  t=i/19;rad=.35+3*t;side=math.sin(math.pi*t)*.65
+  for sign in [-1,1]:vs.append((38+rad*math.cos(an)+sign*side*math.sin(an),26.1,64+rad*math.sin(an)-sign*side*math.cos(an)))
+ mesh('Flower lens petal',vs,[(i*2,i*2+1,i*2+3,i*2+2) for i in range(19)],M['WarmLight'])
+# Elevated Brilliant Plaza: level6 inferred from OSM curved station min_height.
 current=COL['03_Station']
+extrude('Brilliant Plaza elevated approach',[(-43,22),(48,31),(44,52),(-47,44),(-43,22)],5.5,6,M['Pavement'])
+for x in range(-42,48,3):line('Plaza paving stripes',[(x,27,6.02),(x,40,6.02)],.11,M['Dark'])
 for side in [-1,1]:
- vs=[]
- for i in range(25):
-  t=i/24; x=-44+t*90; y=39+3*math.sin(t*math.pi);z=18+1.5*math.sin(t*math.pi)
-  vs.extend([(x,y+side*2,z),(x,y+side*7,z+.8)])
- mesh('Curved plaza canopy',vs,[(i*2,i*2+1,i*2+3,i*2+2) for i in range(24)],M['Metal'])
-for x in [-40,-25,-10,5,20,35]:beam('Canopy support',(x,39,8),(x,39,18),.35,.35,M['Metal'])
-for side in [-1,1]:
- x=side*54
- for i in range(28):box('Plaza stair',(x,45+i*.38,.15+i*.25),(9,.38,.3+i*.5),M['Concrete'])
- line('Stair handrail',[(x-4.5,45,1),(x-4.5,55.5,8)],.08,M['Metal'])
+ x=side*49
+ for i in range(30):box('Plaza stair',(x,20+i*.38,.1+i*.1),(8,.38,.2+i*.2),M['Concrete'])
+ for dx in [-3.8,0,3.8]:
+  line('Stair handrail',[(x+dx,20,1),(x+dx,31.4,7)],.07,M['Metal'])
+  for i in range(0,30,5):beam('Handrail upright',(x+dx,20+i*.38,.2*i),(x+dx,20+i*.38,1+.2*i),.05,.05,M['Metal'])
+# Horizontal glazing divisions on true mapped curved wall; deep soffit uses mapped canopy footprint.
+pts=coords(ways['1311394048'])
+for z in [6.1,9.5,13,16.3]:line('Curved glass transom',[(x,y,z) for x,y in pts],.14,M['Metal'])
+box('Blue station entrance fascia',(2,40,10.4),(24,.3,1.8),M['Blue'])
+text('Entrance Korean','110  의정부',(2,39.75,10),1.25,M['White'])
+text('Entrance English','Uijeongbu',(10,39.72,10.2),.45,M['White'])
+for x in [-10,-5,0,5,10]:
+ for dx in [-1.8,1.8]:beam('Entrance door jamb',(x+dx,40,6),(x+dx,40,9.4),.1,.16,M['Metal'])
+ line('Entrance door upper rail',[(x-1.8,40,9.4),(x+1.8,40,9.4)],.12,M['Metal'])
+# Circular-head plaza luminaires, observed architect photo; dimensions estimated.
+for x in [-30,-12,16,35]:
+ beam('Plaza light post',(x,30,6),(x,30,11),.16,.16,M['Metal'])
+ line('Plaza light disc',[(x+.7*math.cos(a*.2),30+.7*math.sin(a*.2),11) for a in range(33)],.1,M['Metal'])
+# Panel grid and wall top cornice based on facade photo.
+current=COL['04_Shinsegae']
+for a,b in zip(simplify_ring(coords(ways['608705745'])),simplify_ring(coords(ways['608705745']))[1:]):
+ d=Vector(b)-Vector(a);L=d.length;dn=d.normalized()
+ for u in range(0,int(L),3):
+  pp=Vector(a)+dn*u;line('Panel vertical joint',[(pp.x,pp.y,10),(pp.x,pp.y,66)],.025,M['Dark'])
+ line('Top illuminated cornice',[(a[0],a[1],65.8),(b[0],b[1],65.8)],.09,M['WarmLight'])
+# Photo-observed glazed department-store entrance facing raised plaza.
+current=COL['04_Shinsegae']
+box('Mall entrance glazing',(-10,21.5,10),(38,.22,8),M['Glass'])
+box('Mall entrance deep canopy',(-10,24.5,13.7),(40,6,.65),M['Dark'])
+for x in range(-28,10,3):beam('Mall entry upright',(x,21.8,6),(x,21.8,13.5),.14,.22,M['Metal'])
+for z in [6.3,9.5,13.4]:line('Mall entry transom',[(-29,21.9,z),(10,21.9,z)],.13,M['Metal'])
+text('Mall entry letters','SHINSEGAE',(-10,27.6,13.9),1.45,M['White'],(math.pi/2,0,math.pi))
 # South parking ramp, approximate photo-interpreted shape, independent supports.
 current=COL['04_Shinsegae'];pts=[]
 for i in range(65):
@@ -226,7 +296,7 @@ for p in [(0,30,24),(60,-20,22),(-50,55,18),(65,-105,20)]:
 current=COL['10_Cameras']
 def camera(n,p,target,lens):
  bpy.ops.object.camera_add(location=p);c=link(bpy.context.object);c.name=n;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.lens=lens;c.data.clip_end=3000;return c
-cam=camera('01_East_Station_overview',(275,305,175),(5,-10,20),42);camera('02_Plaza_eye_level',(85,135,20),(5,35,28),30);camera('03_Parking_ramp',(160,-290,90),(0,-85,24),40);scene.camera=cam
+cam=camera('01_East_Station_overview',(275,305,175),(5,-10,20),42);camera('02_Plaza_eye_level',(34,27,8),(0,47,10),22);camera('03_Parking_ramp',(160,-290,90),(0,-85,24),40);scene.camera=cam
 scene.render.engine='CYCLES';scene.cycles.samples=48;scene.cycles.use_denoising=True;scene.render.resolution_x=1440;scene.render.resolution_y=1000;scene.render.resolution_percentage=100;scene.render.image_settings.file_format='PNG';scene.view_settings.view_transform='AgX';scene.view_settings.exposure=-.8;scene.frame_end=240;scene.frame_set(1)
 scene['README']='OSM-driven exterior study; photographic facade interpretation. Not a surveyed or fully photoreal final twin. See docs.'
 scene['LOD']='Disable 07_Trees_LOD0 and enable 08_Trees_LOD1 for far/interactive view.'
