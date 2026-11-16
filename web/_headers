@@ -3,5 +3,9 @@
   Referrer-Policy: strict-origin-when-cross-origin
 /assets/*
   Cache-Control: public, max-age=3600
+/assets/station.glb
+  Cache-Control: no-cache
+/build.json
+  Cache-Control: no-cache
 /vendor/*
   Cache-Control: public, max-age=86400
