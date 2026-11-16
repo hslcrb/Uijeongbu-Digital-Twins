@@ -1,5 +1,6 @@
 """Reproducible station study. OSM footprints/parts; photo-interpreted facade detail."""
-import bpy, math, json, random, sys, os, xml.etree.ElementTree as ET
+import faulthandler;faulthandler.dump_traceback_later(60, repeat=True)
+import bpy, gzip, math, json, random, sys, os, xml.etree.ElementTree as ET
 from mathutils import Vector
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];random.seed(110)
@@ -50,7 +51,7 @@ def text(n,txt,p,size,m,rot=(math.pi/2,0,0)):
 # Geographical mapping: x East, y North. Geometry from OSM, not a cadastral survey.
 origin=(127.046,37.738)
 def xy(lon,lat):return ((lon-origin[0])*111320*math.cos(math.radians(origin[1])),(lat-origin[1])*111320)
-r=ET.parse(ROOT/'data/map.osm').getroot();nodes={e.get('id'):xy(float(e.get('lon')),float(e.get('lat'))) for e in r.findall('node')}
+r=ET.parse(gzip.open(ROOT/'data/map.osm.gz','rb')).getroot();nodes={e.get('id'):xy(float(e.get('lon')),float(e.get('lat'))) for e in r.findall('node')}
 ways={e.get('id'):e for e in r.findall('way')}
 def tags(e):return {t.get('k'):t.get('v') for t in e.findall('tag')}
 def coords(w):return [nodes[n.get('ref')] for n in w.findall('nd') if n.get('ref') in nodes]
@@ -192,6 +193,22 @@ ph=b.objects[0]
 for i,y in enumerate(range(-110,115,20)):
  o=ph.copy();o.data=ph.data;COL['07_Trees_LOD0'].objects.link(o);o.location=(77,y,.1);o.rotation_euler.z=i*.7;o.hide_render=False;o.hide_set(False);o['placement']='Illustrative; Poly Haven CC0 Burkea africana is not verified local species'
 COL['08_Trees_LOD1'].hide_render=True;COL['08_Trees_LOD1'].hide_viewport=True
+# Batch repeated facade modules by collection/material while preserving OSM source objects.
+for cn in ['03_Station','04_Shinsegae','05_Context_OSM','06_Street_Detail']:
+ groups={}
+ for o in list(COL[cn].objects):
+  if o.type=='MESH' and 'osm_way_id' not in o and not o.name.startswith('OSM'):
+   groups.setdefault(tuple(m.name for m in o.data.materials),[]).append(o)
+ for key,obs in groups.items():
+  if len(obs)<2:continue
+  vs=[];fs=[]
+  for o in obs:
+   off=len(vs);vs.extend([tuple(o.matrix_world@v.co) for v in o.data.vertices]);fs.extend([tuple(off+j for j in f.vertices) for f in o.data.polygons])
+  current=COL[cn];combined=mesh('Batched '+cn+' '+','.join(key),vs,fs,obs[0].data.materials[0])
+  for o in obs:bpy.data.objects.remove(o,do_unlink=True)
+for _ in range(2):bpy.data.orphans_purge(do_recursive=True)
+
+print('BATCHED',len(bpy.context.scene.objects),flush=True)
 # World controls and keyframes. Saved scene gives editable sun/night animation.
 current=COL['09_Lighting'];world=bpy.data.worlds.new('UIJEONGBU Sky system');scene.world=world;world.use_nodes=True;nt=world.node_tree;nt.nodes.clear();sky=nt.nodes.new('ShaderNodeTexSky');sky.sky_type='MULTIPLE_SCATTERING' if bpy.app.version >= (5,0,0) else 'NISHITA';sky.sun_disc=True;sky.sun_rotation=2.4;sky.altitude=.05;bg=nt.nodes.new('ShaderNodeBackground');out=nt.nodes.new('ShaderNodeOutputWorld');nt.links.new(sky.outputs['Color'],bg.inputs[0]);nt.links.new(bg.outputs[0],out.inputs[0])
 for frame,elev,power in [(1,38,.04),(120,7,.03),(240,-6,.008)]:
@@ -209,17 +226,6 @@ scene.render.engine='CYCLES';scene.cycles.samples=48;scene.cycles.use_denoising=
 scene['README']='OSM-driven exterior study; photographic facade interpretation. Not a surveyed or fully photoreal final twin. See docs.'
 scene['LOD']='Disable 07_Trees_LOD0 and enable 08_Trees_LOD1 for far/interactive view.'
 scene['Origin_lon_lat']='127.046,37.738';scene['Sky_presets']='frame 1 day /120 dusk /240 night'
-# Batch repeated facade modules by collection/material while preserving OSM source objects.
-for cn in ['03_Station','04_Shinsegae','05_Context_OSM','06_Street_Detail']:
- groups={}
- for o in list(COL[cn].objects):
-  if o.type=='MESH' and 'osm_way_id' not in o and not o.name.startswith('OSM'):
-   groups.setdefault(tuple(m.name for m in o.data.materials),[]).append(o)
- for key,obs in groups.items():
-  if len(obs)<2:continue
-  bpy.ops.object.select_all(action='DESELECT')
-  for o in obs:o.select_set(True)
-  bpy.context.view_layer.objects.active=obs[0];bpy.ops.object.join();obs[0].name='Batched '+cn+' '+','.join(key)
 # Pack Korean font so signs survive transfer.
 if font:font.pack()
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'Uijeongbu_Station_v1.blend'),compress=True)
