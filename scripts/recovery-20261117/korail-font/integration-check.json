@@ -1,0 +1,17 @@
+{
+  "base": "Uijeongbu_Station_v9_door_tactile_batched.blend",
+  "base_objects": 1835,
+  "integrated_objects": 1835,
+  "removed": [],
+  "added": [],
+  "changed": [
+    "East station rooftop sign",
+    "Entrance Korean",
+    "의정부역 sign"
+  ],
+  "sign_types": {
+    "Entrance Korean": "MESH",
+    "East station rooftop sign": "MESH",
+    "의정부역 sign": "MESH"
+  }
+}

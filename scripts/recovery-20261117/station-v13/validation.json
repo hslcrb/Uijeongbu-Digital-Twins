@@ -1,0 +1,13 @@
+{
+  "observed": "four small windows in two pairs on east pale wall",
+  "photo_date": "2025-03-23",
+  "source": "https://zenith2.tistory.com/15862539",
+  "architect_source": "https://www.haeahn.com/upload/prompte/20150210154511755183.pdf",
+  "estimated": [
+    "window local coordinates",
+    "width0.96m height1m",
+    "cladding surface plane"
+  ],
+  "objects": 1857,
+  "remote_write": false
+}
