@@ -5,8 +5,12 @@
   "estimated_heights": 254,
   "objects": 2076,
   "mesh_datablocks": 1117,
-  "tree_instances": 73,
-  "unique_tree_meshes": 6,
+  "unique_tree_meshes": 7,
   "vertices": 236620,
-  "polygons": 109849
+  "polygons": 109849,
+  "procedural_tree_instances": 73,
+  "polyhaven_tree_instances": 12,
+  "total_tree_instances": 85,
+  "blender_version": "5.2.4 LTS",
+  "blend_bytes": 7660237
 }

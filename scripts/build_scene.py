@@ -234,7 +234,7 @@ scene['Origin_lon_lat']='127.046,37.738';scene['Sky_presets']='frame 1 day /120 
 # Pack Korean font so signs survive transfer.
 if font:font.pack()
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'Uijeongbu_Station_v1.blend'),compress=True)
-counts.update(objects=len(scene.objects),mesh_datablocks=len(bpy.data.meshes),tree_instances=len(positions),unique_tree_meshes=6,vertices=sum(len(m.vertices) for m in bpy.data.meshes),polygons=sum(len(m.polygons) for m in bpy.data.meshes))
+counts.update(objects=len(scene.objects),mesh_datablocks=len(bpy.data.meshes),procedural_tree_instances=len(positions),polyhaven_tree_instances=12,total_tree_instances=len(positions)+12,unique_tree_meshes=7,vertices=sum(len(m.vertices) for m in bpy.data.meshes),polygons=sum(len(m.polygons) for m in bpy.data.meshes))
 (ROOT/'docs/model-stats.json').write_text(json.dumps(counts,indent=2))
 scene.render.filepath=str(ROOT/'renders/day-overview.png');bpy.ops.render.render(write_still=True)
 scene.frame_set(240);scene.render.filepath=str(ROOT/'renders/night-overview.png');bpy.ops.render.render(write_still=True)
