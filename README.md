@@ -1,6 +1,12 @@
 # Uijeongbu-Digital-Twins
 의정부시 디지털 트윈
 
+## 최신 5차 결과
+
+- [최신 Blender 원본 복원 안내](blender/v5/README.md): 두 조각을 표준 Python으로 무손실 결합하고 SHA256을 확인합니다. 루트 Blender 파일은 4차 호환 스냅샷입니다.
+- [낮](renders/day-v5.jpg) · [밤](renders/night-v5.jpg) · [역 외장](renders/station-cladding-v5.jpg) · [철도](renders/rail-v5.jpg)
+- [5차 검증 및 저장 방식](docs/V5_REVIEW.md)
+
 ## 의정부역 Blender 외관 연구
 
 - [Blender 장면 다운로드](Uijeongbu_Station_v1.blend)
