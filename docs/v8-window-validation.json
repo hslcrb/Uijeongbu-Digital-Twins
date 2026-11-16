@@ -1,0 +1,43 @@
+{
+  "context_buildings_checked": 493,
+  "clockwise_footprints_corrected": 220,
+  "before": {
+    "buildings": 324,
+    "windows": 16459,
+    "lit_windows": 7263
+  },
+  "after": {
+    "buildings": 319,
+    "windows": 16135,
+    "lit_windows": 7172,
+    "thin_shell_cells_without_bays": 36
+  },
+  "unchanged_building_polygon_counts": 489,
+  "thin_shell_buildings_changed": [
+    [
+      "OSM building [1467817364]",
+      68,
+      6
+    ],
+    [
+      "OSM building [1469326937]",
+      36,
+      6
+    ],
+    [
+      "OSM building [1469326951]",
+      12,
+      6
+    ],
+    [
+      "OSM building [1469326973]",
+      44,
+      8
+    ]
+  ],
+  "all_roofs_positive_z": true,
+  "hanwha_facade_preserved": true,
+  "old_stats_note": "Prior stats may include the 288-window generic Hanwha facade removed by specific enhancement.",
+  "basis": "Signed footprint area, not centroid; valid for concave simple polygons. All restored extrusion roof normals +Z. Room depth follows inward -normal.",
+  "scope": "Procedural geometry correction only; facade measurements and occupancies remain unverified."
+}

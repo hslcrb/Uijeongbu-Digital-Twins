@@ -22,7 +22,7 @@ for o in s.objects:
 # Rear pillar is unsupported over the inferred escalator opening. Remove it, not a floating prop.
 for o in list(s.objects):
  if o.name.startswith('Granite pillar') and o.parent and abs(o.location.x+10)<.1 and abs(o.location.y-15)<.1:bpy.data.objects.remove(o,do_unlink=True)
-from building_lighting import enhance_building_windows
+from building_lighting_corrected import enhance_building_windows
 print('WINDOWS',enhance_building_windows(),flush=True)
 from rail_detail import add_rail_detail
 print('RAIL',add_rail_detail(R),flush=True)
