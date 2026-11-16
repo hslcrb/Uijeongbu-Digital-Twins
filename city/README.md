@@ -39,3 +39,11 @@ fetch_tiles.py, download-index.json, boundary-search.json 및 명시된 원본HG
 후속 접합검수에서 셀 중심 제외가 최대40m 가장자리 틈/겹침을 만들 수 있음을 확인했다. `clip_station.py`는 전체 terrain triangle을 정확한 역 제외사각형과 difference한 후 재삼각화한다. 따라서 XY지형 경계는 정확한 사각형이며, 역 바닥0m와 도시지형 간 수직정합은 여전히 고도blend 근사이다. 도로 역시 같은 사각형 차집합으로 처리된다.
 
 실제 역 Study area 바닥은 x[-285,375],y[-250,360],z=0이므로 지형제외/고도blend는 해당 경계로 최종 교정했다. 도로제외는 기존작업crop[-265,355]×[-225,335]를 유지한다. 지형절단경계vertex는0m로 스냅하여 틈새를 막았으며 이 접합은 인위적근사이다.
+
+### 저장소 보존 위치
+- `blender/city/Uijeongbu_City_Outline.blend`: 도시 윤곽 Blender 원본. 역 상세본은 `blender/v5/`에 별도 보존하며 웹에서는 동일 좌표로 함께 표시한다.
+- `city/data/osm-source-tiles.tar.gz`: 지도 원자료20개 bbox 보존본.
+- `web/city/city-tiles.tar.gz`: 웹 GLB104개의 무손실 아카이브. 서비스 시에는 빌드가104개의 독립 URL로 복원한다.
+- `city/scripts/`: 재생성 코드, `city/data/`: 입력·출처·체크섬.
+
+원자료 체크섬과 일치하는 `N37E127.hgt.gz`를 내려받은 뒤 `python city/prepare_workspace.py <별도작업폴더> --elevation <N37E127.hgt.gz경로>`로 폴더를 복원한다. 작업폴더의 `build_city.py`에 지정된 외부 Python 경로를 자신의 Shapely 설치 경로로 바꾼다. 이후 Blender에서 `build_city.py`, `export_city.py` 순으로 실행한다. `prepare_workspace.py`는 원자료를 검사하며 저장소 원본을 덮어쓰지 않는다.

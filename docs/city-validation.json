@@ -5,7 +5,7 @@
   "mockMaxConcurrent": 2,
   "realGpuQA": "unavailable: GL_VENDOR/RENDERER disabled",
   "runtimeArchive": "none: build extracts independent GLBs",
-  "mainDeployed": "pending",
+  "mainDeployed": "48d6946f2a189a6acaf984d4b70f4d45f9093551",
   "terrainBoundaryVertices": 171,
   "terrainBoundaryMaxAbsZ": 0.0,
   "terrainExclusion": [
@@ -21,5 +21,9 @@
     335
   ],
   "terrainCropIntersectionArea": 0,
-  "roadCropIntersectionArea": 0
+  "roadCropIntersectionArea": 0,
+  "cloudflareBuild": "success",
+  "liveManifestSHA256": "ba97461940058ceb7e55d8e5e30ee282961260ad00e098eac26b9d4cf28454f3",
+  "liveTilesVerified": 104,
+  "liveTilesFailed": 0
 }
