@@ -3,7 +3,10 @@
 
 ## 의정부역 Blender 외관 연구
 
-- [Blender 장면 다운로드](Uijeongbu_Station_v1.blend)
+- [최신 7차 Blender 복원·다운로드](blender/v7/README.md)
+- [도시 전체 윤곽 Blender](blender/city/Uijeongbu_City_Outline.blend)
+- [기존 v4 호환 스냅샷](Uijeongbu_Station_v1.blend), [v5 보존본](blender/v5/README.md)
+- [최신 서측 낮](renders/west-v7.jpg) · [서측 밤](renders/west-night-v7.jpg) · [도시 통합 전경](renders/city-integration.jpg)
 - [낮 전경](renders/day-overview.jpg) · [야경](renders/night-overview.jpg) · [광장](renders/plaza.jpg)
 - [모델 범위·사용법·미검증 사항](docs/README_MODEL.md)
 - [사진 및 지도 근거](reference/RESEARCH.md)
@@ -21,3 +24,9 @@ https://twin.uijeongbu.rhee.life/
 웹의 **시 전역 윤곽** 버튼으로 의정부시 지형·건물·도로 윤곽을 같은 공간에서 조망할 수 있다. 104개 타일(약4MB)을 거리 기반으로 순차 로드한다. 원본 지도 기록은 9,094개 건물과 9,721개 도로 way이며, 확인되지 않은 높이·외장은 근사이다. 실제 시내 건물 전수 정밀 복원은 아니다. 지형은 SRTM계열 DEM의80m 재표본 윤곽이고 역 경계에 인위적 고도 전이를 사용한다.
 
 타일은 `web/city/city-tiles.tar.gz`에 보관하며 빌드시104개의 독립 GLB로 복원된다. [스트리밍 검수와 한계](docs/CITY_STREAMING.md), [개발과정기](docs/DEVELOPMENT_JOURNAL.md)를 참조한다.
+
+## 7차 서부 접근 개선
+
+2025년 사진과 지도 계단 방향을 기준으로 서측 접근·유리 캐노피·보조동 루버를 보강하고, 중복 계단·떠 있는 지면 측면·데크 아래에 있던 조명 기둥을 교정했다. 새 부품은 재질별5개 메시로 묶었다. [근거와 추정 구분](docs/WEST_V7_EVIDENCE.md)을 참조한다. 포켓쉼터 가구와 택시쉼터는 정확한 위치가 아직 확인되지 않아 임의 배치하지 않았다.
+
+최신 역 Blender는 `python blender/v7/restore.py`로 분할 보존본을 검증·복원한다. 루트의 `Uijeongbu_Station_v1.blend`는 최신 파일이 아니라 이전 v4 스냅샷이다. 웹은 `web/assets/station.glb.gz`를 빌드시 복원하여 최신 모델을 사용한다.

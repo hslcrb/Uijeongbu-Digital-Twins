@@ -1,0 +1,23 @@
+{
+  "objects": 1793,
+  "taxi_shelter": "not placed: unverified footprint",
+  "datum": "127.046E 37.738N xEast yNorth",
+  "height_status": "inferred, not measured",
+  "source_photo": "pocket2025.jpg",
+  "platform_lights": {
+    "removedUnderDeckPostFaces": 24,
+    "newBaseZ": 11.05,
+    "newHeadZ": 15.05,
+    "height": "inferred relative to existing deck, not surveyed"
+  },
+  "batched_objects": 5,
+  "physical_road_edges": [],
+  "road_audit": [
+    {
+      "name": "Union surface asphalt",
+      "degenerate": 0,
+      "duplicate": 1
+    }
+  ],
+  "road_wedges": "Existing mapped pedestrian outlines visible; no unrelated surfaces removed"
+}
