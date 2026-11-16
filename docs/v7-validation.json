@@ -12,12 +12,11 @@
   },
   "batched_objects": 5,
   "physical_road_edges": [],
-  "road_audit": [
-    {
-      "name": "Union surface asphalt",
-      "degenerate": 0,
-      "duplicate": 1
-    }
-  ],
-  "road_wedges": "Existing mapped pedestrian outlines visible; no unrelated surfaces removed"
+  "road_audit": [],
+  "road_wedges": "Existing mapped pedestrian outlines visible; no unrelated surfaces removed",
+  "exact_duplicate_cleanup": {
+    "removed": 1,
+    "area_m2": 3.630275,
+    "remaining_exact_duplicates": 0
+  }
 }
