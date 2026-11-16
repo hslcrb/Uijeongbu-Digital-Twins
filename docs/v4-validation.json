@@ -1,0 +1,16 @@
+{
+  "blender_objects": 1754,
+  "external_tree_shared_instances": 12,
+  "road_cross_material_overlap_m2": 1.1000867261019715e-15,
+  "rail_segments": 105,
+  "sleepers": 5872,
+  "platform_islands": 3,
+  "context_buildings_with_room_proxies": 324,
+  "window_cells": 16459,
+  "night_lit_cells": 7263,
+  "glb_bytes": 10783996,
+  "glb_git_blob": "1bfdc54acb6f02b397481149e4cecb7af1e4d250",
+  "missing_textures": 0,
+  "photoreal_complete": false,
+  "browser_z_fighting_validation": "pending new deployment"
+}

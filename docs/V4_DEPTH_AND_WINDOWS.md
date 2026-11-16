@@ -12,3 +12,6 @@
 렌더: day-v4.jpg / night-v4.jpg / plaza-v4.jpg. 검수용 Cycles 렌더로 낮·야경은24samples, 입구는64samples. 낮은 샘플의 노이즈와 실제 WebGL 깊이경쟁은 구별해야 한다. 현행 간판, 주변 모든 외관의 정확한 재료와 치수 등은 여전히 추가 조사 대상이다.
 
 재생성 순서: base build_scene → enhance_landscape → integrate_v4 → finalize_v4. integrate_v4는 기존 창구멍 생성 완료 컬렉션을 재생성하지 않는다. finalize_v4의 조명은 단일 적용용이다. road-surfaces-unioned.json은 OSM-derived geometry이며 원자료 출처/ODbL은 기존 LICENSES를 따른다.
+
+## 무손실 파일 압축 검증
+기본 Blender 압축18,335,088bytes를 Zstandard level19로10,645,347bytes로 줄였다. 압축 전후 해제된 전체 바이트의 SHA256은 `fe4844d695099f44ec761e789ab6b3aa4219641e3adeb55e1e715172ba4bff2f`로 같다. 압축본을 Blender5.2.4에서 재열어1754객체·무료수목12공유인스턴스·패킹텍스처·하늘키프레임 검증을 통과했다. 형상이나 텍스처를 제거하지 않았다.
