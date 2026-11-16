@@ -5,6 +5,8 @@ from mathutils import Vector
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'scripts'))
 from station_west_v7 import add_west_plaza
 report=add_west_plaza();col=bpy.data.collections['21_West_Plaza_v7'];groups={}
+from fix_platform_lights_v7 import correct_platform_lights
+report['platform_lights']=correct_platform_lights(col)
 for o in list(col.objects):
  if o.type!='MESH':continue
  bm=bmesh.new();bm.from_mesh(o.data);
@@ -18,10 +20,12 @@ for name,objects in groups.items():
  me=bpy.data.meshes.new('West photo '+name);me.from_pydata(vs,[],fs);me.materials.append(mat);me.update();new=bpy.data.objects.new('West v7 batch '+name,me);col.objects.link(new);new['source_objects']=json.dumps(names);new['evidence']='WEST_V7_EVIDENCE.md; dimensions inferred'
  for o in objects:bpy.data.objects.remove(o,do_unlink=True)
 report['batched_objects']=len(col.objects)
+from solidify_road_edges_v7 import solidify_road_edges
+report['physical_road_edges']=solidify_road_edges()
 # Audit, do not silently delete unrelated mapped geometry.
 audit=[]
 for o in bpy.context.scene.objects:
- if o.type!='MESH' or not (o.name.startswith(('Road','Walk','Pedestrian','Unified','Batched 02'))):continue
+ if o.type!='MESH' or not (o.name.startswith(('Road','Walk','Pedestrian','Unified','Union surface','Batched 02'))):continue
  deg=sum(p.area<1e-8 for p in o.data.polygons);dups=0;seen=set()
  for p in o.data.polygons:
   key=tuple(sorted(tuple(round(c,5) for c in o.matrix_world@o.data.vertices[i].co) for i in p.vertices))

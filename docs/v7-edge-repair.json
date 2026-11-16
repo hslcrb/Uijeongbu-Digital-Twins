@@ -1,0 +1,36 @@
+{
+  "objects": 1793,
+  "taxi_shelter": "not placed: unverified footprint",
+  "datum": "127.046E 37.738N xEast yNorth",
+  "height_status": "inferred, not measured",
+  "source_photo": "pocket2025.jpg",
+  "batched_objects": 5,
+  "physical_road_edges": [
+    {
+      "surface": "Union surface asphalt",
+      "inputFaces": 1043,
+      "degenerateRemoved": 1,
+      "perimeterSides": 1040,
+      "outlineChanged": false,
+      "groundZ": 0.001
+    },
+    {
+      "surface": "Union surface walk",
+      "inputFaces": 1850,
+      "degenerateRemoved": 0,
+      "perimeterSides": 2007,
+      "outlineChanged": false,
+      "groundZ": 0.001
+    },
+    {
+      "surface": "Union surface curb",
+      "inputFaces": 1799,
+      "degenerateRemoved": 15,
+      "perimeterSides": 2287,
+      "outlineChanged": false,
+      "groundZ": 0.001
+    }
+  ],
+  "road_audit": [],
+  "road_wedges": "Existing mapped pedestrian outlines visible; no unrelated surfaces removed"
+}

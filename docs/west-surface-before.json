@@ -1,0 +1,64 @@
+{
+  "horizontalFacesChecked": 1676,
+  "invalidPlanarRings": [
+    {
+      "object": "Union surface curb",
+      "face": 453,
+      "issue": "Too few points in geometry component[-103.902687072754 8.37166118621826]"
+    },
+    {
+      "object": "Union surface curb",
+      "face": 494,
+      "issue": "Too few points in geometry component[-97.4060440063477 7.11201953887939]"
+    },
+    {
+      "object": "Union surface curb",
+      "face": 497,
+      "issue": "Too few points in geometry component[-96.6137390136719 9.47159385681152]"
+    },
+    {
+      "object": "Union surface curb",
+      "face": 510,
+      "issue": "Too few points in geometry component[-100.439956665039 11.4694213867188]"
+    },
+    {
+      "object": "Union surface walk",
+      "face": 255,
+      "issue": "Too few points in geometry component[-80.7990493774414 67.9470672607422]"
+    }
+  ],
+  "objects": {
+    "Study area / not surveyed terrain": 2,
+    "OSM building [1311394071]": 1,
+    "\uc2e0\uc138\uacc4\ubc31\ud654\uc810 [608705745]": 1,
+    "OSM building [704254858]": 1,
+    "OSM building [1017704621]": 1,
+    "OSM building [1017704622]": 1,
+    "\uac00\uc5f0\ud0c0\uc6cc [1310974798]": 1,
+    "OSM building [1310974799]": 1,
+    "OSM building [1313629657]": 1,
+    "OSM building [1435028341]": 1,
+    "OSM building [1435028342]": 1,
+    "OSM building [1435028348]": 1,
+    "OSM building [1473342762]": 1,
+    "Batched 06_Street_Detail Metal": 6,
+    "Batched 06_Street_Detail Dark": 24,
+    "Maple_Autumn instance.032": 1,
+    "OSM grass 1311394041": 1,
+    "OSM grass 1313629696": 1,
+    "Union surface curb": 206,
+    "Union surface asphalt": 107,
+    "Union surface walk": 148,
+    "Context transparent thin glazing": 112,
+    "Context room wall": 114,
+    "Rail crushed stone": 12,
+    "Rail web oxidized": 24,
+    "Rail polished steel": 24,
+    "Rail sleeper concrete": 324,
+    "Rail baseplates": 508,
+    "Street batch steel": 1,
+    "Street batch black": 3,
+    "West v7 batch West concrete treads": 38,
+    "West v7 batch West photographed pale celadon steel": 8
+  }
+}
