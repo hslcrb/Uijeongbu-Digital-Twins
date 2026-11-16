@@ -12,5 +12,11 @@
   "glb_git_blob": "1bfdc54acb6f02b397481149e4cecb7af1e4d250",
   "missing_textures": 0,
   "photoreal_complete": false,
-  "browser_z_fighting_validation": "pending new deployment"
+  "browser_z_fighting_validation": "pending new deployment",
+  "glb_nodes": 1645,
+  "glb_meshes": 1564,
+  "glb_scenes": 1,
+  "compressed_blend_bytes": 10645347,
+  "compressed_blend_blob": "72dcdbd14f2e06bf0b80cd1d91aeb164cf6c4a22",
+  "decompressed_sha256": "fe4844d695099f44ec761e789ab6b3aa4219641e3adeb55e1e715172ba4bff2f"
 }
