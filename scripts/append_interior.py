@@ -3,7 +3,7 @@ import bpy
 from mathutils import Vector
 from pathlib import Path
 
-def append_concourse(blend_path, offset=(2,57,6)):
+def append_concourse(blend_path, offset=(2,57,11)):
     with bpy.data.libraries.load(str(blend_path), link=False) as (src,dst):
         dst.objects=src.objects
     col=bpy.data.collections.new('Concourse_3F_Photo_Study')
@@ -15,4 +15,4 @@ def append_concourse(blend_path, offset=(2,57,6)):
         if obj and obj.type not in {'CAMERA','LIGHT'}:
             col.objects.link(obj);obj.parent=root
     return root
-# Hall's south entry local (0,-15,0) -> world (2,42,6)
+# Hall's south entry local (0,-15,0) -> world (2,42,11)
