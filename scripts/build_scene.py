@@ -193,7 +193,7 @@ for i,y in enumerate(range(-110,115,20)):
  o=ph.copy();o.data=ph.data;COL['07_Trees_LOD0'].objects.link(o);o.location=(77,y,.1);o.rotation_euler.z=i*.7;o.hide_render=False;o.hide_set(False);o['placement']='Illustrative; Poly Haven CC0 Burkea africana is not verified local species'
 COL['08_Trees_LOD1'].hide_render=True;COL['08_Trees_LOD1'].hide_viewport=True
 # World controls and keyframes. Saved scene gives editable sun/night animation.
-current=COL['09_Lighting'];world=bpy.data.worlds.new('UIJEONGBU Sky system');scene.world=world;world.use_nodes=True;nt=world.node_tree;nt.nodes.clear();sky=nt.nodes.new('ShaderNodeTexSky');sky.sky_type='NISHITA';sky.sun_disc=True;sky.sun_rotation=2.4;sky.altitude=.05;bg=nt.nodes.new('ShaderNodeBackground');out=nt.nodes.new('ShaderNodeOutputWorld');nt.links.new(sky.outputs['Color'],bg.inputs[0]);nt.links.new(bg.outputs[0],out.inputs[0])
+current=COL['09_Lighting'];world=bpy.data.worlds.new('UIJEONGBU Sky system');scene.world=world;world.use_nodes=True;nt=world.node_tree;nt.nodes.clear();sky=nt.nodes.new('ShaderNodeTexSky');sky.sky_type='MULTIPLE_SCATTERING' if bpy.app.version >= (5,0,0) else 'NISHITA';sky.sun_disc=True;sky.sun_rotation=2.4;sky.altitude=.05;bg=nt.nodes.new('ShaderNodeBackground');out=nt.nodes.new('ShaderNodeOutputWorld');nt.links.new(sky.outputs['Color'],bg.inputs[0]);nt.links.new(bg.outputs[0],out.inputs[0])
 for frame,elev,power in [(1,38,.04),(120,7,.03),(240,-6,.008)]:
  sky.sun_elevation=math.radians(elev);sky.keyframe_insert('sun_elevation',frame=frame);bg.inputs[1].default_value=power;bg.inputs[1].keyframe_insert('default_value',frame=frame)
 bpy.ops.object.light_add(type='SUN',location=(0,0,120));sun=link(bpy.context.object);sun.name='Sun / day dusk night';sun.data.angle=.06
