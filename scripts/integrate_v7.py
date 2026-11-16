@@ -32,7 +32,9 @@ for o in bpy.context.scene.objects:
   if key in seen:dups+=1
   seen.add(key)
  if deg or dups:audit.append({'name':o.name,'degenerate':deg,'duplicate':dups})
-report['road_audit']=audit;report['road_wedges']='Existing mapped pedestrian outlines visible; no unrelated surfaces removed'
+from deduplicate_road_skirts import deduplicate
+report['exact_duplicate_cleanup']=deduplicate()
+report['road_audit_before_duplicate_cleanup']=audit;report['road_wedges']='Existing mapped pedestrian outlines visible; no unrelated surfaces removed'
 s=bpy.context.scene;s.frame_set(1);s.cycles.samples=32;s.cycles.use_denoising=True;s.render.resolution_x=1400;s.render.resolution_y=1000;s.render.resolution_percentage=100;s.render.image_settings.file_format='JPEG';s.render.image_settings.quality=94
 oldcam=bpy.data.objects.get('v7 west comparison')
 if oldcam:bpy.data.objects.remove(oldcam,do_unlink=True)
