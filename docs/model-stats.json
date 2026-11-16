@@ -1,16 +1,14 @@
 {
-  "osm_buildings": 518,
+  "osm_buildings": 494,
   "station_parts": 9,
   "mall_parts": 13,
-  "estimated_heights": 254,
-  "objects": 2076,
-  "mesh_datablocks": 1117,
-  "unique_tree_meshes": 7,
-  "vertices": 236620,
-  "polygons": 109849,
+  "estimated_heights": 244,
+  "objects": 2317,
+  "mesh_datablocks": 1290,
   "procedural_tree_instances": 73,
   "polyhaven_tree_instances": 12,
   "total_tree_instances": 85,
-  "blender_version": "5.2.4 LTS",
-  "blend_bytes": 7660237
+  "unique_tree_meshes": 7,
+  "vertices": 229070,
+  "polygons": 88587
 }
