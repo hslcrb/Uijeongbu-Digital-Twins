@@ -1,5 +1,4 @@
 """Reproducible station study. OSM footprints/parts; photo-interpreted facade detail."""
-import faulthandler;faulthandler.dump_traceback_later(60, repeat=True)
 import bpy, gzip, math, json, random, sys, os, xml.etree.ElementTree as ET
 from mathutils import Vector
 from pathlib import Path
@@ -205,7 +204,7 @@ for cn in ['03_Station','04_Shinsegae','05_Context_OSM','06_Street_Detail']:
   for o in obs:
    off=len(vs);vs.extend([tuple(o.matrix_world@v.co) for v in o.data.vertices]);fs.extend([tuple(off+j for j in f.vertices) for f in o.data.polygons])
   current=COL[cn];combined=mesh('Batched '+cn+' '+','.join(key),vs,fs,obs[0].data.materials[0])
-  for o in obs:bpy.data.objects.remove(o,do_unlink=True)
+  bpy.data.batch_remove(ids=obs)
 for _ in range(2):bpy.data.orphans_purge(do_recursive=True)
 
 print('BATCHED',len(bpy.context.scene.objects),flush=True)
@@ -213,6 +212,12 @@ print('BATCHED',len(bpy.context.scene.objects),flush=True)
 current=COL['09_Lighting'];world=bpy.data.worlds.new('UIJEONGBU Sky system');scene.world=world;world.use_nodes=True;nt=world.node_tree;nt.nodes.clear();sky=nt.nodes.new('ShaderNodeTexSky');sky.sky_type='MULTIPLE_SCATTERING' if bpy.app.version >= (5,0,0) else 'NISHITA';sky.sun_disc=True;sky.sun_rotation=2.4;sky.altitude=.05;bg=nt.nodes.new('ShaderNodeBackground');out=nt.nodes.new('ShaderNodeOutputWorld');nt.links.new(sky.outputs['Color'],bg.inputs[0]);nt.links.new(bg.outputs[0],out.inputs[0])
 for frame,elev,power in [(1,38,.04),(120,7,.03),(240,-6,.008)]:
  sky.sun_elevation=math.radians(elev);sky.keyframe_insert('sun_elevation',frame=frame);bg.inputs[1].default_value=power;bg.inputs[1].keyframe_insert('default_value',frame=frame)
+# Stable art-directed sky ambient supplements physical sky across Blender versions.
+tc=nt.nodes.new('ShaderNodeTexCoord');sep=nt.nodes.new('ShaderNodeSeparateXYZ');ramp=nt.nodes.new('ShaderNodeValToRGB');nt.links.new(tc.outputs['Normal'],sep.inputs[0]);nt.links.new(sep.outputs['Z'],ramp.inputs[0]);ramp.color_ramp.elements[0].position=0;ramp.color_ramp.elements[1].position=.8
+for f,c0,c1,p in [(1,(.55,.69,.8,1),(.08,.23,.5,1),.65),(120,(.6,.26,.13,1),(.08,.08,.2,1),.35),(240,(.06,.085,.15,1),(.018,.028,.07,1),.6)]:
+ for el,color in zip(ramp.color_ramp.elements,[c0,c1]):el.color=color;el.keyframe_insert('color',frame=f)
+ bg.inputs[1].default_value=p;bg.inputs[1].keyframe_insert('default_value',frame=f)
+nt.links.new(ramp.outputs['Color'],bg.inputs[0])
 bpy.ops.object.light_add(type='SUN',location=(0,0,120));sun=link(bpy.context.object);sun.name='Sun / day dusk night';sun.data.angle=.06
 for f,en,rot in [(1,2,(.45,-.5,-.4)),(120,.5,(1.35,-.2,-.4)),(240,0,(1.7,0,0))]:sun.data.energy=en;sun.data.keyframe_insert('energy',frame=f);sun.rotation_euler=rot;sun.keyframe_insert('rotation_euler',frame=f)
 for p in [(0,30,24),(60,-20,22),(-50,55,18),(65,-105,20)]:
