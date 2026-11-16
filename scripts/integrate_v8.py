@@ -1,6 +1,9 @@
 import bpy,bmesh,sys,json
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'scripts'))
+from fix_window_normals import fix_window_normals
+window_report=fix_window_normals(R/'scripts')
+(R/'docs/v8-window-validation.json').write_text(json.dumps(window_report,ensure_ascii=False,indent=2))
 from station_west_v8 import refine_west_access
 report=refine_west_access();col=bpy.data.collections['22_West_access_photo_v8'];groups={}
 for o in list(col.objects):
