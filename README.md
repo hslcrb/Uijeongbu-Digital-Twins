@@ -3,7 +3,7 @@
 
 ## 의정부역 Blender 외관 연구
 
-- [최신 7차 Blender 복원·다운로드](blender/v7/README.md)
+- [최신 7차 Blender 복원·다운로드](blender/v8/README.md)
 - [도시 전체 윤곽 Blender](blender/city/Uijeongbu_City_Outline.blend)
 - [기존 v4 호환 스냅샷](Uijeongbu_Station_v1.blend), [v5 보존본](blender/v5/README.md)
 - [최신 서측 낮](renders/west-v7.jpg) · [서측 밤](renders/west-night-v7.jpg) · [도시 통합 전경](renders/city-integration.jpg)
@@ -30,3 +30,7 @@ https://twin.uijeongbu.rhee.life/
 2025년 사진과 지도 계단 방향을 기준으로 서측 접근·유리 캐노피·보조동 루버를 보강하고, 중복 계단·떠 있는 지면 측면·데크 아래에 있던 조명 기둥을 교정했다. 새 부품은 재질별5개 메시로 묶었다. [근거와 추정 구분](docs/WEST_V7_EVIDENCE.md)을 참조한다. 포켓쉼터 가구와 택시쉼터는 정확한 위치가 아직 확인되지 않아 임의 배치하지 않았다.
 
 최신 역 Blender는 `python blender/v7/restore.py`로 분할 보존본을 검증·복원한다. 루트의 `Uijeongbu_Station_v1.blend`는 최신 파일이 아니라 이전 v4 스냅샷이다. 웹은 `web/assets/station.glb.gz`를 빌드시 복원하여 최신 모델을 사용한다.
+
+## 8차 창 형상 교정 및 서측 사진 세부
+
+최신 원본은 [v8 복원 안내](blender/v8/README.md)를 따른다. 493개 footprint 방향을 검증하고, 안쪽 여유 두께를 넘어가는 절차적 방을 제한했다. 서측 수평 진입처마·유리 격자·원형 주기둥·석재 측벽을 추가했다. [변경 전](renders/windows-before-v8.png) · [변경 후](renders/windows-after-v8.png) · [서측 낮](renders/west-v8.jpg) · [서측 밤](renders/west-night-v8.jpg). 실제 창 배치·실내 점유는 측량 자료가 아닌 근사다.

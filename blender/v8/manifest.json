@@ -1,0 +1,17 @@
+{
+  "output": "Uijeongbu_Station_v8.blend",
+  "bytes": 14581076,
+  "sha256": "f8606e604acd43235a680c44eacf1c7b76b4799f0efc361943faa0ab95c0fb15",
+  "parts": [
+    {
+      "name": "Uijeongbu_Station_v8.blend.part01",
+      "bytes": 7290538,
+      "sha256": "a58e8a7954d8a9f2404f4839897d0bc835950a2a49a5fd7cbac39f0df5ca354b"
+    },
+    {
+      "name": "Uijeongbu_Station_v8.blend.part02",
+      "bytes": 7290538,
+      "sha256": "2586729b85ffa7e56bc4359f29e5e6de3f6e801a897c7a64dc72385654b9110f"
+    }
+  ]
+}
