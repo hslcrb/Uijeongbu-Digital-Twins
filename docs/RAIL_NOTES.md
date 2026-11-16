@@ -18,3 +18,6 @@ Image search found a Kyeongin image showing signs pointing toward Uijeongbu, so 
 
 ## Validation
 Blender 5.2.4 Cycles executed successfully. 105 segment bodies, 5,872 sleepers, three merged platform islands, seven material-batched objects. Preview rail-study.png was inspected. This is an isolated geometry QA render, not a finished station view. Canopy width subsequently adjusted to 6.2m as visual approximation.
+
+## Pass 5
+`enhance_rail_bed.py` adds 24,821 angular procedural chips and 11,744 rectangular rail baseplates in six material batches. It assigns a packed 512px original generated ballast texture with explicit UV coordinates so glTF export does not depend on Blender procedural shading. Not a photographic CC0 asset; no external texture claimed. `generate_ballast_texture.py` reproduces it using Pillow. Rail fasteners are simplified baseplates, not exact measured clip replicas. Cycles render verified. Tile density/stone counts are decorative approximations and must not be described as field measurements. All generated closed meshes have recalculated outward normals.
