@@ -1,7 +1,7 @@
 """OSM-aligned visual railway study. Geometry details/elevations are approximations.
 Call add_rail_detail(root) in existing scene. Never saves or changes main.
 """
-import bpy, math, gzip, xml.etree.ElementTree as ET
+import bpy, bmesh, math, gzip, xml.etree.ElementTree as ET
 from pathlib import Path
 from mathutils import Vector
 
@@ -20,7 +20,7 @@ def add_rail_detail(root):
  def box(p,s,m,angle=0):
   x,y,z=p;a,b,c=[v/2 for v in s];ca,sa=math.cos(angle),math.sin(angle)
   v=[(x+u*a*ca-vv*b*sa,y+u*a*sa+vv*b*ca,z+w*c) for u,vv,w in [(-1,-1,-1),(-1,-1,1),(-1,1,-1),(-1,1,1),(1,-1,-1),(1,-1,1),(1,1,-1),(1,1,1)]]
-  facebatch(v,[tuple(reversed(f)) for f in [(0,2,6,4),(1,5,7,3),(0,4,5,1),(2,3,7,6),(0,1,3,2),(4,6,7,5)]],m)
+  facebatch(v,[(0,2,6,4),(1,5,7,3),(0,4,5,1),(2,3,7,6),(0,1,3,2),(4,6,7,5)],m)
  def segment(a,b,w,h,z,m):
   d=b-a;box(((a.x+b.x)/2,(a.y+b.y)/2,z),(d.length,w,h),m,math.atan2(d.y,d.x))
  r=ET.parse(gzip.open(root/'data/map.osm.gz','rb')).getroot();origin=(127.046,37.738)
@@ -68,6 +68,6 @@ def add_rail_detail(root):
     for j in range(0,int((b-a).length),18):
      p=a+u*j;box((p.x,p.y,2.85),(.25,.25,3.3),pave)
  for m,(vs,fs) in batches.items():
-  me=bpy.data.meshes.new(m);me.from_pydata(vs,[],fs);me.update();o=bpy.data.objects.new(m,me);col.objects.link(o);o.data.materials.append(bpy.data.materials[m]);o['visual_approximation']=True
+  me=bpy.data.meshes.new(m);me.from_pydata(vs,[],fs);me.update();bm=bmesh.new();bm.from_mesh(me);bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(me);bm.free();o=bpy.data.objects.new(m,me);col.objects.link(o);o.data.materials.append(bpy.data.materials[m]);o['visual_approximation']=True
  col['source']='OSM map.osm.gz; ODbL; origin 127.046,37.738';col['limitations']='Rail Z, sleeper spacing, platform height/canopy not surveyed; no operational assertions.'
  counts['objects']=len(col.objects);counts['osm_rail_ways']=len(used);print('RAIL_DETAIL',counts);return counts
