@@ -1,0 +1,92 @@
+{
+  "sourceModelSha256": "377ef61ea364259524a43e0e744a57aabcfc8e661c60bfe86ac8b710ba3304d0",
+  "scope": "Node CPU-only same-model route sample; not browser FPS",
+  "legacy": [
+    {
+      "label": "legacy",
+      "name": "hall",
+      "elapsedMs": 941.7966419999998,
+      "ensureMs": 911.7025519999913,
+      "feet": [
+        3.0322884537902848,
+        11.00749586654663,
+        -63.527609647599725
+      ],
+      "grounded": true,
+      "fallbackFrames": 0,
+      "indexRebuilds": 7
+    },
+    {
+      "label": "legacy",
+      "name": "left",
+      "elapsedMs": 457.5590109999998,
+      "ensureMs": 451.6388909999978,
+      "feet": [
+        -5.487430484343791,
+        11.00749586654663,
+        -63.66779930201909
+      ],
+      "grounded": true,
+      "fallbackFrames": 0,
+      "indexRebuilds": 10
+    },
+    {
+      "label": "legacy",
+      "name": "stairs",
+      "elapsedMs": 99.62322900000026,
+      "ensureMs": 95.261113999999,
+      "feet": [
+        -4.920404319360025,
+        11.007494382291044,
+        -67.03252136036637
+      ],
+      "grounded": true,
+      "fallbackFrames": 0,
+      "indexRebuilds": 11
+    }
+  ],
+  "baked": [
+    {
+      "label": "baked",
+      "name": "hall",
+      "elapsedMs": 143.7352249999999,
+      "ensureMs": 9.542350999997325,
+      "feet": [
+        2.9730163157097844,
+        11.007496343379422,
+        -63.522524803698126
+      ],
+      "grounded": true,
+      "fallbackFrames": 0,
+      "indexRebuilds": 0
+    },
+    {
+      "label": "baked",
+      "name": "left",
+      "elapsedMs": 117.8811310000001,
+      "ensureMs": 7.436764999998104,
+      "feet": [
+        -5.554376073352401,
+        11.007496343383789,
+        -63.66286453243387
+      ],
+      "grounded": true,
+      "fallbackFrames": 0,
+      "indexRebuilds": 0
+    },
+    {
+      "label": "baked",
+      "name": "stairs",
+      "elapsedMs": 35.58944599999995,
+      "ensureMs": 3.9701749999994718,
+      "feet": [
+        -4.995967511287276,
+        11.007494848732513,
+        -67.0236186014372
+      ],
+      "grounded": true,
+      "fallbackFrames": 0,
+      "indexRebuilds": 0
+    }
+  ]
+}
