@@ -1,0 +1,11 @@
+import {consistPose} from './rail-simulation.js';
+const cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
+function hull(points){const p=points.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);const l=[],u=[];for(const a of p){while(l.length>1&&cross(l.at(-2),l.at(-1),a)<=0)l.pop();l.push(a)}for(const a of [...p].reverse()){while(u.length>1&&cross(u.at(-2),u.at(-1),a)<=0)u.pop();u.push(a)}return [...l.slice(0,-1),...u.slice(0,-1)];}
+function pointSegment(p,a,b){const x=b[0]-a[0],y=b[1]-a[1],n=x*x+y*y,t=n?Math.max(0,Math.min(1,((p[0]-a[0])*x+(p[1]-a[1])*y)/n)):0;return Math.hypot(p[0]-a[0]-x*t,p[1]-a[1]-y*t)}
+function segmentDistance(a,b,c,d){if(cross(a,b,c)*cross(a,b,d)<0&&cross(c,d,a)*cross(c,d,b)<0)return 0;return Math.min(pointSegment(a,c,d),pointSegment(b,c,d),pointSegment(c,a,b),pointSegment(d,a,b));}
+function inside(p,h){return h.length>2&&h.every((a,i)=>cross(a,h[(i+1)%h.length],p)>=-1e-8)}
+function shapeDistance(a,b){if(inside(a[0],b)||inside(b[0],a))return 0;let d=Infinity;for(let i=0;i<a.length;i++)for(let j=0;j<b.length;j++)d=Math.min(d,segmentDistance(a[i],a[(i+1)%a.length],b[j],b[(j+1)%b.length]));return d;}
+function cars(e,d){const u=e.t.userData,pose=consistPose(e.layer.route,d,u.carCount,u.carSpacing,u.bogieSpan),width=u.carCount===2?2.08:3.12,half=(u.carSpacing-.6-width)/2+3;return pose.cars.map(c=>{const dx=Math.sin(c.heading)*half,dz=Math.cos(c.heading)*half;return {ends:[[c.position[0]-dx,c.position[2]-dz],[c.position[0]+dx,c.position[2]+dz]],radius:width/2+.1}})}
+export function consistsConflict(a,b){const ad=a.held?a.d0:a.next.d,bd=b.held?b.d0:b.next.d,n=Math.max(1,Math.ceil(Math.max(Math.abs(ad-a.d0),Math.abs(bd-b.d0))/5));let ca=cars(a,a.d0),cb=cars(b,b.d0);
+ for(let step=1;step<=n;step++){const na=cars(a,a.d0+(ad-a.d0)*step/n),nb=cars(b,b.d0+(bd-b.d0)*step/n);const ah=ca.map((c,i)=>({points:hull([...c.ends,...na[i].ends]),radius:c.radius})),bh=cb.map((c,i)=>({points:hull([...c.ends,...nb[i].ends]),radius:c.radius}));for(const x of ah)for(const y of bh){const r=x.radius+y.radius;let ax=x.points.map(p=>p[0]),az=x.points.map(p=>p[1]),bx=y.points.map(p=>p[0]),bz=y.points.map(p=>p[1]);if(Math.max(...ax)+r<Math.min(...bx)||Math.max(...bx)+r<Math.min(...ax)||Math.max(...az)+r<Math.min(...bz)||Math.max(...bz)+r<Math.min(...az))continue;if(shapeDistance(x.points,y.points)<r)return true;}ca=na;cb=nb;}return false;
+}

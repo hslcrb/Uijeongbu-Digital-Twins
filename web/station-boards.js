@@ -7,7 +7,7 @@ export function boardRows(layers,time,direction){
   const index=r.stations.findIndex(s=>s.name==='의정부');if(index<0)continue;
   const spacing=r.period/count;
   for(let train=0;train<count;train++){
-   if(trains[train]?.userData?.manualState)continue;
+   if(trains[train]?.userData?.manualState||trains[train]?.userData?.safetyHeld||trains[train]?.userData?.safetyHidden)continue;
    const phase=((time+train*spacing+(trains[train]?.userData?.timeOffset||0))%r.period+r.period)%r.period;
    for(const l of r.legs){
     if(l.i!==index||Math.sign(r.stations[l.j].d-r.stations[l.i].d)!==direction)continue;
