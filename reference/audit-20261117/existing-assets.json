@@ -1,0 +1,202 @@
+[
+  {
+    "path": "Uijeongbu_Station_v1.blend",
+    "bytes": 10645347,
+    "sha256": "458494124b36e2d4e4f98c31ed4b344dc6422334fb4032d94c0c003f11d62628"
+  },
+  {
+    "path": "renders/night-landscape.jpg",
+    "bytes": 160661,
+    "sha256": "3ce3c078bb3d23e7dba56c670bf58ddf8f01eb1f239d8dcc600a207af86e5a65"
+  },
+  {
+    "path": "renders/day-v4.jpg",
+    "bytes": 351361,
+    "sha256": "5a4a48a56766fafaa8f9a5415eff6aa218eab7f861a35064de10fe3de995e72c"
+  },
+  {
+    "path": "renders/east-edge-v7.jpg",
+    "bytes": 90232,
+    "sha256": "5453c86681f2afc595fbd1adef7b72d90608b797498254c114fe47752d09ddd0"
+  },
+  {
+    "path": "renders/interior-stairs.jpg",
+    "bytes": 54694,
+    "sha256": "1f0c6720983a3ce8e8d29a9fe20ed6e8cafd4b2942505eec4d211fb899157fd5"
+  },
+  {
+    "path": "renders/city-integration.jpg",
+    "bytes": 368765,
+    "sha256": "db89d047a2a239df7397bc4dc153834bb8262fca33e268258bfc9a27c6ecaded"
+  },
+  {
+    "path": "renders/city-seam.jpg",
+    "bytes": 492221,
+    "sha256": "fae8f241c50ec05ed1903bff0a79f0fdd42966c0fae0fc2e50c7ac33302aedbc"
+  },
+  {
+    "path": "renders/west-v7.jpg",
+    "bytes": 193494,
+    "sha256": "51bcc1839b7ac892d8c9d77234cfef6a064383a05b5839e00f71fc05522710ac"
+  },
+  {
+    "path": "renders/day-overview.jpg",
+    "bytes": 219188,
+    "sha256": "e4363238d7905ce4aa707668902b44c8ef18784ef40d4da701055af570c2b341"
+  },
+  {
+    "path": "renders/west-night-v8.jpg",
+    "bytes": 171446,
+    "sha256": "9f9c30d386a6b3954fd07d02fb119ccd256b07b1c6a69437a489bc544c7ddcf7"
+  },
+  {
+    "path": "renders/plaza-v4.jpg",
+    "bytes": 409108,
+    "sha256": "bd7679a04636f0b318955f2454f6f704ae29d21a2201f6191d37be5eb318c869"
+  },
+  {
+    "path": "renders/day-v5.jpg",
+    "bytes": 338030,
+    "sha256": "1b537d0620d1a5c25f3be372e082f82a95b36918aa635fb9e79e26f2430d009d"
+  },
+  {
+    "path": "renders/rail-v5.jpg",
+    "bytes": 434686,
+    "sha256": "b65b8eb0297cee3035e09ad789f84e8b84554edeec865082f71a95b7b3cf89d6"
+  },
+  {
+    "path": "renders/night-overview.jpg",
+    "bytes": 137154,
+    "sha256": "fff0b3e352d8bc60d51b324be9442e2b6ab81a0e535983ef339a0428eecd5821"
+  },
+  {
+    "path": "renders/windows-before-v8.png",
+    "bytes": 773988,
+    "sha256": "68c64d2622f5ccb06c6f9333f92cfc4d433b3b3b060d2295a55f0473605db8ca"
+  },
+  {
+    "path": "renders/night-v4.jpg",
+    "bytes": 435397,
+    "sha256": "b90387185238e18940160635f1fdfcb67b74dc09196738778be9b6995b98296f"
+  },
+  {
+    "path": "renders/night-v5.jpg",
+    "bytes": 429783,
+    "sha256": "2c6c535cab606a14009f267e0ad1a868a6a917dadc20b870ea0404757b47cfa5"
+  },
+  {
+    "path": "renders/windows-after-v8.png",
+    "bytes": 765708,
+    "sha256": "0608661b747a5119ecd684cd8e414c1571a6472d0666b10d61b6b1c44ddfa2cc"
+  },
+  {
+    "path": "renders/west-night-v7.jpg",
+    "bytes": 169938,
+    "sha256": "d1d8e07623888525f60254947c0d7137db39f89d192845b7f31aefff08305aca"
+  },
+  {
+    "path": "renders/underpass.jpg",
+    "bytes": 109491,
+    "sha256": "17b8b426aad3aea9c5987a365a03e5191ccbbdf6202b783a792d37ed8bd94da1"
+  },
+  {
+    "path": "renders/station-cladding-v5.jpg",
+    "bytes": 284039,
+    "sha256": "e62fee3666eedd1b0cf8228275a9996dcf675a484d9bb4988cef0b16d1c25860"
+  },
+  {
+    "path": "renders/west-v8.jpg",
+    "bytes": 197403,
+    "sha256": "ba6ad6806380115807d928486def311e10059efe8fd2aff1523acbd660784d7b"
+  },
+  {
+    "path": "renders/interior-concourse.jpg",
+    "bytes": 143828,
+    "sha256": "62b147b3c7ebad7df9852c7927075881bc42794c37612d330a79a8719549e0f9"
+  },
+  {
+    "path": "renders/rail-v4.jpg",
+    "bytes": 363916,
+    "sha256": "97ef94653b26bc9145aff778aa65c6bf59f130c9e882ed512b5af82319cac986"
+  },
+  {
+    "path": "renders/plaza.jpg",
+    "bytes": 90274,
+    "sha256": "fae00f9b986094c1f96e9f33b294a3353f4979b4d6a38173efeaf4f0ae0cdcf5"
+  },
+  {
+    "path": "renders/interior-gates.jpg",
+    "bytes": 64528,
+    "sha256": "a34c130ba2ad1cab6d2fa1634d0a45ee9d7ea395a444ceef19ab4b244e34e42b"
+  },
+  {
+    "path": "data/map.osm.gz",
+    "bytes": 166430,
+    "sha256": "6aad398f3f9ed5a8dd6719465f5d37154992af2dded9cd2c1b330ff5afd982f7"
+  },
+  {
+    "path": "assets/hanwha-label.otf",
+    "bytes": 3204,
+    "sha256": "4d30a13fe46aedb187fb72a3403ca62b42b8ccc3bbfab7feec5e4466dc4e53ec"
+  },
+  {
+    "path": "assets/polyhaven-tree-small02-seasonal.blend",
+    "bytes": 10483250,
+    "sha256": "b267edf393febb2d21aa8f9fe95cb42965f9b8db4e03d4dd5085da9fcbd6dc31"
+  },
+  {
+    "path": "assets/trees.blend",
+    "bytes": 1100461,
+    "sha256": "74dc15fec6b7773f597e166ddd55edc0b8953adc2c438b995e42ad9ebefe4b9a"
+  },
+  {
+    "path": "assets/Uijeongbu_Concourse_Study.blend",
+    "bytes": 670710,
+    "sha256": "44eaa7788ae79b9298ffa4a2817c80a282dff5bcebafb143eef1440eb1e0b97d"
+  },
+  {
+    "path": "assets/rail-ballast-procedural.png",
+    "bytes": 98563,
+    "sha256": "bc479e7ddb9f7a8aa7f72da6f025891f255e12d5d1de7a4da1cfdcf4551eb133"
+  },
+  {
+    "path": "assets/station-labels.otf",
+    "bytes": 17760,
+    "sha256": "d83092b8f63fdd96dc87ee90b1a52e357bd4fee5f5cc965025d5487258cf7a44"
+  },
+  {
+    "path": "web/collision/tiles-bundle.part000",
+    "bytes": 7000000,
+    "sha256": "a15967db2ecd36defb99170aa24a5b0f1723f8ebc7384ff93ed4b961a35c32a5"
+  },
+  {
+    "path": "web/collision/tiles-bundle.part001",
+    "bytes": 5909070,
+    "sha256": "803e4355a4a66468c65c8abe89a0fe82c4849def02bc34cf4617aa8896e0500a"
+  },
+  {
+    "path": "web/assets/station.glb.gz",
+    "bytes": 9046019,
+    "sha256": "602c59baf88b37e30fb3b97d791f4590913f78fa9a25451123a2f9c3a91e8c82"
+  },
+  {
+    "path": "web/assets/station.glb",
+    "bytes": 10783996,
+    "sha256": "bdefff8f043aa1ec30a83326a6679c4e36e10f9270b62f1debd0221655e0f9d5"
+  },
+  {
+    "path": "web/city/city-tiles.tar.gz",
+    "bytes": 3715954,
+    "sha256": "1c332735575ac17788a4955bf3cf1d12038441282dc85abbe8bff97ba56f2295"
+  },
+  {
+    "path": "blender/city/Uijeongbu_City_Outline.blend",
+    "bytes": 8846008,
+    "sha256": "834ca1b63f524f1417a36668fc051c848fe3371f286be9aa1ea9a5d0876ef7cb"
+  },
+  {
+    "path": "city/data/osm-source-tiles.tar.gz",
+    "bytes": 6430288,
+    "sha256": "1ca971862525ccec6618e47e46f1293c00682bae972f5fbdc186cd2161d564c0"
+  }
+]
