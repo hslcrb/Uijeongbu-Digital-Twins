@@ -4,10 +4,12 @@ import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 export function createRollingStock(route={}){
  const light=route.line==='uline',count=light?2:10,w=light?2.08:3.12,l=light?13.7:19.5,gap=light?.6:.6;
  const colors={body:0xc6cdd2,glass:0x132c3a,blue:light?0x28883e:0x164b8b,red:light?0xda3e36:0xd44848,dark:0x343b40,roof:0xe0e4e5,white:0xfff2cc};
- const buckets=Object.fromEntries(Object.keys(colors).map(k=>[k,[]])),parts={windows:0,doors:0,wheels:0};let pantographs=0;
- function box(k,x,y,z,sx,sy,sz,rx=0,ry=0,rz=0){let g=new THREE.BoxGeometry(sx,sy,sz);g.rotateX(rx);g.rotateY(ry);g.rotateZ(rz);g.translate(x,y,z);buckets[k].push(g)}
- function wheel(x,y,z){let g=new THREE.CylinderGeometry(light?.28:.43,light?.28:.43,.18,10);g.rotateZ(Math.PI/2);g.translate(x,y,z);buckets.dark.push(g);parts.wheels++}
+ const buckets=Object.fromEntries(Object.keys(colors).map(k=>[k,[]])),parts={windows:0,doors:0,wheels:0};let pantographs=0,activeCar=0;
+ function skin(g){const n=g.attributes.position.count,indices=new Uint16Array(n*4),weights=new Float32Array(n*4);for(let i=0;i<n;i++){indices[i*4]=activeCar;weights[i*4]=1}g.setAttribute("skinIndex",new THREE.Uint16BufferAttribute(indices,4));g.setAttribute("skinWeight",new THREE.Float32BufferAttribute(weights,4));return g;}
+ function box(k,x,y,z,sx,sy,sz,rx=0,ry=0,rz=0){let g=new THREE.BoxGeometry(sx,sy,sz);g.rotateX(rx);g.rotateY(ry);g.rotateZ(rz);g.translate(x,y,z);buckets[k].push(skin(g))}
+ function wheel(x,y,z){let g=new THREE.CylinderGeometry(light?.28:.43,light?.28:.43,.18,10);g.rotateZ(Math.PI/2);g.translate(x,y,z);buckets.dark.push(skin(g));parts.wheels++}
  for(let c=0;c<count;c++){
+  activeCar=c;
   const z=-c*(l+gap),bodyY=light?1.95:2.35,h=light?2.45:2.8,top=bodyY+h/2;
   box('body',0,bodyY,z,w,h,l);box(light?'red':'roof',0,top+.12,z,w*.96,.24,l-.4);box('dark',0,light?.6:.8,z,w*.8,.55,l-2);
   for(let side of [-1,1]){
@@ -29,6 +31,6 @@ export function createRollingStock(route={}){
    box('dark',0,.7,ez+end*.3,.35,.22,.5);
   }
  }
- let train=new THREE.Group();for(let [k,geometries] of Object.entries(buckets)){if(!geometries.length)continue;let geometry=mergeGeometries(geometries);for(let g of geometries)g.dispose();train.add(new THREE.Mesh(geometry,new THREE.MeshLambertMaterial({color:colors[k]})));}
- train.userData={carCount:count,pantographs,parts,modelLabel:light?'VAL208 참고 2량 근사 모델':'코레일 통근형 참고 10량 근사 모델'};return train;
+ let train=new THREE.Group();const bones=Array.from({length:count},(_,i)=>{const b=new THREE.Bone();b.name='car-'+i;b.position.z=-i*(l+gap);train.add(b);return b;});train.updateMatrixWorld(true);const skeleton=new THREE.Skeleton(bones);for(let [k,geometries] of Object.entries(buckets)){if(!geometries.length)continue;let geometry=mergeGeometries(geometries);for(let g of geometries)g.dispose();const mesh=new THREE.SkinnedMesh(geometry,new THREE.MeshLambertMaterial({color:colors[k]}));mesh.bind(skeleton);mesh.frustumCulled=false;train.add(mesh);}
+ train.userData={carCount:count,carSpacing:l+gap,bogieSpan:l*.62,pantographs,parts,modelLabel:light?'VAL208 참고 2량 근사 모델':'코레일 통근형 참고 10량 근사 모델'};return train;
 }
