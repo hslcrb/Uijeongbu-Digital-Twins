@@ -1,12 +1,14 @@
 import * as THREE from 'three';
 import {LocalCollisionWorld} from './local-collision.js';
 import {CapsuleMotor} from './walking-physics.js';
+import {CONCOURSE_ENTRY,resolveWalkEntry} from './walk-entry.js';
 
 export class Walking {
  constructor({model,camera,canvas,controls,onChange}){
   Object.assign(this,{model,camera,canvas,controls,onChange});this.active=false;this.selecting=false;this.keys=new Set();this.euler=new THREE.Euler(0,0,0,'YXZ');this.raycaster=new THREE.Raycaster();this.spawn=null;this.world=null;
   this.button=document.createElement('button');this.button.id='walk';this.button.textContent='보행 시작';this.button.setAttribute('aria-pressed','false');document.querySelector('.tools').append(this.button);
   this.help=document.createElement('div');this.help.id='walk-help';this.help.setAttribute('role','status');this.help.hidden=true;document.body.append(this.help);
+  this.interiorButton=document.createElement('button');this.interiorButton.id='walk-interior';this.interiorButton.textContent='대합실 입장';this.interiorButton.title='사진 기반 대합실 연구 모델로 이동 (실측 위치 아님)';document.querySelector('.tools').append(this.interiorButton);this.interiorButton.onclick=()=>this.enterConcourse();
   this.button.onclick=()=>this.active||this.selecting?this.stop():this.select();
   canvas.addEventListener('click',e=>{if(this.selecting)this.place(e);else if(this.active)this.lock()});
   document.addEventListener('mousemove',e=>{if(this.active&&document.pointerLockElement===canvas)this.look(e.movementX,e.movementY)});
@@ -23,6 +25,7 @@ export class Walking {
   const feet=hit.point.clone().add(new THREE.Vector3(0,.025,0));const motor=new CapsuleMotor(this.world,feet);const obstruction=this.world.capsuleIntersect(motor.capsule);if(obstruction&&obstruction.depth>.04){this.help.textContent='머리나 몸이 끼이는 위치입니다. 조금 더 넓은 바닥을 선택하세요.';return}
   this.motor=motor;this.spawn=feet;this.active=true;this.selecting=false;this.button.textContent='보행 종료';this.button.setAttribute('aria-pressed','true');this.canvas.style.cursor='';this.euler.setFromQuaternion(this.camera.quaternion,'YXZ');this.euler.z=0;this.camera.position.copy(motor.eye);this.camera.near=.05;this.camera.updateProjectionMatrix();this.help.textContent='WASD 이동 · Shift 달리기 · Space 점프 · R 시작점 · 화면 드래그/클릭 시점';this.lock();this.onChange();
  }
+ enterConcourse(){if(!this.world)this.world=new LocalCollisionWorld(this.model);try{const motor=resolveWalkEntry(this.world,new THREE.Vector3(...CONCOURSE_ENTRY.feet));this.motor=motor;this.spawn=motor.feet;this.active=true;this.selecting=false;this.keys.clear();this.controls.enabled=false;this.camera.position.copy(motor.eye);this.camera.lookAt(new THREE.Vector3(...CONCOURSE_ENTRY.target));this.euler.setFromQuaternion(this.camera.quaternion,'YXZ');this.euler.z=0;this.camera.near=.05;this.camera.updateProjectionMatrix();this.canvas.style.cursor='';this.button.textContent='보행 종료';this.button.setAttribute('aria-pressed','true');this.help.hidden=false;this.help.textContent='대합실 사진 연구 모델 · 배치/치수 추정 · WASD 이동 · 화면 드래그 시점 · Space 점프 · R 복귀';this.interiorButton.blur();this.onChange()}catch(error){this.help.hidden=false;this.help.textContent=error.message}}
  lock(){try{const p=this.canvas.requestPointerLock?.();p?.catch(()=>{})}catch{}}
  look(x,y){this.euler.y-=x*.002;this.euler.x=THREE.MathUtils.clamp(this.euler.x-y*.002,-Math.PI*.48,Math.PI*.48);this.camera.quaternion.setFromEuler(this.euler);this.onChange()}
  reset(){if(this.motor&&this.spawn){this.motor.reset(this.spawn);this.camera.position.copy(this.motor.eye);this.keys.clear();this.onChange()}}
