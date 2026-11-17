@@ -379,3 +379,18 @@ Blender 5.2.4 LTS, Cycles 48샘플로 같은 사선 뷰와 천장 근접 뷰를 
 - 정확도: 사진 기반 추정이며 실측 100% 복제라고 평가하지 않는다. 배포 성공은 원격 빌드와 공개 모델 해시를 별도로 확인한다.
 
 - 원격 게시에는 gzip 원본을 사용한다. 저장소의 압축되지 않은 기존 GLB는 그대로지만 배포 시 build.mjs가 새 gzip에서 정확한 v13c 바이트를 복원한다.
+
+## 2026-11-17 — rail network first working layer
+
+### Problem and source decision
+The user asked to extend the railway through all endpoints including Sinchang, with simplified surrounding terrain, repeating trains and station displays. Instead of extrapolating straight lines between city names, six OpenStreetMap route relation geometries were retrieved and checked for continuous shared nodes. See `RAIL_NETWORK_SOURCES.md` and the dataset metadata for relation IDs, attribution, and ODbL terms.
+
+### Implemented
+A separate railway scene uses the same camera/renderer but does not pretend the large flat network terrain is the detailed Uijeongbu city model. Six selectable paths cover Yeoncheon–Incheon, Kwangwoon–Sinchang, Kwangwoon–Seodongtan, Yeongdeungpo–Gwangmyeong, and both directions of the U Line including the temporary depot platform. Source station positions snap exactly onto the selected paths. Twin metal rail ribbons use standard-gauge visual spacing along the source centerline. Generic platforms, station labels, three-car procedural train placeholders, station selection, route overview and first-train follow are provided.
+
+The deterministic illustrative timetable dwells 25 seconds per stop and runs at 18 m/s, with evenly spaced phases capped at 64 trains per selected route. The displayed headway is calculated from that cap, not a false official timetable. Boards reflect this same simulation clock; 1x, 10x, 60x and pause are available. Inbound/outbound movement uses the same selected alignment. This is not a railway signalling/interlocking or collision simulation.
+
+### Verification and limitations
+Projection, stopping/turnback, nonnegative sorted arrival predictions, source station snapping and finite simulation of all six real paths were tested. Actual Three.js scene construction/switching/animation/disposal was tested with a minimal DOM fixture. Full project tests and build passed. Chromium GUI/GPU execution failed with `socket() failed: Operation not permitted`, including escalated retry, so actual browser interaction and image fidelity are NOT yet verified.
+
+This is a first usable network layer, not all railway engineering trackwork: sidings, switches, both actual directional tracks, exact elevation/grades, real rolling-stock exteriors, surveyed station buildings/interiors, every service pattern and live timetables remain incomplete. The U Line depot platform is included physically; OSM's inactive-stop tag versus the operator timetable's listed platform is preserved as a source discrepancy. Sinchang relation track geometry extends approximately 308 m beyond its station stop; trains turn at the stop, not the relation's far endpoint. Existing detailed-station walking physics is disabled in network mode because these generic platforms do not yet have a collision representation.
