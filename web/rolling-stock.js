@@ -1,8 +1,9 @@
+import {isLightRail,railLayerHeight} from './rail-contract.js';
 import * as THREE from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 // Original procedural approximation, not a scanned manufacturer's model.
 export function createRollingStock(route={}){
- const light=route.line==='uline',count=light?2:10,w=light?2.08:3.12,l=light?13.7:19.5,gap=light?.6:.6;
+ const light=isLightRail(route),count=light?2:10,w=light?2.08:3.12,l=light?13.7:19.5,gap=light?.6:.6;
  const colors={body:0xc6cdd2,glass:0x132c3a,blue:light?0x28883e:0x164b8b,red:light?0xda3e36:0xd44848,dark:0x343b40,roof:0xe0e4e5,white:0xfff2cc};
  const buckets=Object.fromEntries(Object.keys(colors).map(k=>[k,[]])),parts={windows:0,doors:0,wheels:0};let pantographs=0,activeCar=0;
  function skin(g){const n=g.attributes.position.count,indices=new Uint16Array(n*4),weights=new Float32Array(n*4);for(let i=0;i<n;i++){indices[i*4]=activeCar;weights[i*4]=1}g.setAttribute("skinIndex",new THREE.Uint16BufferAttribute(indices,4));g.setAttribute("skinWeight",new THREE.Float32BufferAttribute(weights,4));return g;}
