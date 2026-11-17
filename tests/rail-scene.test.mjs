@@ -3,16 +3,18 @@ import test from 'node:test';import assert from 'node:assert/strict';import fs f
 class Element{constructor(){this.children=[];this.nodes={};this.value='0'}append(x){this.children.push(x)}querySelector(id){return this.nodes[id]??=(new Element())}add(x){this.children.push(x)}replaceChildren(){this.children=[]}setAttribute(){}getContext(){return {fillRect(){},fillText(){}}}}
 globalThis.document={createElement:()=>new Element(),body:new Element(),querySelector:()=>new Element()};globalThis.Option=class{constructor(text,value){Object.assign(this,{text,value})}};
 globalThis.fetch=async()=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(new URL('../web/rail/network.json',import.meta.url)))});
-test('all actual route scenes build, switch, animate and dispose',async()=>{const camera=new THREE.PerspectiveCamera(),controls={target:new THREE.Vector3(),update(){}};let r=new RailNetwork({camera,controls,schedule(){},stopWalking(){}});await r.init();r.set(true);for(let i=0;i<r.routes.length;i++){r.choose(i);r.update(1);assert.ok(r.group.children.length>r.route.stations.length);assert.ok(r.trains.length<=64);assert.ok(r.trains.every(t=>t.position.toArray().every(Number.isFinite)));r.stationView();assert.ok(camera.position.toArray().every(Number.isFinite));}r.set(false);assert.equal(r.panel.hidden,true);r.clear();assert.equal(r.group.children.length,0)});
+test('all actual route scenes build, switch, animate and dispose',async()=>{const camera=new THREE.PerspectiveCamera(),controls={target:new THREE.Vector3(),update(){}};let r=new RailNetwork({scene:new THREE.Scene(),camera,controls,schedule(){},stopWalking(){}});await r.init();r.set(true);for(let i=0;i<r.routes.length;i++){r.choose(i);r.update(1);assert.ok(r.layers[i].group.children.length>r.route.stations.length);assert.ok(r.trains.length<=64);assert.ok(r.trains.every(t=>t.position.toArray().every(Number.isFinite)));r.stationView();assert.ok(camera.position.toArray().every(Number.isFinite));}r.set(false);assert.equal(r.panel.hidden,true);r.clear();assert.equal(r.group.children.length,0)});
 
 import {positionAt} from '../web/rail-simulation.js';
 test('platforms remain eight meters perpendicular to each station track',async()=>{
  const camera=new THREE.PerspectiveCamera(),controls={target:new THREE.Vector3(),update(){}};
- const r=new RailNetwork({camera,controls,schedule(){},stopWalking(){}});await r.init();
+ const r=new RailNetwork({scene:new THREE.Scene(),camera,controls,schedule(){},stopWalking(){}});await r.init();
  for(let route=0;route<r.routes.length;route++){
-  r.choose(route);const platforms=r.group.children.filter(o=>o.geometry?.parameters?.width===8);
+  r.choose(route);const platforms=r.layers[route].group.children.filter(o=>o.geometry?.parameters?.width===8);
   assert.equal(platforms.length,r.route.stations.length);
   platforms.forEach((platform,i)=>{const p=positionAt(r.route,r.route.stations[i].d),dx=platform.position.x-p.position[0],dz=platform.position.z-p.position[2];assert.ok(Math.abs(Math.hypot(dx,dz)-8)<1e-6);assert.ok(Math.abs(dx*Math.sin(p.heading)+dz*Math.cos(p.heading))<1e-6,'platform offset must be perpendicular, not along track');});
  }
  r.clear();
 });
+
+ test('one world retains every route, station model, animation and walking when panel closes',async()=>{const scene=new THREE.Scene(),station=new THREE.Group();station.name='Station';scene.add(station);let stopped=0;const camera=new THREE.PerspectiveCamera(),controls={target:new THREE.Vector3(),update(){}};const r=new RailNetwork({scene,camera,controls,schedule(){},stopWalking(){stopped++}});await r.init();assert.equal(r.scene,scene);assert.equal(scene.children.includes(station),true);assert.equal(r.layers.length,r.routes.length);const groups=r.layers.map(l=>l.group);r.set(true);r.set(false);assert.equal(stopped,0);r.update(1);const time=r.time;r.choose(1,false);assert.equal(r.time,time);assert.deepEqual(r.layers.map(l=>l.group),groups);r.update(1);assert.ok(r.time>time);assert.ok(r.layers.every(l=>l.trains.every(t=>t.position.toArray().every(Number.isFinite))));assert.ok(r.layers.reduce((a,l)=>a+l.trains.length,0)<=60);r.clear();});
