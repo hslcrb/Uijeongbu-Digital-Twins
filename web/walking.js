@@ -1,0 +1,31 @@
+import * as THREE from 'three';
+import {LocalCollisionWorld} from './local-collision.js';
+import {CapsuleMotor} from './walking-physics.js';
+
+export class Walking {
+ constructor({model,camera,canvas,controls,onChange}){
+  Object.assign(this,{model,camera,canvas,controls,onChange});this.active=false;this.selecting=false;this.keys=new Set();this.euler=new THREE.Euler(0,0,0,'YXZ');this.raycaster=new THREE.Raycaster();this.spawn=null;this.world=null;
+  this.button=document.createElement('button');this.button.id='walk';this.button.textContent='보행 시작';this.button.setAttribute('aria-pressed','false');document.querySelector('.tools').append(this.button);
+  this.help=document.createElement('div');this.help.id='walk-help';this.help.setAttribute('role','status');this.help.hidden=true;document.body.append(this.help);
+  this.button.onclick=()=>this.active||this.selecting?this.stop():this.select();
+  canvas.addEventListener('click',e=>{if(this.selecting)this.place(e);else if(this.active)this.lock()});
+  document.addEventListener('mousemove',e=>{if(this.active&&document.pointerLockElement===canvas)this.look(e.movementX,e.movementY)});
+  // Drag-to-look fallback also works without pointer-lock support and on touch.
+  let drag=null;canvas.addEventListener('pointerdown',e=>{if(this.active&&document.pointerLockElement!==canvas){drag={x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId)}});
+  canvas.addEventListener('pointermove',e=>{if(drag&&this.active&&document.pointerLockElement!==canvas){this.look(e.clientX-drag.x,e.clientY-drag.y);drag={x:e.clientX,y:e.clientY}}});canvas.addEventListener('pointerup',()=>drag=null);
+  document.addEventListener('pointerlockchange',()=>{this.keys.clear();if(this.active){this.help.textContent=document.pointerLockElement===canvas?'WASD 이동 · Shift 달리기 · Space 점프 · R 시작점 · Esc 마우스 해제':'화면 클릭으로 시점 조작 · WASD 이동 · R 시작점 · 보행 종료 버튼';this.onChange()}});
+  addEventListener('keydown',e=>{if(e.target.closest?.('input,select,textarea,button,[contenteditable]')||!this.active||document.querySelector('dialog[open]')||e.ctrlKey||e.metaKey||e.altKey)return;if(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space','ShiftLeft','ShiftRight','KeyR'].includes(e.code)){e.preventDefault();this.keys.add(e.code);if(e.code==='Space'&&!e.repeat)this.motor.jump();if(e.code==='KeyR')this.reset();this.onChange()}});
+  addEventListener('keyup',e=>this.keys.delete(e.code));addEventListener('blur',()=>this.keys.clear());document.addEventListener('visibilitychange',()=>this.keys.clear());
+ }
+ select(){this.selecting=true;this.controls.enabled=false;this.button.textContent='보행 취소';this.help.hidden=false;this.help.textContent='걷고 싶은 바닥을 클릭하세요. 모델에 구현된 바닥·벽만 충돌합니다. 미구현 내부는 재현되지 않습니다.';this.canvas.style.cursor='crosshair';this.onChange()}
+ place(e){const rect=this.canvas.getBoundingClientRect();this.raycaster.setFromCamera(new THREE.Vector2((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1),this.camera);const hit=this.raycaster.intersectObject(this.model,true)[0];if(!hit?.face)return;const normal=hit.face.normal.clone().applyMatrix3(new THREE.Matrix3().getNormalMatrix(hit.object.matrixWorld)).normalize();if(normal.y<.65){this.help.textContent='벽이나 급경사가 아닌 평평한 바닥을 선택하세요.';return}
+  if(!this.world)this.world=new LocalCollisionWorld(this.model);try{this.world.ensure(hit.point)}catch(error){this.help.textContent=error.message;return}
+  const feet=hit.point.clone().add(new THREE.Vector3(0,.025,0));const motor=new CapsuleMotor(this.world,feet);const obstruction=this.world.capsuleIntersect(motor.capsule);if(obstruction&&obstruction.depth>.04){this.help.textContent='머리나 몸이 끼이는 위치입니다. 조금 더 넓은 바닥을 선택하세요.';return}
+  this.motor=motor;this.spawn=feet;this.active=true;this.selecting=false;this.button.textContent='보행 종료';this.button.setAttribute('aria-pressed','true');this.canvas.style.cursor='';this.euler.setFromQuaternion(this.camera.quaternion,'YXZ');this.euler.z=0;this.camera.position.copy(motor.eye);this.camera.near=.05;this.camera.updateProjectionMatrix();this.help.textContent='WASD 이동 · Shift 달리기 · Space 점프 · R 시작점 · 화면 드래그/클릭 시점';this.lock();this.onChange();
+ }
+ lock(){try{const p=this.canvas.requestPointerLock?.();p?.catch(()=>{})}catch{}}
+ look(x,y){this.euler.y-=x*.002;this.euler.x=THREE.MathUtils.clamp(this.euler.x-y*.002,-Math.PI*.48,Math.PI*.48);this.camera.quaternion.setFromEuler(this.euler);this.onChange()}
+ reset(){if(this.motor&&this.spawn){this.motor.reset(this.spawn);this.camera.position.copy(this.motor.eye);this.keys.clear();this.onChange()}}
+ stop(){window.__walking={active:false};this.active=false;this.selecting=false;this.keys.clear();if(document.pointerLockElement===this.canvas)document.exitPointerLock();this.controls.enabled=true;const direction=new THREE.Vector3();this.camera.getWorldDirection(direction);this.controls.target.copy(this.camera.position).addScaledVector(direction,8);this.controls.update();this.help.hidden=true;this.button.textContent='보행 시작';this.button.setAttribute('aria-pressed','false');this.canvas.style.cursor='';this.onChange()}
+ update(delta){if(!this.active)return;const forward=new THREE.Vector3(-Math.sin(this.euler.y),0,-Math.cos(this.euler.y)),right=new THREE.Vector3(Math.cos(this.euler.y),0,-Math.sin(this.euler.y)),direction=new THREE.Vector3();if(!document.querySelector('dialog[open]')){if(this.keys.has('KeyW')||this.keys.has('ArrowUp'))direction.add(forward);if(this.keys.has('KeyS')||this.keys.has('ArrowDown'))direction.sub(forward);if(this.keys.has('KeyD')||this.keys.has('ArrowRight'))direction.add(right);if(this.keys.has('KeyA')||this.keys.has('ArrowLeft'))direction.sub(right)}try{this.world.ensure(this.motor.feet)}catch(error){this.stop();this.help.hidden=false;this.help.textContent=error.message;return}this.motor.update(delta,direction,this.keys.has('ShiftLeft')||this.keys.has('ShiftRight'));if(this.motor.feet.y<this.spawn.y-80)this.reset();this.camera.position.copy(this.motor.eye);this.controls.target.copy(this.camera.position).add(forward);window.__walking={active:true,grounded:this.motor.grounded,feet:this.motor.feet.toArray(),velocity:this.motor.velocity.toArray(),collisionTriangles:this.world.triangleCount}}
+}
