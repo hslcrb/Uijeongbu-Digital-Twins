@@ -1,0 +1,6 @@
+import fs from 'node:fs';import {pathToFileURL} from 'node:url';
+const load=p=>import(pathToFileURL(process.cwd()+'/web/'+p));const {prepareRoute}=await load('rail-simulation.js'),{advanceFleet}=await load('fleet-spacing.js'),{isLightRail,railLayerHeight}=await load('rail-contract.js');
+for(const [dt,duration] of [[1,3600],[.05,600]]){
+const layers=JSON.parse(fs.readFileSync('web/rail/network.json')).routes.map(raw=>{const route=prepareRoute(raw,{speed:raw.speed||18,dwell:25}),count=Math.min(10,Math.ceil(route.period/180));return {route,group:{position:{y:railLayerHeight(raw)}},spacing:route.period/count,trains:Array.from({length:count},()=>({userData:{carCount:isLightRail(raw)?2:10,carSpacing:isLightRail(raw)?13.7:20,bogieSpan:14}}))}});
+let maxHeld=0,total=0;const started=performance.now();for(let i=1;i<=duration/dt;i++){const t=performance.now();advanceFleet(layers,i*dt,dt,.05);total+=performance.now()-t;maxHeld=Math.max(maxHeld,layers.flatMap(l=>l.trains).filter(t=>t.userData.safetyHeld).length);}
+console.log(JSON.stringify({dt,duration,maxHeld,averageMs:total/(duration/dt),elapsed:performance.now()-started,layers:layers.map(l=>({route:l.route.name,held:l.trains.filter(t=>t.userData.safetyHeld).length,hidden:l.trains.filter(t=>t.userData.safetyHidden).length}))}));}

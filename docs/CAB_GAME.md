@@ -13,3 +13,13 @@ One illustrative nearby platform screen door follows the active train's door sta
 
 ## Validation
 44 tests and build passed: existing fleet override, position-continuous handback, manual ETA exclusion, actual Three scene binding, boarding/cab flow, door/traction locks, route endpoint bounds, and existing world/rail/physics regressions. GPU visual/interaction QA still requires functional WebGL and is not claimed complete.
+
+## Conservative game spacing, next iteration
+All visible automatic and manual trains now share a proximity guard before their positions are applied. It compares swept horizontal centre paths with a conservative radius based on each whole consist's length plus a margin; elevation-separated layers are ignored. On conflict both stop for the current step, manual power is cleared, and automatic phase offsets are held instead of jumping through the obstruction. Repeated checks propagate a stop through following trains. Initially overlapping automatic spawns are temporarily hidden and held until space opens. ETA panels exclude held trains, since release time is unknown.
+
+This is deliberately NOT a real signal/interlocking system, braking-distance simulation, track circuit, or guarantee of real railway safety. Whole-consist circles can stop trains on nearby parallel tracks unnecessarily; opposing trains sharing a simplified single centreline can remain waiting and need a player's reversal. Hidden conflicting spawns reduce visible fleet count. Collision meshes and precise coupler contact are not simulated. These limitations avoid falsely promising an operational traffic control system.
+
+### Review correction: narrow collision shapes and automatic dispatch yield
+Whole-train circles were rejected in review: they incorrectly stopped parallel tracks and caused the simplified shared centreline fleet to deadlock. They are now only a broad phase. The narrow phase uses each car's longitudinal capsule width, swept convex hulls in route-distance intervals no larger than 5m, and includes an explicit 4m-parallel-track regression.
+
+Automatic trains do not both stop indefinitely at a shared-centreline conflict. The lower-priority automatic consist is temporarily removed from the visible simulation and its phase held until it can re-enter without overlap. Player-occupied trains take priority. Two player-occupied trains still stop. This is a disclosed game dispatch approximation: an automatic train may disappear temporarily mid-route; no physical passing manoeuvre, real signal block, siding, or accurate timetable is claimed. It prevents the previous all-fleet freeze without pretending a fully modelled bidirectional track network exists.
