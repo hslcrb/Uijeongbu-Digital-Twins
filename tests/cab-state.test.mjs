@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {CabState} from '../web/cab-state.js';
+test('boarding requires stopped open door and cab sequence',()=>{let s=new CabState({});assert.equal(s.enter(),false);assert.equal(s.cab(),false);s.toggleDoors();assert(s.enter());assert(s.cab());assert.equal(s.command(1),false);s.toggleDoors();assert(s.command(1));s.update(.1);assert(s.v>0);assert.equal(s.toggleDoors(),false);assert.equal(s.exit(),false);});
+test('brake, platform alignment, and route bounds',()=>{let s=new CabState({distance:99,length:100,station:99});s.mode='cab';s.command(1);for(let i=0;i<100;i++)s.update(.1);assert.equal(s.d,100);assert.equal(s.v,0);assert(s.toggleDoors());s.toggleDoors();s.d=50;assert.equal(s.toggleDoors(),false);});
+test('invalid long frame cannot teleport train',()=>{let s=new CabState({});s.mode='cab';s.command(1);s.update(1000);assert(s.d<1);});

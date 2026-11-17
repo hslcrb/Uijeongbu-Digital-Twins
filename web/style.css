@@ -3,3 +3,7 @@
 #walk-help{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);max-width:min(620px,90vw);padding:12px 18px;background:#112331e8;color:#fff;border:1px solid #ffffff35;border-radius:12px;font-size:13px;line-height:1.7;z-index:5;pointer-events:none}#walk-help[hidden]{display:none}#walk[aria-pressed=true]{background:#ecf7ff;color:#152b38}
 
 .rail-panel{position:fixed;right:20px;top:110px;width:min(340px,calc(100vw - 40px));padding:18px;background:rgba(16,30,40,.95);color:#edf3f6;border:1px solid #526775;border-radius:12px;z-index:6;max-height:65vh;overflow:auto}.rail-panel[hidden]{display:none}.rail-panel h2{font-size:17px;margin:0 0 14px}.rail-panel label{display:block;margin:10px 0}.rail-panel select{max-width:100%;background:#243e50;color:white;padding:8px;border:1px solid #6c8596;border-radius:5px}.rail-panel button{padding:7px;margin:3px;border:1px solid #526775;background:#243e50;color:white;border-radius:5px;cursor:pointer}.rail-panel p{white-space:pre-line;font-variant-numeric:tabular-nums;background:#07161d;color:#f4d25f;line-height:1.8;padding:10px}.rail-panel small{display:block;line-height:1.6;color:#b4c8d3}@media(max-width:600px){.rail-panel{top:150px;max-height:50vh}}
+
+.cab-hint{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);max-width:90vw;padding:8px 14px;background:#071e28dd;color:#fff;border-radius:8px;font-size:12px;pointer-events:none;z-index:20}
+
+body.in-cab .tools button:not(#home),body.in-cab .bottom,body.in-cab .walk-controls{display:none}body.in-cab header{opacity:.3}
