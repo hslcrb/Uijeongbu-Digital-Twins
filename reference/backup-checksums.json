@@ -1,0 +1,62 @@
+[
+  {
+    "path": "RESEARCH.md",
+    "bytes": 6181,
+    "sha256": "ae885bd52485441abadaf319bd2ed12607499937060d5cc580e252f1e7feded6"
+  },
+  {
+    "path": "audit-20261117/withheld-third-party.json",
+    "bytes": 354,
+    "sha256": "a5ca4f8dc19d61b8f691e78882c307cdf9d64bee50743db851f8d2f5888b23b4"
+  },
+  {
+    "path": "audit-20261117/source-urls.json",
+    "bytes": 84425,
+    "sha256": "ddaf891894fe5031e9d4f6987b02fa76eb44af268273acb32cd2da3449793a6e"
+  },
+  {
+    "path": "audit-20261117/existing-assets.json",
+    "bytes": 6107,
+    "sha256": "d451520aed9db0fd9c99fcce7cd2f32654f2eb6a32bb9ea8a6e20f238f3deccc"
+  },
+  {
+    "path": "generated-renders/v17-development-reproduction/east-street-v17.png",
+    "bytes": 1039125,
+    "sha256": "3aad057585d4ce5990b8831f81a1dbf85950caf13d28e75e1668af1b246cfc40"
+  },
+  {
+    "path": "generated-renders/v17-development-reproduction/east-v17.png",
+    "bytes": 1063195,
+    "sha256": "6b4f6ed1a2f0216d186587eb14ded4ee9f73d46c2017fc8c0cf9f6d427549dd2"
+  },
+  {
+    "path": "generated-renders/v18-development-reproduction/east-v18.png",
+    "bytes": 1060777,
+    "sha256": "a9aab27750cbcf02594a8f765cc23c245cc17788b127d3fd89aa170a4886aecb"
+  },
+  {
+    "path": "generated-renders/v18-development-reproduction/east-street-v18.png",
+    "bytes": 1039032,
+    "sha256": "686e39b960672092da0747536513fd1eec63d411c678f49487b149451f5c3993"
+  },
+  {
+    "path": "generated-renders/v16-development-reproduction/east-v16.png",
+    "bytes": 1025703,
+    "sha256": "806ea377f2dcfaa4ab25b7c887ead17ee9cf2ae8fd5ffee9448de9b1a7b41282"
+  },
+  {
+    "path": "generated-renders/v15-development-reproduction/east-v15.png",
+    "bytes": 1015354,
+    "sha256": "25e55ff4a88479c2eee99e6c53d77d4bc04d213b1e21fa29929b56884022b9c2"
+  },
+  {
+    "path": "generated-renders/v14-reproduction-and-review/east-v14.png",
+    "bytes": 1011813,
+    "sha256": "4a4ce720b43987b91ca1ed4688fa5a02d1502b2ed6882a9f1811e5f63bf40b38"
+  },
+  {
+    "path": "generated-renders/v14-reproduction-and-review/baseline.png",
+    "bytes": 1010501,
+    "sha256": "0d0da001d159c638d7a25e586a725c2204fe22a06788cb58ccb6dd4571264c75"
+  }
+]

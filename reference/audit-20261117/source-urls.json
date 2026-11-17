@@ -1,0 +1,2204 @@
+[
+  {
+    "url": "http://osm.org/copyright",
+    "evidence_files": [
+      "city/data/boundary-search.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://api.openstreetmap.org/api/0.6/map",
+    "evidence_files": [
+      "city/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://api.openstreetmap.org/api/0.6/map?bbox='+','.join(map(str,box",
+    "evidence_files": [
+      "city/scripts/fetch_tiles.py"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://api.openstreetmap.org/api/0.6/way/1144299903",
+    "evidence_files": [
+      "scripts/recovery-20261117/v14-v18/v17/DEVELOPMENT_v17.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://api.openstreetmap.org/api/0.6/way/1144299904",
+    "evidence_files": [
+      "scripts/recovery-20261117/v14-v18/v17/DEVELOPMENT_v17.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://api.openstreetmap.org/api/0.6/way/1311394039",
+    "evidence_files": [
+      "scripts/recovery-20261117/v14-v18/v16/DEVELOPMENT_v16.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://api.openstreetmap.org/api/0.6/way/1334917247",
+    "evidence_files": [
+      "scripts/recovery-20261117/v14-v18/v15/DEVELOPMENT_v15.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://api.polyhaven.com/files/tree_small_02",
+    "evidence_files": [
+      "docs/TREE_ASSETS.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/Category:Uijeongbu_Station_(Korail",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/tree_small_02/tree_small_02_1k.blend",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/2k/tree_small_02/tree_small_02_2k.blend",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/4k/tree_small_02/tree_small_02_4k.blend",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/8k/tree_small_02/tree_small_02_8k.blend",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_ao_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_arm_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_branch_ao_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_branch_arm_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_branch_diff_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_branch_disp_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_branch_nor_dx_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_branch_nor_gl_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_nor_gl_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/tree_small_02/tree_small_02_rough_1k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_ao_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_arm_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_branch_ao_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_branch_arm_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_branch_diff_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_branch_disp_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_branch_nor_dx_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_branch_nor_gl_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_nor_gl_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/tree_small_02/tree_small_02_rough_2k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_ao_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_arm_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_branch_ao_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_branch_arm_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_branch_diff_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_branch_disp_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_branch_nor_dx_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_nor_gl_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/tree_small_02/tree_small_02_rough_4k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_ao_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_arm_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_branch_ao_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_branch_arm_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_branch_diff_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_branch_disp_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_branch_nor_dx_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_nor_gl_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/tree_small_02/tree_small_02_rough_8k.exr",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/4k/tree_small_02/tree_small_02_4k.fbx",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/8k/tree_small_02/tree_small_02_8k.fbx",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/tree_small_02/tree_small_02_1k.gltf",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/tree_small_02/tree_small_02_2k.gltf",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/tree_small_02/tree_small_02_4k.gltf",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/tree_small_02/tree_small_02.bin",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/tree_small_02/tree_small_02_8k.gltf",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_ao_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_arm_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_branch_ao_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_branch_arm_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_branch_diff_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_branch_disp_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_branch_nor_dx_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_branch_nor_gl_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_diff_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_leaves_arm_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_leaves_diff_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_leaves_nor_gl_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_nor_gl_1k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_ao_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_arm_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_branch_ao_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_branch_arm_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_branch_diff_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_branch_disp_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_branch_nor_dx_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_branch_nor_gl_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_diff_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_leaves_arm_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_leaves_diff_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_leaves_nor_gl_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/tree_small_02/tree_small_02_nor_gl_2k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_ao_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_arm_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_branch_ao_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_branch_arm_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_branch_diff_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_branch_disp_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_branch_nor_dx_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_branch_nor_gl_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_diff_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_leaves_arm_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_leaves_diff_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_leaves_nor_gl_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/tree_small_02/tree_small_02_nor_gl_4k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_ao_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_arm_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_branch_ao_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_branch_arm_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_branch_diff_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_branch_disp_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_branch_nor_dx_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_branch_nor_gl_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_diff_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_leaves_arm_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_leaves_diff_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_leaves_nor_gl_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/tree_small_02/tree_small_02_nor_gl_8k.jpg",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_ao_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_arm_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_ao_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_arm_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_diff_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_disp_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_nor_dx_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_nor_gl_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_rough_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_alpha_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_diff_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_nor_gl_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_rough_1k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_ao_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_arm_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_branch_ao_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_branch_arm_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_branch_diff_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_branch_disp_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_branch_nor_dx_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_branch_nor_gl_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_branch_rough_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_leaves_alpha_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_leaves_diff_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_leaves_nor_gl_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/tree_small_02/tree_small_02_leaves_rough_2k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_ao_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_arm_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_branch_ao_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_branch_arm_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_branch_diff_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_branch_disp_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_branch_nor_dx_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_branch_nor_gl_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_branch_rough_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_leaves_alpha_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_leaves_diff_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_leaves_nor_gl_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/tree_small_02/tree_small_02_leaves_rough_4k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_ao_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_arm_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_branch_ao_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_branch_arm_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_branch_diff_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_branch_disp_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_branch_nor_dx_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_branch_nor_gl_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_branch_rough_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_leaves_alpha_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_leaves_diff_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_leaves_nor_gl_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/tree_small_02/tree_small_02_leaves_rough_8k.png",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/1k/tree_small_02/tree_small_02_1k.usdc",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/2k/tree_small_02/tree_small_02_2k.usdc",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/4k/tree_small_02/tree_small_02_4k.usdc",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/8k/tree_small_02/tree_small_02_8k.usdc",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dl.polyhaven.org/file/ph-ass…10744",
+    "evidence_files": [
+      "assets/polyhaven-download-manifest.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://dldduxhrl.tistory.com/269",
+    "evidence_files": [
+      "docs/NIGHT_LANDSCAPE.md",
+      "docs/STREET_FURNITURE.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/3.6/modeling/geometry_nodes/instances.html",
+    "evidence_files": [
+      "docs/TREE_ASSETS.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/5.0/editors/asset_browser.html",
+    "evidence_files": [
+      "docs/TREE_ASSETS.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://download.blender.org/release/Blender5.2/",
+    "evidence_files": [
+      "docs/TREE_ASSETS.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://example.test/city/'",
+    "evidence_files": [
+      "tests/city-stream.test.mjs"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://github.com/chalk/supports-color?sponsor=1",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://github.com/hslcrb/Uijeongbu-Digital-Twins",
+    "evidence_files": [
+      "web/index.html"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://github.com/notofonts/noto-cjk",
+    "evidence_files": [
+      "LICENSES/OFL.txt"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://github.com/notofonts/noto-cjk/issues",
+    "evidence_files": [
+      "LICENSES/OFL.txt"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://github.com/sindresorhus/is?sponsor=1",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://github.com/sponsors/antfu",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://github.com/sponsors/colinhacks",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+    "evidence_files": [
+      "city/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://hhk2001.tistory.com/8062",
+    "evidence_files": [
+      "docs/DEVELOPMENT_JOURNAL.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://hhk2001.tistory.com/8063",
+    "evidence_files": [
+      "docs/DEVELOPMENT_JOURNAL.md",
+      "scripts/recovery-20261117/entrance-v11/validation.json",
+      "scripts/recovery-20261117/korail-font/README.md",
+      "scripts/recovery-20261117/v14-v18/v18/DEVELOPMENT_v18.md",
+      "scripts/recovery-20261117/v14-v18/v18/research-manifest.json",
+      "scripts/recovery-20261117/west-v12/validation.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://hhk2001.tistory.com/8063','estimated':['dimensions','lamp",
+    "evidence_files": [
+      "scripts/recovery-20261117/entrance-v11/refine.py"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://hhk2001.tistory.com/8063','observed':['blue",
+    "evidence_files": [
+      "scripts/recovery-20261117/west-v12/improve.py"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://hhk2001.tistory.com/8063';o['estimated'",
+    "evidence_files": [
+      "scripts/recovery-20261117/entrance-v11/refine.py"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://image.fnnews.com/resource/media/image/2025/03/19/202503192113432609_l.jpg",
+    "evidence_files": [
+      "docs/NIGHT_LANDSCAPE.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://img.newsro.kr/wp-content/uploads/2025/04/zip_51971_5.jpg",
+    "evidence_files": [
+      "docs/WEST_V7_EVIDENCE.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://info.korail.com/downloadContentsFile.do?key=721&fileNo=809",
+    "evidence_files": [
+      "scripts/recovery-20261117/korail-font/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://info.korail.com/info/contents.do?key=721",
+    "evidence_files": [
+      "docs/DEVELOPMENT_JOURNAL.md",
+      "scripts/recovery-20261117/korail-font/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=aca02a77-35ff-4359-b981-a54dbb90581a",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=eecbe743-aaf1-43c1-8b43-b3f0bbc992e5",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://local.invalid'",
+    "evidence_files": [
+      "scripts/validate-baked-route.mjs"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://local.invalid/'",
+    "evidence_files": [
+      "web/baked-collision.js"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://nominatim.openstreetmap.org/search?q=의정부시&format=json&polygon_geojson=1",
+    "evidence_files": [
+      "city/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://opencollective.com/express",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://opencollective.com/libvips",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://openhanafn.ttmap.co.kr/mobile/content_m.jsp?seq_no=457",
+    "evidence_files": [
+      "docs/HANWHA_FACADE.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://polyhaven.com/a/tree_small_02",
+    "evidence_files": [
+      "docs/TREE_ASSETS.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://polyhaven.com/a/tree_small_02';master['license'",
+    "evidence_files": [
+      "scripts/prepare_polyhaven_tree.py"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://polyhaven.com/license",
+    "evidence_files": [
+      "docs/TREE_ASSETS.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://railway.or.kr/Papers_Conference/201611/pdf/KSR2016A140.pdf",
+    "evidence_files": [
+      "docs/DEVELOPMENT_JOURNAL.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cloudflare/build-output-utils/-/build-output-utils-0.9.14.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cloudflare/config/-/config-0.32.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cloudflare/runtime-types/-/runtime-types-0.1.28.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cloudflare/workerd-darwin-64/-/workerd-darwin-64-1.20261113.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cloudflare/workerd-darwin-arm64/-/workerd-darwin-arm64-1.20261113.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cloudflare/workerd-linux-64/-/workerd-linux-64-1.20261113.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cloudflare/workerd-linux-arm64/-/workerd-linux-arm64-1.20261113.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cloudflare/workerd-windows-64/-/workerd-windows-64-1.20261113.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.11.3.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-freebsd-wasm32/-/sharp-freebsd-wasm32-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-linux-arm/-/sharp-libvips-linux-arm-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-linux-arm64/-/sharp-libvips-linux-arm64-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-linux-ppc64/-/sharp-libvips-linux-ppc64-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-linux-riscv64/-/sharp-libvips-linux-riscv64-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-linux-s390x/-/sharp-libvips-linux-s390x-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-linuxmusl-arm64/-/sharp-libvips-linuxmusl-arm64-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-libvips-linuxmusl-x64/-/sharp-libvips-linuxmusl-x64-1.3.4.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-linux-arm/-/sharp-linux-arm-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-linux-arm64/-/sharp-linux-arm64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-linux-ppc64/-/sharp-linux-ppc64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-linux-riscv64/-/sharp-linux-riscv64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-linux-s390x/-/sharp-linux-s390x-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-linux-x64/-/sharp-linux-x64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-linuxmusl-arm64/-/sharp-linuxmusl-arm64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-linuxmusl-x64/-/sharp-linuxmusl-x64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-wasm32/-/sharp-wasm32-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-webcontainers-wasm32/-/sharp-webcontainers-wasm32-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-win32-arm64/-/sharp-win32-arm64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-win32-ia32/-/sharp-win32-ia32-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.3.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.6.0.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.9.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@poppinss/colors/-/colors-4.1.6.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@poppinss/dumper/-/dumper-0.6.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@poppinss/exception/-/exception-1.2.3.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@sindresorhus/is/-/is-7.2.0.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/@speed-highlight/core/-/core-1.2.24.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/blake3-wasm/-/blake3-wasm-2.1.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/cf/-/cf-1.0.0-beta.32.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/error-stack-parser-es/-/error-stack-parser-es-1.0.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/kleur/-/kleur-4.1.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/miniflare/-/miniflare-5.20261113.0-beta.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/semver/-/semver-7.8.6.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/sharp/-/sharp-0.35.5.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/supports-color/-/supports-color-10.2.2.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/three/-/three-0.187.0.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/tslib/-/tslib-2.9.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/undici/-/undici-7.30.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/workerd/-/workerd-1.20261113.1.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/ws/-/ws-8.21.0.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/youch-core/-/youch-core-0.3.3.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/youch/-/youch-4.1.0-beta.10.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.npmjs.org/zod/-/zod-4.6.6.tgz",
+    "evidence_files": [
+      "package-lock.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://registry.opendata.aws/terrain-tiles/",
+    "evidence_files": [
+      "city/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://s.shinsegae.com/store/main.do?storeCd=SC00010",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N37/N37E127.hgt.gz",
+    "evidence_files": [
+      "city/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://sesshou.tistory.com/entry/기업들이-제공한-서체",
+    "evidence_files": [
+      "scripts/recovery-20261117/korail-font/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://t1.daumcdn.net/cfile/tistory/993FF63F5E1AD89F0A",
+    "evidence_files": [
+      "scripts/recovery-20261117/korail-font/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://t1.daumcdn.net/cfile/tistory/993FF63F5E1AD89F0A';changed.append(name",
+    "evidence_files": [
+      "scripts/recovery-20261117/korail-font/apply.py"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://tong.visitkorea.or.kr/cms/resource/",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://twin.uijeongbu.rhee.life/",
+    "evidence_files": [
+      "README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://twin.uijeongbu.rhee.life/assets/station.58120faaf7f52baf.glb",
+    "evidence_files": [
+      "docs/v7-deployment-validation.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://ucf-uac.or.kr/web/main/bbs/faqs/list",
+    "evidence_files": [
+      "docs/INTERIOR.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://ui4u.go.kr/tour/contents.do?mId=0103000000",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://ui4u.go.kr/tour/contents.do?mId=0103040000",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://wiki.openstreetmap.org/wiki/Seoul_Subway",
+    "evidence_files": [
+      "docs/RAIL_NETWORK_SOURCES.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.63realty.co.kr/comm/oneFileDownload?file_sq=1",
+    "evidence_files": [
+      "docs/HANWHA_FACADE.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.blender.org/download/lts/",
+    "evidence_files": [
+      "docs/TREE_ASSETS.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.blendkit.com/asset-gallery-detail/4f13cb8d-55e4-482c-9901-20e3c551051a/",
+    "evidence_files": [
+      "docs/TREE_ASSETS.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/",
+    "evidence_files": [
+      "LICENSES/OFL.txt"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.fnnews.com/news/202503192113443362",
+    "evidence_files": [
+      "docs/WINDOW_LIGHTING.md",
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.haeahn.com/ko/project/detail.do?prjctSeq=625",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.haeahn.com/upload/prjctmain/20150113175815574898.jpg|",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.haeahn.com/upload/prjctmain/20150113175815579900.jpg|",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.haeahn.com/upload/prjctmain/20150113175815583901.jpg|",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.haeahn.com/upload/prjctmain/20150113175815588902.jpg|",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.haeahn.com/upload/prjctmain/20150113175815592903.jpg|",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.haeahn.com/upload/prompte/20150210154511755183.pdf",
+    "evidence_files": [
+      "docs/DEVELOPMENT_JOURNAL.md",
+      "scripts/recovery-20261117/station-v13/validation.json",
+      "scripts/recovery-20261117/v14-v18/v15/DEVELOPMENT_v15.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.kric.go.kr/jsp/board/portal/sub02/rcd/railDogam6Detail.jsp?p_id=A030504001&seq=90",
+    "evidence_files": [
+      "docs/DEVELOPMENT_JOURNAL.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.ktdb.go.kr/DATA/pblcte/20261020050440656.pdf",
+    "evidence_files": [
+      "docs/RAIL_NETWORK_SOURCES.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.newsro.kr/articles/882094",
+    "evidence_files": [
+      "docs/WEST_V7_EVIDENCE.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/api/0.6/map?bbox=127.043,37.736,127.05,37.741",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/api/0.6/relation/16850861/full.json",
+    "evidence_files": [
+      "docs/RAIL_NETWORK_SOURCES.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/copyright",
+    "evidence_files": [
+      "city/README.md",
+      "docs/RAIL_NETWORK_SOURCES.md",
+      "docs/README_MODEL.md",
+      "web/rail-network.js",
+      "web/rail/network.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/relation/10881612",
+    "evidence_files": [
+      "web/rail/network.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/relation/13738410",
+    "evidence_files": [
+      "web/rail/network.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/relation/13738411",
+    "evidence_files": [
+      "web/rail/network.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/relation/16850861",
+    "evidence_files": [
+      "web/rail/network.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/relation/7530882",
+    "evidence_files": [
+      "docs/RAIL_NETWORK_SOURCES.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/relation/8691899",
+    "evidence_files": [
+      "docs/RAIL_NETWORK_SOURCES.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/relation/8692707",
+    "evidence_files": [
+      "web/rail/network.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.openstreetmap.org/relation/8692928",
+    "evidence_files": [
+      "web/rail/network.json"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.sandollcloud.com/free-font/17910/KORAIL",
+    "evidence_files": [
+      "scripts/recovery-20261117/korail-font/README.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.ui4u.go.kr/depart/contents.do?mId=0200000000",
+    "evidence_files": [
+      "docs/RAIL_NETWORK_SOURCES.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.ujbcl.go.kr/svc/mtm/MtmPhotoGalleryView.do?bbsSn=11598&pageNo=12&totalCnt=2151",
+    "evidence_files": [
+      "docs/WEST_V7_EVIDENCE.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.ulrt.co.kr/doc/contents/information/time.php",
+    "evidence_files": [
+      "docs/RAIL_NETWORK_SOURCES.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.ulrt.co.kr/doc/contents/secure/train.php",
+    "evidence_files": [
+      "docs/DEVELOPMENT_JOURNAL.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.wegive.co.kr/contents/wetownDetail/2999457",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=JaViZF7Lc8I",
+    "evidence_files": [
+      "reference/RESEARCH.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  },
+  {
+    "url": "https://zenith2.tistory.com/15862539",
+    "evidence_files": [
+      "docs/CURTAINWALL_DEPTH_REVIEW.md",
+      "docs/DEVELOPMENT_JOURNAL.md",
+      "docs/HANWHA_FACADE.md",
+      "docs/INTERIOR.md",
+      "docs/STREET_FURNITURE.md",
+      "docs/V2_REVIEW.md",
+      "reference/RESEARCH.md",
+      "scripts/recovery-20261117/station-v13/validation.json",
+      "scripts/recovery-20261117/v14-v18/v14/DEVELOPMENT_v14.md",
+      "scripts/recovery-20261117/v14-v18/v15/DEVELOPMENT_v15.md",
+      "scripts/recovery-20261117/v14-v18/v16/DEVELOPMENT_v16.md",
+      "scripts/recovery-20261117/v14-v18/v17/DEVELOPMENT_v17.md"
+    ],
+    "status": "Recovered from repository text; not proof of a fresh visit or license grant."
+  }
+]
