@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.1 (2265398 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="1311394048" visible="true" version="6" changeset="159593795" timestamp="2024-11-25T23:40:51Z" user="VLD292" uid="21941706">
+  <nd ref="12138925167"/>
+  <nd ref="12138925434"/>
+  <nd ref="12138925007"/>
+  <nd ref="12138903993"/>
+  <nd ref="12138925142"/>
+  <nd ref="12138925169"/>
+  <nd ref="12138925328"/>
+  <nd ref="12138925201"/>
+  <nd ref="12138925191"/>
+  <nd ref="12138925028"/>
+  <nd ref="12138925136"/>
+  <nd ref="12349699525"/>
+  <nd ref="12138925321"/>
+  <nd ref="12138925071"/>
+  <nd ref="12138925290"/>
+  <nd ref="12138925182"/>
+  <nd ref="12138925010"/>
+  <nd ref="12138925187"/>
+  <nd ref="12138925046"/>
+  <nd ref="12138925057"/>
+  <nd ref="12138925106"/>
+  <nd ref="12138925253"/>
+  <nd ref="12138925095"/>
+  <nd ref="12138925159"/>
+  <nd ref="12138925165"/>
+  <nd ref="12138925391"/>
+  <nd ref="12138925167"/>
+  <tag k="building:part" v="transportation"/>
+  <tag k="height" v="20"/>
+  <tag k="layer" v="4"/>
+  <tag k="min_height" v="6"/>
+  <tag k="roof:colour" v="#F0F0F0"/>
+ </way>
+</osm>

@@ -1,0 +1,11 @@
+{
+  "removed_south_generic_faces": 336,
+  "new_faces": {
+    "stone": 21,
+    "glass": 10,
+    "metal": 128
+  },
+  "source": "2026-06-23 field photo14 of hhk2001.tistory.com/8063",
+  "preserved": "footprint, total relative height11, terrace level5.5, v15 north arcade",
+  "assumptions": "band heights and mullion spacing are approximations; not measured as-built dimensions"
+}

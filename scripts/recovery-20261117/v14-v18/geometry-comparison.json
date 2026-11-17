@@ -1,0 +1,48 @@
+{
+  "added": [
+    "v15 arcade v15 muted concrete",
+    "v15 arcade v15 recessed arcade wall",
+    "v15 arcade v15 satin railing",
+    "v16 bicycle parking curved canopy",
+    "v16 bicycle parking posts",
+    "v16 bicycle parking side glazing",
+    "v16 east pylon English",
+    "v16 east pylon Korail 부",
+    "v16 east pylon Korail 역",
+    "v16 east pylon Korail 의",
+    "v16 east pylon Korail 정",
+    "v16 east pylon header",
+    "v16 east pylon station label",
+    "v16 east station pylon blue face",
+    "v16 east station pylon plinth",
+    "v16 east station pylon silver housing",
+    "v17 bicycle shelter 1144299903",
+    "v17 bicycle shelter 1144299904",
+    "v17 bicycle supports 1144299903",
+    "v17 bicycle supports 1144299904",
+    "v17 infill daylight leak backing",
+    "v18 south circulation glass",
+    "v18 south circulation metal",
+    "v18 south circulation stone"
+  ],
+  "removed": [
+    "OSM building [1144299903]",
+    "OSM building [1144299904]",
+    "OSM building [1311394039]",
+    "OSM building [1334917247]"
+  ],
+  "changed": [
+    "Room glow 2",
+    "Context room wall",
+    "East station rooftop sign",
+    "Photographed station rooftop sign plate",
+    "Context room reveals",
+    "Context transparent thin glazing",
+    "Room glow 3",
+    "Room glow 0",
+    "North window interior backs",
+    "Room glow 1",
+    "East elevation individual pale panels"
+  ],
+  "unchanged": 1056
+}

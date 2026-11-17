@@ -1,0 +1,3 @@
+import bpy
+from mathutils import Vector
+s=bpy.context.scene;orig=s.camera;c=orig.copy();c.data=orig.data.copy();c.name='v17 East street-level comparison';bpy.context.collection.objects.link(c);c.location=(119.2792,64.2816,2.0);target=Vector((38,94,15));c.rotation_euler=(target-c.location).to_track_quat('-Z','Y').to_euler();c.data.lens=38;s.camera=c;s.render.filepath='recovery-output/v17/east-street-v17.png';s.cycles.samples=32;bpy.ops.render.render(write_still=True);s.camera=orig;bpy.ops.wm.save_as_mainfile(filepath='recovery-output/v17/Uijeongbu_Station_v17_forecourt_shelters.blend',compress=True)
