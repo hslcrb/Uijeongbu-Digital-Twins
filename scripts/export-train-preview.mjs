@@ -1,0 +1,2 @@
+import fs from 'node:fs';import {createRollingStock} from '../web/rolling-stock.js';
+for(let line of ['line1','uline']){let model=createRollingStock({line}),parts=[];model.traverse(o=>{if(!o.isMesh)return;let g=o.geometry;parts.push({positions:[...g.attributes.position.array],indices:[...g.index.array],color:o.material.color.toArray()});});fs.writeFileSync(`/workspace/shared/train-${line}.json`,JSON.stringify(parts));}
