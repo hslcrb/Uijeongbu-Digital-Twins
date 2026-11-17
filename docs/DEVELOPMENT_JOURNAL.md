@@ -394,3 +394,7 @@ The deterministic illustrative timetable dwells 25 seconds per stop and runs at 
 Projection, stopping/turnback, nonnegative sorted arrival predictions, source station snapping and finite simulation of all six real paths were tested. Actual Three.js scene construction/switching/animation/disposal was tested with a minimal DOM fixture. Full project tests and build passed. Chromium GUI/GPU execution failed with `socket() failed: Operation not permitted`, including escalated retry, so actual browser interaction and image fidelity are NOT yet verified.
 
 This is a first usable network layer, not all railway engineering trackwork: sidings, switches, both actual directional tracks, exact elevation/grades, real rolling-stock exteriors, surveyed station buildings/interiors, every service pattern and live timetables remain incomplete. The U Line depot platform is included physically; OSM's inactive-stop tag versus the operator timetable's listed platform is preserved as a source discrepancy. Sinchang relation track geometry extends approximately 308 m beyond its station stop; trains turn at the stop, not the relation's far endpoint. Existing detailed-station walking physics is disabled in network mode because these generic platforms do not yet have a collision representation.
+
+## 2026-11-17 · 플랫폼 선로 방향 오프셋 수정
+- 렌더 검토에서 동서 방향 선로의 플랫폼이 겹치는 문제 발견. 전역 X축 8m 배치를 선로 방위에 수직인 8m 오프셋으로 교체했다.
+- 6개 노선 모든 역에 대해 오프셋 길이 8m·선로 방향 내적 0 회귀검증을 추가했다. 수정 전 실패를 확인하고 수정 후 전체 15개 테스트 및 빌드를 통과했다. 플랫폼은 여전히 단순 예시 형상이며 실제 승강장 측량을 의미하지 않는다.
