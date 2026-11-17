@@ -2,12 +2,13 @@ import * as THREE from 'three';
 // Same loop, fleet size and simulation clock as the visible trains. No live API.
 export function boardRows(layers,time,direction){
  const rows=[];
- for(const {route:r,count} of layers){
+ for(const {route:r,count,trains=[]} of layers){
   if(!r||!count)continue;
   const index=r.stations.findIndex(s=>s.name==='의정부');if(index<0)continue;
   const spacing=r.period/count;
   for(let train=0;train<count;train++){
-   const phase=((time+train*spacing)%r.period+r.period)%r.period;
+   if(trains[train]?.userData?.manualState)continue;
+   const phase=((time+train*spacing+(trains[train]?.userData?.timeOffset||0))%r.period+r.period)%r.period;
    for(const l of r.legs){
     if(l.i!==index||Math.sign(r.stations[l.j].d-r.stations[l.i].d)!==direction)continue;
     const stopped=phase+1e-9>=l.start&&phase<l.depart-1e-9;

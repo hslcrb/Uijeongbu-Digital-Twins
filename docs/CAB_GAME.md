@@ -1,15 +1,15 @@
-# Fictional cab interaction, 2026-11-17
+# In-world scheduled-fleet cab interaction, 2026-11-17
 
-## Scope and design choice
-The user requested fewer overlay buttons and direct door/cab interaction. This iteration adds one clearly turquoise, fictional single-car training vehicle at the selected route station, alongside the autonomous fleet. It is NOT a faithful train simulator, not instructions to operate real equipment, and not a replacement of every fleet train's passenger interior.
+## Current scope (supersedes the separate training car)
+The separate single-car training vehicle has been removed. Every generated scheduled train gets a turquoise boarding marker on its first car. The marker appears only while the train is stopped and close to the camera. Clicking within 18 metres takes control of that exact existing train; a second click boards, and the cab door enters the simplified cab. The existing whole consist follows the player's route distance and car-by-car curve transforms. Other trains retain their automatic simulation.
 
-Click the turquoise door within 18 metres to open it, click again to board the vestibule, then click the cab door. Three coloured world controls are power, brake, and doors. Keyboard alternatives: aim at interaction and E; in cab W power, S brake, X coast, O doors, R direction, Esc disembark. Minimal status text remains for discoverability. Home/city navigation safely resets the experience.
+The game gives direct in-world controls rather than a drive button: green power, red brake, yellow doors. Keyboard alternatives: aim at the marker and E, then W power, S brake, X coast, O doors, R direction, Escape disembark. Home/city resets release the train. Cab mode hides unrelated controls. Camera transitions are a game concession, not continuous walking physics inside a moving carriage.
 
-## Mechanics
-Position integrates a fictional acceleration/braking model on actual sampled route geometry. Velocity is bounded, frame delta capped. Doors can only operate while stopped and within 3 metres of a sourced station's route coordinate. Open doors prevent traction. A simple glass screen-door representation at the currently nearest station follows the same door state. No real screen-door location, dimensions, safety certification, or signalling is asserted.
+## State and schedule
+Manual override lives on the existing train object, not a cloned vehicle. Opening the boarding marker freezes the stopped train. Doors can only open while stopped and within 3m of the nearest station's route distance; open doors block power. On release, the automatic loop gets a per-train time offset matching the current distance/direction, preventing a teleport back to the old timetable. Automatic ETA panels omit manually controlled trains (their future arrival is unknown) and use adjusted offsets after handback.
 
-## Limits
-Only the training vehicle and its one nearest-station gate are interactive. Existing platform screen doors are not comprehensively reconstructed; gate placement is approximate. Other trains continue their illustrative schedule and do not perform collision avoidance against the training car. Cab camera is a fixed forward view, and click boarding is a game transition, not continuous walking aboard a physically simulated moving carriage. Endpoints stop the car. Route grade remains the application's existing approximation. World UI remains elsewhere; this feature does not claim all overlay controls have been eliminated.
+## Screen door and visual limitations
+One illustrative nearby platform screen door follows the active train's door state. It is not a reconstruction of every station's screen doors. The turquoise overlay visibly shifts, but the procedural stock's original merged door/body geometry is not fully remodelled into independently animated door leaves. Thus boarding is an interaction/camera transition rather than a physically opened accurate aperture. Interior furnishings and console are generic. Exact real controls, interlocking, signals, collision avoidance between trains, and continuous passenger movement aboard are not implemented. No real-world operating instructions are represented.
 
-## Tests
-Pure state tests cover blocked boarding, cab sequence, door/traction interlock, motion lock, platform alignment, endpoints, and bounded long-frame integration. Full project tests and build run. GPU interaction quality still requires a browser with functional WebGL; not claimed verified here.
+## Validation
+44 tests and build passed: existing fleet override, position-continuous handback, manual ETA exclusion, actual Three scene binding, boarding/cab flow, door/traction locks, route endpoint bounds, and existing world/rail/physics regressions. GPU visual/interaction QA still requires functional WebGL and is not claimed complete.
