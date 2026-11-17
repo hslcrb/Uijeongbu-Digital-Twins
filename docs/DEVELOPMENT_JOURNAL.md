@@ -411,3 +411,16 @@ The cumulative model was freshly rendered from the east-overview and street-leve
 Walking compatibility was tested against a separate non-Draco export with identical visible object selection: entry-to-central aisle travelled 18.5 m and remained grounded; lateral motion travelled 8.5 m and remained grounded; peak collision triangles 17,901 remained below the 20,000 safety budget. The existing staircase remains blocked by an overlapping OSM shell around z=-67; this is a known pre-existing limitation, not a claim that all station interiors are walkable. Source recovery does not solve that geometry conflict.
 
 Status at this commit: recovered asset and reproducibility record prepared for main integration; production deployment must be verified separately. Full-body station realism, measured terrain, road levels and exact station interior reconstruction remain incomplete.
+
+## 2026-11-17 — Reference-based rolling stock detail
+
+Problem: every route displayed identical three-box trains. Replaced them with original procedural approximations: a ten-car commuter EMU for mainline routes and a two-car, narrower VAL208-inspired set for U Line. The geometry now includes side doors/window panes, front windshield and wipers, lights, bogies/wheels, gangways, rooftop ventilation and mainline pantographs. U Line has no pantograph and uses green/blue/red/white accents checked against the KRIC photograph. This is not a locomotive hauling coaches, but an EMU visualization.
+
+Sources checked:
+- KRIC vehicle catalogue, U100/VAL208: https://www.kric.go.kr/jsp/board/portal/sub02/rcd/railDogam6Detail.jsp?p_id=A030504001&seq=90 (13,700 × 2,080 × 3,700 mm; two-car set; rubber wheels). Its linked photograph was viewed, not redistributed or used as texture.
+- Operator VAL208 introduction: https://www.ulrt.co.kr/doc/contents/secure/train.php (search-index content accessible; direct page timeout).
+- Hyundai Rotem authors, Korean Society for Railway 2016 paper: https://railway.or.kr/Papers_Conference/201611/pdf/KSR2016A140.pdf confirms the standard ten-car Line 1 EMU formation. All mainline services use this illustrative standard, not a verified route-by-route roster; Gwangmyeong shuttle and fleet-generation differences remain unresolved.
+
+Dimensions and detailing other than the cited general proportions are modelling approximations. No manufacturer CAD or survey was obtained. Bogies do not yet articulate individually, and the whole consist still follows the existing rigid heading; track curvature and platform lengths therefore are not a fully realistic railway simulation. The generic stations remain generic. No source photo is embedded.
+
+Performance: geometry merged into seven material meshes per set; train instances clone shared geometry/materials instead of repeatedly building hundreds of parts. Tests first failed for absent factory; route-specific formations, finite vertices, component counts and bounded mesh count now pass. Full suite: 20 tests passed, syntax and build passed (npm emits pre-existing unknown http-proxy config warning). Preview renders are generated from the exact web mesh positions/indices and colours, under separate Blender lighting, not app screenshots. Browser GPU interaction remains separately unverified.
