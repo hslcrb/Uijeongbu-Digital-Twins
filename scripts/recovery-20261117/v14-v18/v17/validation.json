@@ -1,0 +1,31 @@
+{
+  "changes": [
+    {
+      "osm": "1144299903",
+      "old_generic_height": 9.9,
+      "new_eave": 1,
+      "new_crown": 2.5,
+      "height_status": "OSM height1 / roofheight1.5 conflict; interpreted eave+rise provisionally, not field verified",
+      "length": 15.277540267581648,
+      "width": 3.658017807078727
+    },
+    {
+      "osm": "1144299904",
+      "old_generic_height": 9.9,
+      "new_eave": 1,
+      "new_crown": 2.5,
+      "height_status": "OSM height1 / roofheight1.5 conflict; interpreted eave+rise provisionally, not field verified",
+      "length": 19.40740167883061,
+      "width": 4.159174044717874
+    }
+  ],
+  "generic_faces_removed": {
+    "Context room reveals": 28,
+    "Context room wall": 112,
+    "Context transparent thin glazing": 168,
+    "Room glow 0": 5,
+    "Room glow 1": 3,
+    "Room glow 2": 8,
+    "Room glow 3": 12
+  }
+}

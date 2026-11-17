@@ -1,0 +1,8 @@
+{
+  "removed_faces": {
+    "OSM building [1334917247]": 195
+  },
+  "source_osm": "way1334917247 transportation height11 layer-1",
+  "new_elements": "local open lower arcade, recessed upper passage backing, thin terrace railings; existing slab retained",
+  "all_dimensions": "estimated from existing relative levels, not measured"
+}

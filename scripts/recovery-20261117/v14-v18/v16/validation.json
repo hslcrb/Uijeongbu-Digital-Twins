@@ -1,0 +1,17 @@
+{
+  "new_objects": [
+    "v16 east pylon English",
+    "v16 east pylon header",
+    "v16 east pylon Korail 부",
+    "v16 east pylon Korail 역",
+    "v16 east pylon Korail 의",
+    "v16 east pylon Korail 정",
+    "v16 east pylon station label",
+    "v16 east station pylon blue face",
+    "v16 east station pylon plinth",
+    "v16 east station pylon silver housing"
+  ],
+  "source": "2025-03-23 east elevation photo23 zenith2.tistory.com/15862539",
+  "position": "estimated existing model coordinates 49.4,111.7,0",
+  "geometry": "reuse documented v12 KORAIL-outline pylon design, east placement supported by photo; west retained"
+}

@@ -398,3 +398,16 @@ This is a first usable network layer, not all railway engineering trackwork: sid
 ## 2026-11-17 · 플랫폼 선로 방향 오프셋 수정
 - 렌더 검토에서 동서 방향 선로의 플랫폼이 겹치는 문제 발견. 전역 X축 8m 배치를 선로 방위에 수직인 8m 오프셋으로 교체했다.
 - 6개 노선 모든 역에 대해 오프셋 길이 8m·선로 방향 내적 0 회귀검증을 추가했다. 수정 전 실패를 확인하고 수정 후 전체 15개 테스트 및 빌드를 통과했다. 플랫폼은 여전히 단순 예시 형상이며 실제 승강장 측량을 의미하지 않는다.
+
+
+## 2026-11-17 — cumulative v18 source recovery and model deployment preparation
+
+The prior v13c recovery did not contain later glass-band and bicycle-shelter corrections. A filename search was insufficient, so the Library was enumerated by creation time. This located every v14–v18 cumulative Blender model and per-version reproduction ZIP. The original v18 Blender file and v14–v18 archives were downloaded without changing the originals. Archived development notes, source-photo references, OSM XML, scripts and validation records were reviewed. The original photographic evidence remains archived; its source links and date/measurement caveats are retained in the recovered notes.
+
+Rather than approximate the missing edits again, the exact cumulative v18 model was recovered. A mesh geometry comparison against v13c confirms 1,056 unchanged mesh objects, 24 added, four removed/replaced erroneous generic buildings, and 11 changed mesh objects. The additions cover the open lower arcade, continuous southern glazing, lower curved bicycle shelters and east station pylon. The footprint/dimensions marked estimated in the original development notes remain estimates, not new measured claims. Recovered scripts are archived under scripts/recovery-20261117/v14-v18; their former machine-specific output base is normalized to recovery-output/. They are historical sequential scripts, not automatically applied to the already cumulative v18 model.
+
+The cumulative model was freshly rendered from the east-overview and street-level cameras and visually inspected. The v13c source was preserved. The same visible-selection export produced a web GLB of 15,681,948 bytes with 13 embedded images and no external image URI. SHA256: 377ef61ea364259524a43e0e744a57aabcfc8e661c60bfe86ac8b710ba3304d0. Both the deterministic gzip source and generated GLB must match; build.mjs restores gzip before content-addressing.
+
+Walking compatibility was tested against a separate non-Draco export with identical visible object selection: entry-to-central aisle travelled 18.5 m and remained grounded; lateral motion travelled 8.5 m and remained grounded; peak collision triangles 17,901 remained below the 20,000 safety budget. The existing staircase remains blocked by an overlapping OSM shell around z=-67; this is a known pre-existing limitation, not a claim that all station interiors are walkable. Source recovery does not solve that geometry conflict.
+
+Status at this commit: recovered asset and reproducibility record prepared for main integration; production deployment must be verified separately. Full-body station realism, measured terrain, road levels and exact station interior reconstruction remain incomplete.

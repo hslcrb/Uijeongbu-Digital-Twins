@@ -1,0 +1,16 @@
+{
+  "old_height": 9.9,
+  "new_eave": 2.5,
+  "new_crown": 3.1,
+  "height_status": "photo proportion estimate; source has no height",
+  "removed_generic_faces": {
+    "Context room reveals": 40,
+    "Context room wall": 160,
+    "Context transparent thin glazing": 240,
+    "Room glow 0": 5,
+    "Room glow 1": 7,
+    "Room glow 2": 7,
+    "Room glow 3": 21
+  },
+  "source": "OSM way1311394039 amenity=bicycle_parking bicycle_parking=building"
+}

@@ -1,0 +1,448 @@
+{
+  "source": "https://hhk2001.tistory.com/8063",
+  "discovered_urls": 63,
+  "downloaded_files": 46,
+  "valid_files": 42,
+  "files": [
+    {
+      "file": "photo-08.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 15:55:25",
+      "sha256": "717ec33574d7bdb2d04645872e88be375af769035dacfa4525463dc5fddf5cff"
+    },
+    {
+      "file": "photo-48.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1062
+      ],
+      "datetime_original": "2026:06:23 08:30:04",
+      "sha256": "0037864b8a7c89d3a795c35a9aa9e5ee4d01689a7ddbebb08cb2ef0b3a468946"
+    },
+    {
+      "file": "photo-11.jpg",
+      "status": "incomplete",
+      "error": "image file is truncated (23 bytes not processed)"
+    },
+    {
+      "file": "photo-01.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:16:54",
+      "sha256": "f52484b3cfb4d00839cd8e83486e0d9a1ccf94a09d510a95243ba6a5d43e265b"
+    },
+    {
+      "file": "photo-03.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 15:59:35",
+      "sha256": "18fe205460935665a43b61d5fcf9d7d0f1b319418bf3da34ff1b00610582d538"
+    },
+    {
+      "file": "photo-12.jpg",
+      "status": "incomplete",
+      "error": "image file is truncated (9 bytes not processed)"
+    },
+    {
+      "file": "photo-18.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:24:08",
+      "sha256": "a9cd36c846271ac3a4c4065e7de3cb85e1ccbf448772d32fd0e2164ddc45706c"
+    },
+    {
+      "file": "photo-34.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:28:27",
+      "sha256": "7e5383ad68766cabbec0b03bafe88af6575314b84ff73473297633ab4354e990"
+    },
+    {
+      "file": "photo-59.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:38:34",
+      "sha256": "64a18e3620e37e3a49f18f2944eb8f0748327765a6c1ed623d2c088dccce826e"
+    },
+    {
+      "file": "photo-49.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 13:56:16",
+      "sha256": "bd6f61cf1068587e1185bc9dbb16b9c65b43587c090b087454de00728dbca671"
+    },
+    {
+      "file": "photo-54.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:35:21",
+      "sha256": "317c8a2f2b8959aecda21b71721112f4312248ddd145c238e1d896ece0b24be7"
+    },
+    {
+      "file": "photo-62.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 11:26:39",
+      "sha256": "e58737ae9fbe71ae249422245c5946f4d72217629f07a634e2ab8b68dcf57321"
+    },
+    {
+      "file": "photo-00.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 16:01:10",
+      "sha256": "25dee83c63d74099025db1eb8f86363da0bd535786a0e1aba08c819276f529fe"
+    },
+    {
+      "file": "photo-21.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 13:07:34",
+      "sha256": "6869418d6cf30251d891dc4596f0921b3d2e167dd78a041629ba57aee60c35f3"
+    },
+    {
+      "file": "photo-57.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:37:22",
+      "sha256": "ba28173ef719563cd273a2881866653b79ca41e8d12d49c020b88c7464d3e96e"
+    },
+    {
+      "file": "photo-14.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:22:43",
+      "sha256": "df8c9f05cd1061149ce7a63600e52418d21efeb42960420b17c489daaf870d12"
+    },
+    {
+      "file": "photo-37.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:29:44",
+      "sha256": "1ea6bd233d2972b925cae5d6892da3bf868d40c55add772d15897d22807b4947"
+    },
+    {
+      "file": "photo-05.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 15:55:39",
+      "sha256": "afe67c09ef5c629345f09ee6fc664981cba23d9cb7336c9a96a0d025f7eaae36"
+    },
+    {
+      "file": "photo-09.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 15:56:16",
+      "sha256": "b6fbf9e6522aa89b75ae0b7e03b93dacd04edc5a6e6eb78d632141c6a7c2ad3f"
+    },
+    {
+      "file": "photo-53.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:35:13",
+      "sha256": "37aaab5a1b1acfd0483484c7e02141439f8fb05c33a47ddf811913b519605a9a"
+    },
+    {
+      "file": "photo-51.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:39:23",
+      "sha256": "e40abda2e5c1c082ded0142b4216cd57783c6624c8e60f683c4f11756470fc8e"
+    },
+    {
+      "file": "photo-19.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 13:05:16",
+      "sha256": "7eda085d1b3a454b916ce0231dc6fcf0f13c5e4d470923d0cba3207ed0241e8f"
+    },
+    {
+      "file": "photo-07.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1033
+      ],
+      "datetime_original": "2026:06:23 15:59:45",
+      "sha256": "440d773e1eb21637891850607245f18f5b8702cc57d1459a9c637971c38a237e"
+    },
+    {
+      "file": "photo-39.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:30:34",
+      "sha256": "e3ff8af01111a687b44ba68c81553da8ad1ab9c74f6924ed5101a613d1f2b51a"
+    },
+    {
+      "file": "photo-02.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 15:55:03",
+      "sha256": "37401abdfe2363f4f9a4962ed14cc2a512e82876525db2bf44011fb0388974e4"
+    },
+    {
+      "file": "photo-04.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 15:57:43",
+      "sha256": "01d31b905b808316e482ae88da7c3f7e18ff812b33680feb7e34f505a1d10fde"
+    },
+    {
+      "file": "photo-58.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:38:10",
+      "sha256": "9663ae8d191a3bff00c956bec1da1e6a6c8f4a087023e28659c6ad8b772b3a1e"
+    },
+    {
+      "file": "photo-50.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:34:58",
+      "sha256": "c2f45d0e7351d2956e3f4fcaf829cb7f86c5342f294ab4cfb0e959a865cffdd2"
+    },
+    {
+      "file": "photo-20.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 13:04:12",
+      "sha256": "6f52d40a0ca08d39cedde5551d5f886d03394ad94a6aa6a313b357e35e443377"
+    },
+    {
+      "file": "photo-17.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1512
+      ],
+      "datetime_original": "2026:06:23 08:23:42",
+      "sha256": "277bb03c18aff831fdd3e4779fb601dbe80f623db4bd007685c7c3c5e0376466"
+    },
+    {
+      "file": "photo-38.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:30:16",
+      "sha256": "162a1528418f029ce65c3966d83dad4eeebad4878ecfa77dbf5fbd549f2881e9"
+    },
+    {
+      "file": "photo-22.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1060
+      ],
+      "datetime_original": "2026:06:23 09:13:32",
+      "sha256": "3f6b4a65b376e37588d84674eac4470e1a29b3848da6465a66e124db572b5300"
+    },
+    {
+      "file": "photo-33.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:28:23",
+      "sha256": "b4c096d99143e34b3deb0075ee49501df1af303e63d0d3f24ac1751f8d0c60b6"
+    },
+    {
+      "file": "photo-55.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1174
+      ],
+      "datetime_original": "2026:06:23 08:36:01",
+      "sha256": "8753f6b428b4ae12e1eaeed7fff5d3ef01be85229f1556cf2ce2d03bc7e4592b"
+    },
+    {
+      "file": "photo-60.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:38:41",
+      "sha256": "7db532b366da6d56df0260c55469858f037af83638f529c3b1ee6a1d222010b8"
+    },
+    {
+      "file": "photo-10.jpg",
+      "status": "incomplete",
+      "error": "image file is truncated (21 bytes not processed)"
+    },
+    {
+      "file": "photo-32.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:20:10",
+      "sha256": "fa13bb24240c7998776e004e5d48a629bcebe3326a992250c773a1567734208d"
+    },
+    {
+      "file": "photo-61.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 11:25:56",
+      "sha256": "f5d340d612d65ca9369e9e17eafb602f918921ed39255b625174dbe013d17a1c"
+    },
+    {
+      "file": "photo-15.jpg",
+      "status": "incomplete",
+      "error": "image file is truncated (16 bytes not processed)"
+    },
+    {
+      "file": "photo-23.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 09:13:55",
+      "sha256": "f520c108fda365ba208d4a70304666acf550155ed9313c5ec626c01f626a444d"
+    },
+    {
+      "file": "photo-06.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 15:59:29",
+      "sha256": "4a7785400a7d94a9261501e3e89e5c12ae1fa9f83690cb988c41d77ec25f7790"
+    },
+    {
+      "file": "photo-36.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:28:57",
+      "sha256": "0c12bad00caeb73fbaea14f8231a3e0751bbf5340051605f5895ba92a95fbce3"
+    },
+    {
+      "file": "photo-16.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:23:24",
+      "sha256": "4d889947f528fab42d9d51f5671ced3f1ad22735e1df0e3f4f4835e50d9bac4c"
+    },
+    {
+      "file": "photo-56.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:37:10",
+      "sha256": "4c88a1f663fac7620980a37af5da406e3b304b3d336e6eacf98ee97bfe2adb7f"
+    },
+    {
+      "file": "photo-52.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:34:54",
+      "sha256": "e771fed6952973e2f40467243e97ec2c18db78ca1e9a240341a1f27ca9d0aee0"
+    },
+    {
+      "file": "photo-35.jpg",
+      "status": "valid",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "datetime_original": "2026:06:23 08:28:46",
+      "sha256": "7ac75aa29d9b67a53402d6edb4d715634bd46d8ec3afc4198917a5d47e7212f8"
+    }
+  ]
+}
