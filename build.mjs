@@ -49,3 +49,10 @@ if(fs.existsSync('web/city/city-tiles.tar.gz')) {
  fs.rmSync('web-dist/city/city-tiles.tar.gz',{force:true});
  console.log('Restored city tiles:',count);
 }
+
+// Bake and render geometry must be from the exact same final model bytes.
+const fullModelHash=crypto.createHash('sha256').update(model).digest('hex');
+const versionPath='web-dist/collision-version.js';
+if(fs.existsSync(versionPath))fs.writeFileSync(versionPath,fs.readFileSync(versionPath,'utf8').replace('__STATION_COLLISION_HASH__',fullModelHash));
+const {buildCollisionAssets}=await import('./scripts/build-collision-assets.mjs');
+console.log('Static collision:',buildCollisionAssets('web/collision','web-dist/collision',fullModelHash));

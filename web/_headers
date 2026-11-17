@@ -9,3 +9,9 @@
   Cache-Control: no-cache
 /vendor/*
   Cache-Control: public, max-age=86400
+/collision/manifest.json
+  Cache-Control: no-cache
+/collision-version.js
+  Cache-Control: no-cache
+/collision/tiles/*
+  Cache-Control: public, max-age=3600
